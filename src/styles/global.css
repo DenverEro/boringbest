@@ -186,3 +186,35 @@ th {
 .schema-json {
   display: none;
 }
+
+/* Force white text on all buttons - CRITICAL FIX */
+button, 
+button span, 
+.btn-primary, 
+.btn-primary span, 
+a[href*="amazon"],
+a[href*="amazon"] span {
+  color: #ffffff !important;
+  font-weight: 600;
+}
+
+/* Ensure text isn't being hidden by overflow */
+button {
+  overflow: visible !important;
+  white-space: nowrap;
+}
+
+/* PickCard button explicit text color */
+#pick-1 a,
+#pick-2 a,
+#pick-3 a,
+[id^="pick-"] a {
+  color: #ffffff !important;
+}
+
+#pick-1 a span,
+#pick-2 a span,
+#pick-3 a span,
+[id^="pick-"] a span {
+  color: #ffffff !important;
+}
