@@ -1,0 +1,140 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import NewsletterForm from '../../components/NewsletterForm.astro';
+
+const title = 'Product Categories - Browse All Reviews';
+const description = 'Browse our expert reviews by category. Find the best bathroom accessories, kitchen essentials, home office gear, and more.';
+
+const categories = [
+  {
+    name: 'Bathroom',
+    slug: 'bathroom',
+    description: 'Essential bathroom products tested for durability and performance.',
+    reviews: [
+      { title: 'Best Toilet Plungers', slug: 'best-toilet-plungers' },
+      { title: 'Best Shower Curtain Liners', slug: 'best-shower-curtain-liners' }
+    ],
+    comingSoon: ['Shower Caddies', 'Toilet Brushes', 'Bath Mats']
+  },
+  {
+    name: 'Kitchen',
+    slug: 'kitchen',
+    description: 'Kitchen tools and accessories that make cooking and cleaning easier.',
+    reviews: [
+      { title: 'Best Dish Racks', slug: 'best-dish-racks' },
+      { title: 'Best Kitchen Trash Cans', slug: 'best-kitchen-trash-cans' }
+    ],
+    comingSoon: ['Sponge Holders', 'Sink Strainers', 'Cabinet Organizers']
+  },
+  {
+    name: 'Home Office',
+    slug: 'home-office',
+    description: 'Work-from-home essentials tested for productivity and safety.',
+    reviews: [
+      { title: 'Best Extension Cords', slug: 'best-extension-cords' },
+      { title: 'Best Power Strips', slug: 'best-power-strips' }
+    ],
+    comingSoon: ['Cable Organizers', 'Desk Lamps', 'Monitor Stands']
+  },
+  {
+    name: 'Home Improvement',
+    slug: 'home-improvement',
+    description: 'Tools and supplies for DIY projects and home maintenance.',
+    reviews: [],
+    comingSoon: ['Paint Rollers', 'Painter\'s Tape', 'Drop Cloths']
+  },
+  {
+    name: 'Laundry',
+    slug: 'laundry',
+    description: 'Laundry room essentials that simplify wash day.',
+    reviews: [],
+    comingSoon: ['Laundry Hampers', 'Drying Racks', 'Ironing Boards']
+  }
+];
+
+const breadcrumbs = [{ label: 'Categories' }];
+---
+
+<BaseLayout 
+  title={title}
+  description={description}
+  breadcrumbs={breadcrumbs}
+>
+  <section class="py-12">
+    <h1 class="text-4xl font-bold text-gray-900 mb-4">Browse by Category</h1>
+    <p class="text-xl text-gray-600 mb-12">
+      Find expert reviews organized by room and use case.
+    </p>
+    
+    <div class="space-y-12">
+      {categories.map((category) => (
+        <div class="border border-gray-200 rounded-xl p-6 md:p-8">
+          <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4 mb-6">
+            <div>
+              <h2 class="text-2xl font-bold text-gray-900 mb-2">
+                <a href={`/categories/${category.slug}/`} class="hover:text-[#2563EB] transition-colors">
+                  {category.name}
+                </a>
+              </h2>
+              <p class="text-gray-600">{category.description}</p>
+            </div>
+            <a 
+              href={`/categories/${category.slug}/`}
+              class="inline-flex items-center gap-2 px-4 py-2 bg-[#2563EB] hover:bg-[#1D4ED8] text-white font-medium rounded-lg transition-colors self-start"
+            >
+              View All {category.name} Reviews
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="9 18 15 12 9 6"></polyline>
+              </svg>
+            </a>
+          </div>
+          
+          {category.reviews.length > 0 && (
+            <div class="mb-6">
+              <h3 class="text-sm font-semibold text-gray-500 uppercase tracking-wider mb-3">Published Reviews</h3>
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+                {category.reviews.map((review) => (
+                  <a 
+                    href={`/reviews/${review.slug}/`}
+                    class="flex items-center gap-3 p-3 bg-gray-50 hover:bg-blue-50 rounded-lg transition-colors group"
+                  >
+                    <svg class="text-gray-400 group-hover:text-[#2563EB] transition-colors" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                      <polyline points="14 2 14 8 20 8"></polyline>
+                      <line x1="16" y1="13" x2="8" y2="13"></line>
+                      <line x1="16" y1="17" x2="8" y2="17"></line>
+                      <polyline points="10 9 9 9 8 9"></polyline>
+                    </svg>
+                    <span class="font-medium text-gray-900 group-hover:text-[#2563EB] transition-colors">{review.title}</span>
+                  </a>
+                ))}
+              </div>
+            </div>
+          )}
+          
+          {category.comingSoon.length > 0 && (
+            <div>
+              <h3 class="text-sm font-semibold text-gray-500 uppercase tracking-wider mb-3">Coming Soon</h3>
+              <div class="flex flex-wrap gap-2">
+                {category.comingSoon.map((item) => (
+                  <span class="inline-flex items-center px-3 py-1 bg-gray-100 text-gray-600 text-sm rounded-full">
+                    {item}
+                  </span>
+                ))}
+              </div>
+            </div>
+          )}
+        </div>
+      ))}
+    </div>
+  </section>
+  
+  <!-- Newsletter -->
+  <section class="py-12 border-t border-gray-200">
+    <NewsletterForm 
+      variant="inline"
+      title="Get Notified of New Reviews"
+      description="Be the first to know when we publish new reviews in your favorite categories."
+    />
+  </section>
+</BaseLayout>

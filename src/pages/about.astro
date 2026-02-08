@@ -1,0 +1,111 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import NewsletterForm from '../components/NewsletterForm.astro';
+
+const title = 'About Boring Best - Our Mission & Methodology';
+const description = 'We test the boring stuff so you do not have to. Learn about our mission, values, and commitment to honest, independent product reviews.';
+---
+
+<BaseLayout 
+  title={title}
+  description={description}
+  breadcrumbs={[{ label: 'About Us' }]}
+>
+  <section class="py-12">
+    <h1 class="text-4xl font-bold text-gray-900 mb-6">About Boring Best</h1>
+    
+    <div class="prose max-w-none text-gray-700">
+      <p class="text-xl mb-8">
+        We test the boring stuff so you do not have to. From toilet plungers to extension cords, we spend hours researching and testing the everyday products you actually need.
+      </p>
+      
+      <h2 class="text-2xl font-bold text-gray-900 mt-12 mb-4">Our Mission</h2>
+      <p class="mb-4">
+        Every day, millions of people buy mundane household products without research. They grab the cheapest option or the first one they see, then live with products that break, underperform, or frustrate them for years.
+      </p>
+      <p class="mb-4">
+        We believe boring products deserve better research. You should not have to spend 10 hours researching toilet plungers or shower curtain liners. That is our job.
+      </p>
+      <p class="mb-8">
+        Our mission is simple: <strong>Find the best everyday products through rigorous testing, then tell you exactly what to buy.</strong>
+      </p>
+      
+      <h2 class="text-2xl font-bold text-gray-900 mt-12 mb-4">Our Values</h2>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 my-8">
+        <div class="bg-gray-50 p-6 rounded-lg">
+          <h3 class="font-bold text-gray-900 mb-2">100% Independent</h3>
+          <p class="text-gray-600">We buy every product ourselves. No free samples, no sponsored reviews, no manufacturer influence on our recommendations.</p>
+        </div>
+        
+        <div class="bg-gray-50 p-6 rounded-lg">
+          <h3 class="font-bold text-gray-900 mb-2">Rigorous Testing</h3>
+          <p class="text-gray-600">We spend 30+ hours testing each category. We create standardized tests, measure performance objectively, and document everything.</p>
+        </div>
+        
+        <div class="bg-gray-50 p-6 rounded-lg">
+          <h3 class="font-bold text-gray-900 mb-2">Transparent Methodology</h3>
+          <p class="text-gray-600">We explain exactly how we test and why we recommend what we do. No black box algorithms or mysterious rankings.</p>
+        </div>
+        
+        <div class="bg-gray-50 p-6 rounded-lg">
+          <h3 class="font-bold text-gray-900 mb-2">Long-Term Thinking</h3>
+          <p class="text-gray-600">We test for durability and longevity, not just first impressions. A product that lasts 5 years is better than one that fails in 6 months.</p>
+        </div>
+      </div>
+      
+      <h2 class="text-2xl font-bold text-gray-900 mt-12 mb-4">The Boring Best Team</h2>
+      <p class="mb-4">
+        We are a small team of product researchers, engineers, and writers who got tired of buying terrible products. Our team includes:
+      </p>
+      <ul class="list-disc pl-6 mb-8 space-y-2">
+        <li><strong>Product Researchers</strong> who dig deep into specifications, materials, and manufacturing processes</li>
+        <li><strong>Testing Engineers</strong> who design standardized tests and measure performance objectively</li>
+        <li><strong>Writers</strong> who translate technical details into clear, honest recommendations</li>
+        <li><strong>Home Testers</strong> who use products in real homes under real conditions</li>
+      </ul>
+      
+      <h2 class="text-2xl font-bold text-gray-900 mt-12 mb-4">Our Testing Process</h2>
+      <p class="mb-4">
+        Every review follows the same rigorous process:
+      </p>
+      <ol class="list-decimal pl-6 mb-8 space-y-3">
+        <li><strong>Research Phase:</strong> We identify the top products in a category through market research, expert recommendations, and user reviews.</li>
+        <li><strong>Purchase:</strong> We buy every product with our own money. No free samples means no manufacturer influence.</li>
+        <li><strong>Standardized Testing:</strong> We create objective tests that measure what actually matters for each product type.</li>
+        <li><strong>Real-World Use:</strong> Products are used in real homes for weeks or months to test long-term performance.</li>
+        <li><strong>Analysis:</strong> We compare results, identify patterns, and determine which products perform best for different use cases.</li>
+        <li><strong>Publication:</strong> We write comprehensive reviews explaining our findings with full transparency.</li>
+        <li><strong>Updates:</strong> We regularly revisit categories to test new products and update recommendations.</li>
+      </ol>
+      
+      <h2 class="text-2xl font-bold text-gray-900 mt-12 mb-4">Affiliate Disclosure</h2>
+      <p class="mb-4">
+        Boring Best is a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for sites to earn advertising fees by advertising and linking to Amazon.com.
+      </p>
+      <p class="mb-4">
+        When you purchase a product through one of our links, we may earn a small commission. This comes at no extra cost to you.
+      </p>
+      <p class="mb-8">
+        <strong>Important:</strong> Our affiliate relationships never influence our recommendations. We only recommend products we have tested and genuinely believe are the best options. Our editorial team operates independently from our business team.
+      </p>
+      
+      <h2 class="text-2xl font-bold text-gray-900 mt-12 mb-4">Contact Us</h2>
+      <p class="mb-4">
+        Have questions, suggestions, or feedback? We would love to hear from you.
+      </p>
+      <p class="mb-8">
+        Email us at: <a href="mailto:hello@boringbest.com" class="text-[#2563EB] hover:underline">hello@boringbest.com</a>
+      </p>
+    </div>
+  </section>
+  
+  <!-- Newsletter -->
+  <section class="py-12 border-t border-gray-200">
+    <NewsletterForm 
+      variant="hero"
+      title="Never Miss a Review"
+      description="Get weekly reviews of everyday essentials delivered to your inbox."
+    />
+  </section>
+</BaseLayout>

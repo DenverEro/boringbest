@@ -1,0 +1,57 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import TrustBar from '../../components/TrustBar.astro';
+import NewsletterForm from '../../components/NewsletterForm.astro';
+
+const title = 'Best Kitchen Trash Cans of 2026: Tested for Odor & Durability';
+const description = 'We tested 10 kitchen trash cans for odor control, foot pedal durability, and bag compatibility. Our top pick keeps smells contained and lasts for years.';
+const publishedDate = '2026-01-12';
+const lastUpdated = '2026-02-08';
+
+const breadcrumbs = [
+  { label: 'Reviews', href: '/categories/' },
+  { label: 'Kitchen', href: '/categories/kitchen/' },
+  { label: 'Kitchen Trash Cans' }
+];
+---
+
+<BaseLayout 
+  title={title}
+  description={description}
+  type="article"
+  publishedDate={publishedDate}
+  modifiedDate={lastUpdated}
+  breadcrumbs={breadcrumbs}
+>
+  <section class="py-12 text-center">
+    <h1 class="text-4xl font-bold text-gray-900 mb-4">{title}</h1>
+    <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+      {description}
+    </p>
+  </section>
+  
+  <TrustBar 
+    testingHours={63}
+    productsTested={10}
+    lastUpdated={lastUpdated}
+  />
+  
+  <section class="py-12">
+    <div class="bg-blue-50 border border-blue-200 rounded-xl p-8 text-center">
+      <h2 class="text-2xl font-bold text-gray-900 mb-4">Full Review Coming Soon</h2>
+      <p class="text-gray-700 mb-6">
+        We are currently finalizing our comprehensive trash can review. Join our newsletter to be notified when it is published.
+      </p>
+      <NewsletterForm 
+        variant="inline"
+        title="Get Notified When This Review Publishes"
+        description="Be the first to read our in-depth trash can testing results."
+      />
+    </div>
+  </section>
+  
+  <!-- Affiliate Disclosure -->
+  <div class="bg-gray-100 rounded-lg p-4 mt-8 text-sm text-gray-600">
+    <strong>Affiliate Disclosure:</strong> Boring Best is a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for sites to earn advertising fees by advertising and linking to Amazon.com.
+  </div>
+</BaseLayout>

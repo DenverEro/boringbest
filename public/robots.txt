@@ -1,0 +1,14 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://boringbest.com/sitemap-index.xml
+
+# Disallow admin and utility pages
+Disallow: /admin/
+Disallow: /api/
+Disallow: /404/
+Disallow: /500/
+
+# Crawl delay for bots
+Crawl-delay: 1

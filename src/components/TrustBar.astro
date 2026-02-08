@@ -1,0 +1,78 @@
+---
+interface Props {
+  testingHours?: number;
+  productsTested?: number;
+  lastUpdated: string;
+  showMethodology?: boolean;
+}
+
+const { 
+  testingHours, 
+  productsTested, 
+  lastUpdated, 
+  showMethodology = true 
+} = Astro.props;
+
+const formattedDate = new Date(lastUpdated).toLocaleDateString('en-US', {
+  year: 'numeric',
+  month: 'long',
+  day: 'numeric'
+});
+---
+
+<div class="bg-blue-50 border border-blue-100 rounded-lg p-4 mb-8">
+  <div class="flex flex-wrap items-center gap-4 text-sm">
+    <!-- Testing Hours -->
+    {testingHours && (
+      <div class="flex items-center gap-2">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="10"></circle>
+          <polyline points="12 6 12 12 16 14"></polyline>
+        </svg>
+        <span class="text-gray-700">
+          <strong class="text-gray-900">{testingHours}</strong> testing hours
+        </span>
+      </div>
+    )}
+    
+    <!-- Products Tested -->
+    {productsTested && (
+      <div class="flex items-center gap-2">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="m7.5 4.27 9 5.15"></path>
+          <path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z"></path>
+          <path d="m3.3 7 8.7 5 8.7-5"></path>
+          <path d="M12 22V12"></path>
+        </svg>
+        <span class="text-gray-700">
+          <strong class="text-gray-900">{productsTested}</strong> products tested
+        </span>
+      </div>
+    )}
+    
+    <!-- Last Updated -->
+    <div class="flex items-center gap-2">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"></path>
+        <path d="M3 3v5h5"></path>
+      </svg>
+      <span class="text-gray-700">
+        Updated <strong class="text-gray-900">{formattedDate}</strong>
+      </span>
+    </div>
+    
+    <!-- Methodology Link -->
+    {showMethodology && (
+      <div class="ml-auto">
+        <a href="/methodology/" class="text-[#2563EB] hover:text-[#1D4ED8] font-medium inline-flex items-center gap-1">
+          How we test
+          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+            <polyline points="15 3 21 3 21 9"></polyline>
+            <line x1="10" y1="14" x2="21" y2="3"></line>
+          </svg>
+        </a>
+      </div>
+    )}
+  </div>
+</div>

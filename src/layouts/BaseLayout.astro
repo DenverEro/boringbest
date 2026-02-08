@@ -1,0 +1,60 @@
+---
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import Layout from './Layout.astro';
+import Breadcrumb from '../components/Breadcrumb.astro';
+
+interface BreadcrumbItem {
+  label: string;
+  href?: string;
+}
+
+interface Props {
+  title: string;
+  description: string;
+  image?: string;
+  type?: 'website' | 'article';
+  publishedDate?: string;
+  modifiedDate?: string;
+  schema?: Record<string, unknown>;
+  canonical?: string;
+  noindex?: boolean;
+  breadcrumbs?: BreadcrumbItem[];
+}
+
+const { 
+  title, 
+  description, 
+  image,
+  type,
+  publishedDate,
+  modifiedDate,
+  schema,
+  canonical,
+  noindex,
+  breadcrumbs
+} = Astro.props;
+---
+
+<Layout 
+  title={title}
+  description={description}
+  image={image}
+  type={type}
+  publishedDate={publishedDate}
+  modifiedDate={modifiedDate}
+  schema={schema}
+  canonical={canonical}
+  noindex={noindex}
+>
+  <Header />
+  
+  <main class="flex-1">
+    <div class="container">
+      {breadcrumbs && <Breadcrumb items={breadcrumbs} />}
+      <slot />
+    </div>
+  </main>
+  
+  <Footer />
+</Layout>

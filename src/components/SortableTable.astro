@@ -1,0 +1,159 @@
+---
+interface Product {
+  name: string;
+  image?: string;
+  price: number;
+  rating: number;
+  type?: string;
+  bestFor?: string;
+  verdict: string;
+  buyLink: string;
+  buyText?: string;
+}
+
+interface Props {
+  products: Product[];
+}
+
+const { products } = Astro.props;
+---
+
+<div class="overflow-x-auto -mx-4 px-4 md:mx-0 md:px-0">
+  <table class="w-full min-w-[640px] border-collapse" id="comparison-table">
+    <thead>
+      <tr class="bg-gray-50">
+        <th class="text-left py-3 px-4 font-semibold text-gray-900 rounded-tl-lg">Product</th>
+        <th 
+          class="text-left py-3 px-4 font-semibold text-gray-900 cursor-pointer hover:bg-gray-100 transition-colors sortable" 
+          data-sort="price"
+        >
+          <span class="inline-flex items-center gap-1">
+            Price
+            <svg class="sort-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="m7 15 5 5 5-5"></path>
+              <path d="m7 9 5-5 5 5"></path>
+            </svg>
+          </span>
+        </th>
+        <th 
+          class="text-left py-3 px-4 font-semibold text-gray-900 cursor-pointer hover:bg-gray-100 transition-colors sortable" 
+          data-sort="rating"
+        >
+          <span class="inline-flex items-center gap-1">
+            Rating
+            <svg class="sort-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="m7 15 5 5 5-5"></path>
+              <path d="m7 9 5-5 5 5"></path>
+            </svg>
+          </span>
+        </th>
+        <th class="text-left py-3 px-4 font-semibold text-gray-900">Type</th>
+        <th class="text-left py-3 px-4 font-semibold text-gray-900">Best For</th>
+        <th class="text-left py-3 px-4 font-semibold text-gray-900 rounded-tr-lg">Action</th>
+      </tr>
+    </thead>
+    <tbody class="divide-y divide-gray-200">
+      {products.map((product, index) => (
+        <tr class="hover:bg-gray-50 transition-colors" data-price={product.price} data-rating={product.rating}>
+          <td class="py-4 px-4">
+            <div class="flex items-start gap-3">
+              {product.image && (
+                <img 
+                  src={product.image} 
+                  alt={product.name}
+                  class="w-16 h-16 object-contain bg-white rounded border border-gray-200"
+                  loading="lazy"
+                  width="64"
+                  height="64"
+                />
+              )}
+              <div>
+                <h4 class="font-semibold text-gray-900 text-sm">{product.name}</h4>
+                <p class="text-xs text-gray-600 mt-1 max-w-[200px]">{product.verdict}</p>
+              </div>
+            </div>
+          </td>
+          <td class="py-4 px-4">
+            <span class="font-bold text-gray-900">${product.price.toFixed(2)}</span>
+          </td>
+          <td class="py-4 px-4">
+            <div class="flex items-center gap-1">
+              <span class="font-bold text-gray-900">{product.rating.toFixed(1)}</span>
+              <div class="flex text-yellow-400">
+                {Array.from({ length: 5 }).map((_, i) => (
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill={i < Math.floor(product.rating) ? "currentColor" : "none"} stroke="currentColor" stroke-width="2">
+                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                  </svg>
+                ))}
+              </div>
+            </div>
+          </td>
+          <td class="py-4 px-4">
+            <span class="inline-flex px-2 py-1 bg-gray-100 text-gray-700 text-xs font-medium rounded">
+              {product.type || 'Standard'}
+            </span>
+          </td>
+          <td class="py-4 px-4 text-sm text-gray-700">
+            {product.bestFor || 'General Use'}
+          </td>
+          <td class="py-4 px-4">
+            <a 
+              href={product.buyLink}
+              target="_blank"
+              rel="noopener noreferrer sponsored"
+              class="inline-flex items-center justify-center px-4 py-2 bg-[#2563EB] hover:bg-[#1D4ED8] text-white text-sm font-semibold rounded-md transition-colors"
+            >
+              {product.buyText || 'Check Price'}
+            </a>
+          </td>
+        </tr>
+      ))}
+    </tbody>
+  </table>
+</div>
+
+<script>
+  // Client-side sorting
+  const table = document.getElementById('comparison-table');
+  const headers = table?.querySelectorAll('.sortable');
+  
+  headers?.forEach(header => {
+    header.addEventListener('click', () => {
+      const sortKey = header.getAttribute('data-sort');
+      const tbody = table?.querySelector('tbody');
+      const rows = Array.from(tbody?.querySelectorAll('tr') || []);
+      
+      // Toggle sort direction
+      const isAscending = !header.classList.contains('sorted-asc');
+      
+      // Reset all headers
+      headers.forEach(h => {
+        h.classList.remove('sorted-asc', 'sorted-desc');
+      });
+      
+      // Set current header direction
+      header.classList.add(isAscending ? 'sorted-asc' : 'sorted-desc');
+      
+      // Sort rows
+      rows.sort((a, b) => {
+        const aVal = parseFloat(a.getAttribute(`data-${sortKey}`) || '0');
+        const bVal = parseFloat(b.getAttribute(`data-${sortKey}`) || '0');
+        return isAscending ? aVal - bVal : bVal - aVal;
+      });
+      
+      // Re-append sorted rows
+      rows.forEach(row => tbody?.appendChild(row));
+    });
+  });
+</script>
+
+<style>
+  .sortable.sorted-asc .sort-icon,
+  .sortable.sorted-desc .sort-icon {
+    color: #2563EB;
+  }
+  
+  .sortable.sorted-asc .sort-icon {
+    transform: rotate(180deg);
+  }
+</style>

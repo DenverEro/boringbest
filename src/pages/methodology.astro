@@ -1,0 +1,285 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import NewsletterForm from '../components/NewsletterForm.astro';
+
+const title = 'Our Testing Methodology - How We Review Products';
+const description = 'Learn exactly how we test everyday products. Our rigorous methodology ensures honest, unbiased recommendations you can trust.';
+---
+
+<BaseLayout 
+  title={title}
+  description={description}
+  breadcrumbs={[{ label: 'Methodology' }]}
+>
+  <section class="py-12">
+    <h1 class="text-4xl font-bold text-gray-900 mb-6">Our Testing Methodology</h1>
+    
+    <p class="text-xl text-gray-700 mb-12">
+      Every product we review goes through the same rigorous process. Here is exactly how we test and evaluate everyday essentials.
+    </p>
+    
+    <!-- Phase 1 -->
+    <div class="mb-16">
+      <div class="flex items-center gap-4 mb-6">
+        <div class="w-12 h-12 bg-[#2563EB] text-white rounded-full flex items-center justify-center font-bold text-xl">1</div>
+        <h2 class="text-2xl font-bold text-gray-900">Research & Selection</h2>
+      </div>
+      
+      <div class="ml-16 prose max-w-none text-gray-700">
+        <p class="mb-4">
+          Before we buy anything, we research the entire category to identify the products worth testing.
+        </p>
+        
+        <h3 class="text-lg font-semibold text-gray-900 mt-6 mb-3">What We Do:</h3>
+        <ul class="list-disc pl-6 mb-6 space-y-2">
+          <li>Scan Amazon, Home Depot, Lowe's, and specialty retailers for top-selling products</li>
+          <li>Read thousands of user reviews to identify common complaints and praise</li>
+          <li>Consult with industry experts, contractors, and professionals who use these products daily</li>
+          <li>Research materials, manufacturing processes, and industry standards</li>
+          <li>Identify the key features that actually matter (and which are just marketing)</li>
+        </ul>
+        
+        <h3 class="text-lg font-semibold text-gray-900 mt-6 mb-3">Selection Criteria:</h3>
+        <ul class="list-disc pl-6 mb-6 space-y-2">
+          <li><strong>Popularity:</strong> We test products people actually buy</li>
+          <li><strong>Price Range:</strong> We include budget, mid-range, and premium options</li>
+          <li><strong>Brand Diversity:</strong> We test well-known brands and hidden gems</li>
+          <li><strong>Feature Variety:</strong> We test different designs and approaches</li>
+        </ul>
+        
+        <p>
+          <strong>Typical Result:</strong> We identify 10-20 products worth testing in each category.
+        </p>
+      </div>
+    </div>
+    
+    <!-- Phase 2 -->
+    <div class="mb-16">
+      <div class="flex items-center gap-4 mb-6">
+        <div class="w-12 h-12 bg-[#2563EB] text-white rounded-full flex items-center justify-center font-bold text-xl">2</div>
+        <h2 class="text-2xl font-bold text-gray-900">Purchase & Receipt</h2>
+      </div>
+      
+      <div class="ml-16 prose max-w-none text-gray-700">
+        <p class="mb-4">
+          We buy every product with our own money. No free samples. No manufacturer relationships.
+        </p>
+        
+        <div class="bg-blue-50 border-l-4 border-[#2563EB] p-4 rounded-r-lg my-6">
+          <p class="font-semibold text-gray-900 mb-2">Why This Matters</p>
+          <p class="text-gray-700 text-sm">
+            When manufacturers send free products, they often cherry-pick their best units. By buying retail, we get the same product you would receive. This ensures our reviews reflect real-world quality and consistency.
+          </p>
+        </div>
+        
+        <h3 class="text-lg font-semibold text-gray-900 mt-6 mb-3">What We Track:</h3>
+        <ul class="list-disc pl-6 mb-6 space-y-2">
+          <li>Purchase price (including any discounts or promotions)</li>
+          <li>Packaging quality and protection</li>
+          <li>Shipping time and condition on arrival</li>
+          <li>Included accessories and documentation</li>
+          <li>First impressions and build quality</li>
+        </ul>
+      </div>
+    </div>
+    
+    <!-- Phase 3 -->
+    <div class="mb-16">
+      <div class="flex items-center gap-4 mb-6">
+        <div class="w-12 h-12 bg-[#2563EB] text-white rounded-full flex items-center justify-center font-bold text-xl">3</div>
+        <h2 class="text-2xl font-bold text-gray-900">Standardized Testing</h2>
+      </div>
+      
+      <div class="ml-16 prose max-w-none text-gray-700">
+        <p class="mb-4">
+          We create objective, repeatable tests that measure what actually matters for each product type.
+        </p>
+        
+        <h3 class="text-lg font-semibold text-gray-900 mt-6 mb-3">Test Categories:</h3>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
+          <div class="bg-gray-50 p-4 rounded-lg">
+            <h4 class="font-semibold text-gray-900 mb-2">Performance Testing</h4>
+            <p class="text-sm text-gray-600">Does the product do what it claims? We create standardized scenarios to measure effectiveness.</p>
+          </div>
+          
+          <div class="bg-gray-50 p-4 rounded-lg">
+            <h4 class="font-semibold text-gray-900 mb-2">Durability Testing</h4>
+            <p class="text-sm text-gray-600">We stress-test products to simulate months or years of use in days or weeks.</p>
+          </div>
+          
+          <div class="bg-gray-50 p-4 rounded-lg">
+            <h4 class="font-semibold text-gray-900 mb-2">Ergonomics Testing</h4>
+            <p class="text-sm text-gray-600">How easy is it to use? We test with different body sizes, strengths, and abilities.</p>
+          </div>
+          
+          <div class="bg-gray-50 p-4 rounded-lg">
+            <h4 class="font-semibold text-gray-900 mb-2">Safety Testing</h4>
+            <p class="text-sm text-gray-600">We verify safety claims and test for potential hazards.</p>
+          </div>
+        </div>
+        
+        <h3 class="text-lg font-semibold text-gray-900 mt-6 mb-3">Example: Toilet Plunger Testing</h3>
+        <ul class="list-disc pl-6 mb-6 space-y-2">
+          <li><strong>Clearing Speed Test:</strong> Created identical clogs in 6 different toilets, timed how long each plunger took to clear</li>
+          <li><strong>Seal Quality Test:</strong> Measured vacuum pressure created by each plunger design</li>
+          <li><strong>Durability Test:</strong> Compressed each plunger 1,000 times to simulate years of use</li>
+          <li><strong>Ergonomics Test:</strong> Had testers of different heights rate handle comfort and effort required</li>
+          <li><strong>Material Analysis:</strong> Measured rubber thickness, flexibility, and resistance to cracking</li>
+        </ul>
+        
+        <p>
+          <strong>Total Testing Time:</strong> 30-60 hours per category
+        </p>
+      </div>
+    </div>
+    
+    <!-- Phase 4 -->
+    <div class="mb-16">
+      <div class="flex items-center gap-4 mb-6">
+        <div class="w-12 h-12 bg-[#2563EB] text-white rounded-full flex items-center justify-center font-bold text-xl">4</div>
+        <h2 class="text-2xl font-bold text-gray-900">Real-World Use</h2>
+      </div>
+      
+      <div class="ml-16 prose max-w-none text-gray-700">
+        <p class="mb-4">
+          Lab tests only tell part of the story. We use products in real homes under real conditions.
+        </p>
+        
+        <h3 class="text-lg font-semibold text-gray-900 mt-6 mb-3">Our Real-World Testing:</h3>
+        <ul class="list-disc pl-6 mb-6 space-y-2">
+          <li><strong>Multiple Households:</strong> We distribute products to 3-5 different homes with different users</li>
+          <li><strong>Extended Time:</strong> Products are used for weeks or months (not just days)</li>
+          <li><strong>Daily Use:</strong> Products are used exactly as intended in real routines</li>
+          <li><strong>Different Conditions:</strong> We test in various water qualities, climates, and usage patterns</li>
+          <li><strong>Documentation:</strong> Users keep detailed logs of their experiences</li>
+        </ul>
+        
+        <div class="bg-gray-50 border-l-4 border-gray-400 p-4 rounded-r-lg my-6">
+          <p class="text-gray-700 text-sm">
+            <strong>Example:</strong> For shower curtain liners, we had households use each liner for 2 weeks without cleaning them. This revealed which liners actually resisted mold in real bathroom conditions—not just in theory.
+          </p>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Phase 5 -->
+    <div class="mb-16">
+      <div class="flex items-center gap-4 mb-6">
+        <div class="w-12 h-12 bg-[#2563EB] text-white rounded-full flex items-center justify-center font-bold text-xl">5</div>
+        <h2 class="text-2xl font-bold text-gray-900">Analysis & Comparison</h2>
+      </div>
+      
+      <div class="ml-16 prose max-w-none text-gray-700">
+        <p class="mb-4">
+          We compile all testing data and identify the clear winners for different use cases.
+        </p>
+        
+        <h3 class="text-lg font-semibold text-gray-900 mt-6 mb-3">What We Analyze:</h3>
+        <ul class="list-disc pl-6 mb-6 space-y-2">
+          <li><strong>Performance Data:</strong> Which products performed best in objective tests?</li>
+          <li><strong>Value Assessment:</strong> Does higher price mean better performance?</li>
+          <li><strong>Use Case Matching:</strong> Which product is best for specific situations?</li>
+          <li><strong>Failure Analysis:</strong> What broke, wore out, or underperformed?</li>
+          <li><strong>User Feedback:</strong> What did real users love or hate?</li>
+        </ul>
+        
+        <h3 class="text-lg font-semibold text-gray-900 mt-6 mb-3">Selection Process:</h3>
+        <ol class="list-decimal pl-6 mb-6 space-y-2">
+          <li>Identify the top 3-5 performers across all tests</li>
+          <li>Determine which product is "Best Overall" (best balance of performance, price, and durability)</li>
+          <li>Identify "Best Budget" option (best performance for the lowest price)</li>
+          <li>Recognize specialty picks (best for specific situations or needs)</li>
+          <li>Document why other products did not make the cut</li>
+        </ol>
+      </div>
+    </div>
+    
+    <!-- Phase 6 -->
+    <div class="mb-16">
+      <div class="flex items-center gap-4 mb-6">
+        <div class="w-12 h-12 bg-[#2563EB] text-white rounded-full flex items-center justify-center font-bold text-xl">6</div>
+        <h2 class="text-2xl font-bold text-gray-900">Publication & Updates</h2>
+      </div>
+      
+      <div class="ml-16 prose max-w-none text-gray-700">
+        <p class="mb-4">
+          We write comprehensive reviews and keep them updated as new products emerge.
+        </p>
+        
+        <h3 class="text-lg font-semibold text-gray-900 mt-6 mb-3">Our Review Standards:</h3>
+        <ul class="list-disc pl-6 mb-6 space-y-2">
+          <li><strong>Transparency:</strong> We explain exactly how we tested and what we found</li>
+          <li><strong>Honesty:</strong> We share flaws and downsides, not just benefits</li>
+          <li><strong>Clarity:</strong> We write for regular people, not engineers</li>
+          <li><strong>Completeness:</strong> Every review includes pros, cons, comparisons, and buying guidance</li>
+          <li><strong>Updates:</strong> We add "Last Updated" dates and revisit categories regularly</li>
+        </ul>
+        
+        <h3 class="text-lg font-semibold text-gray-900 mt-6 mb-3">Update Schedule:</h3>
+        <ul class="list-disc pl-6 mb-6 space-y-2">
+          <li><strong>Monthly:</strong> Price checks and availability updates</li>
+          <li><strong>Quarterly:</strong> Check for new product releases in tested categories</li>
+          <li><strong>Annually:</strong> Full retesting of popular categories</li>
+          <li><strong>As Needed:</strong> Immediate updates if safety issues emerge</li>
+        </ul>
+      </div>
+    </div>
+    
+    <!-- Our Commitments -->
+    <div class="bg-gray-50 rounded-xl p-8 my-12">
+      <h2 class="text-2xl font-bold text-gray-900 mb-6">Our Commitments to You</h2>
+      
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="text-center">
+          <div class="w-16 h-16 bg-[#2563EB] bg-opacity-10 rounded-full flex items-center justify-center mx-auto mb-4">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+            </svg>
+          </div>
+          <h3 class="font-bold text-gray-900 mb-2">100% Independent</h3>
+          <p class="text-sm text-gray-600">No free products. No sponsored reviews. No manufacturer influence.</p>
+        </div>
+        
+        <div class="text-center">
+          <div class="w-16 h-16 bg-[#2563EB] bg-opacity-10 rounded-full flex items-center justify-center mx-auto mb-4">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"></circle>
+              <polyline points="12 6 12 12 16 14"></polyline>
+            </svg>
+          </div>
+          <h3 class="font-bold text-gray-900 mb-2">Rigorous Testing</h3>
+          <p class="text-sm text-gray-600">30+ hours of testing per category with standardized, repeatable methods.</p>
+        </div>
+        
+        <div class="text-center">
+          <div class="w-16 h-16 bg-[#2563EB] bg-opacity-10 rounded-full flex items-center justify-center mx-auto mb-4">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+              <circle cx="12" cy="12" r="3"></circle>
+            </svg>
+          </div>
+          <h3 class="font-bold text-gray-900 mb-2">Full Transparency</h3>
+          <p class="text-sm text-gray-600">We show our work. Exact testing methods, detailed results, and honest downsides.</p>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Questions -->
+    <div class="my-12">
+      <h2 class="text-2xl font-bold text-gray-900 mb-4">Questions About Our Process?</h2>
+      <p class="text-gray-700 mb-6">
+        We are happy to explain our testing in more detail. Contact us at <a href="mailto:hello@boringbest.com" class="text-[#2563EB] hover:underline">hello@boringbest.com</a>
+      </p>
+    </div>
+  </section>
+  
+  <!-- Newsletter -->
+  <section class="py-12 border-t border-gray-200">
+    <NewsletterForm 
+      variant="hero"
+      title="Get Reviews You Can Trust"
+      description="Weekly reviews of everyday essentials, tested with the methodology you just read about."
+    />
+  </section>
+</BaseLayout>

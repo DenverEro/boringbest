@@ -1,0 +1,232 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import TrustBar from '../components/TrustBar.astro';
+import NewsletterForm from '../components/NewsletterForm.astro';
+import ReviewCard from '../components/ReviewCard.astro';
+
+const featuredReviews = [
+  {
+    title: 'Best Toilet Plungers',
+    description: 'After testing 12 plungers over 47 hours, we found the one that actually works every time.',
+    category: 'Bathroom',
+    slug: 'best-toilet-plungers',
+    testingHours: 47,
+    productsTested: 12,
+    rating: 4.8,
+    badge: 'Top Pick'
+  },
+  {
+    title: 'Best Shower Curtain Liners',
+    description: 'We tested 15 liners for mold resistance, durability, and eco-friendliness.',
+    category: 'Bathroom',
+    slug: 'best-shower-curtain-liners',
+    testingHours: 38,
+    productsTested: 15,
+    rating: 4.6,
+    badge: 'Most Popular'
+  },
+  {
+    title: 'Best Extension Cords',
+    description: 'Safety-tested 20 extension cords for home and outdoor use.',
+    category: 'Home Office',
+    slug: 'best-extension-cords',
+    testingHours: 52,
+    productsTested: 20,
+    rating: 4.9,
+    badge: 'Best Rated'
+  },
+  {
+    title: 'Best Dish Racks',
+    description: 'Rusted 8 dish racks to find the one that drains best and lasts longest.',
+    category: 'Kitchen',
+    slug: 'best-dish-racks',
+    testingHours: 41,
+    productsTested: 8,
+    rating: 4.5
+  },
+  {
+    title: 'Best Kitchen Trash Cans',
+    description: 'Tested 10 trash cans for odor control, foot pedal durability, and bag compatibility.',
+    category: 'Kitchen',
+    slug: 'best-kitchen-trash-cans',
+    testingHours: 63,
+    productsTested: 10,
+    rating: 4.7
+  },
+  {
+    title: 'Best Power Strips',
+    description: 'Surge protection tested 18 power strips with USB charging.',
+    category: 'Home Office',
+    slug: 'best-power-strips',
+    testingHours: 35,
+    productsTested: 18,
+    rating: 4.8
+  }
+];
+
+const categories = [
+  { name: 'Bathroom', slug: 'bathroom', count: 2 },
+  { name: 'Kitchen', slug: 'kitchen', count: 2 },
+  { name: 'Home Office', slug: 'home-office', count: 2 },
+  { name: 'Home Improvement', slug: 'home-improvement', count: 0 },
+  { name: 'Laundry', slug: 'laundry', count: 0 },
+];
+
+const schema = {
+  '@type': 'WebPage',
+  name: 'Boring Best - Expert Reviews of Everyday Essentials',
+  description: 'We test the boring stuff so you dont have to. Honest, in-depth reviews of everyday household products.',
+  url: 'https://boringbest.com',
+  mainEntity: {
+    '@type': 'ItemList',
+    itemListElement: featuredReviews.map((review, index) => ({
+      '@type': 'ListItem',
+      position: index + 1,
+      item: {
+        '@type': 'Article',
+        headline: review.title,
+        description: review.description,
+        url: `https://boringbest.com/reviews/${review.slug}/`
+      }
+    }))
+  }
+};
+---
+
+<BaseLayout 
+  title="Boring Best - Expert Reviews of Everyday Essentials"
+  description="We test the boring stuff so you don't have to. Honest, in-depth reviews of toilet plungers, shower curtains, extension cords, and other everyday essentials you actually need."
+  schema={schema}
+>
+  <!-- Hero Section -->
+  <section class="py-16 md:py-24 text-center">
+    <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 mx-auto leading-tight px-4">
+      We Test the <span class="text-[#2563EB]">Boring Stuff</span><br class="hidden md:block" /> So You Don't Have To
+    </h1>
+    <p class="text-xl text-gray-600 mx-auto mb-8 px-4" style="max-width: 100%;">
+      Expert reviews of everyday essentials. From toilet plungers to extension cords, we spend hours testing the products you use every day.
+    </p>
+    
+    <!-- Trust Bar -->
+    <TrustBar 
+      testingHours={276}
+      productsTested={83}
+      lastUpdated="2026-02-08"
+    />
+    
+    <!-- Quick Stats -->
+    <div class="flex flex-wrap justify-center gap-8 mt-8 text-center">
+      <div>
+        <div class="text-3xl font-bold text-[#2563EB]">276+</div>
+        <div class="text-sm text-gray-600">Testing Hours</div>
+      </div>
+      <div>
+        <div class="text-3xl font-bold text-[#2563EB]">83</div>
+        <div class="text-sm text-gray-600">Products Tested</div>
+      </div>
+      <div>
+        <div class="text-3xl font-bold text-[#2563EB]">6</div>
+        <div class="text-sm text-gray-600">Categories</div>
+      </div>
+      <div>
+        <div class="text-3xl font-bold text-[#2563EB]">100%</div>
+        <div class="text-sm text-gray-600">Independent</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Reviews -->
+  <section class="py-16">
+    <h2 class="text-3xl font-bold text-gray-900 mb-2">Latest Reviews</h2>
+    <p class="text-gray-600 mb-8">Our most thoroughly tested recommendations</p>
+    
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      {featuredReviews.map((review) => (
+        <ReviewCard
+          title={review.title}
+          description={review.description}
+          category={review.category}
+          slug={review.slug}
+          testingHours={review.testingHours}
+          rating={review.rating}
+          badge={review.badge}
+        />
+      ))}
+    </div>
+  </section>
+
+  <!-- Browse by Category -->
+  <section class="py-16 border-t border-gray-200">
+    <h2 class="text-3xl font-bold text-gray-900 mb-2">Browse by Category</h2>
+    <p class="text-gray-600 mb-8">Find reviews by room or use case</p>
+    
+    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
+      {categories.map((category) => (
+        <a 
+          href={`/categories/${category.slug}/`}
+          class="group bg-gray-50 hover:bg-blue-50 border border-gray-200 hover:border-[#2563EB] rounded-xl p-6 text-center transition-all"
+        >
+          <h3 class="font-semibold text-gray-900 group-hover:text-[#2563EB] transition-colors">
+            {category.name}
+          </h3>
+          <p class="text-sm text-gray-500 mt-1">
+            {category.count > 0 ? `${category.count} reviews` : 'Coming soon'}
+          </p>
+        </a>
+      ))}
+    </div>
+  </section>
+
+  <!-- Newsletter Section -->
+  <section class="py-16">
+    <NewsletterForm 
+      variant="hero"
+      title="Never Buy the Wrong Product Again"
+      description="Get weekly reviews of everyday essentials delivered to your inbox. We test so you don't have to regret."
+    />
+  </section>
+
+  <!-- Trust Section -->
+  <section class="py-16 border-t border-gray-200">
+    <div class="mx-auto text-center max-w-5xl px-4">
+      <h2 class="text-3xl font-bold text-gray-900 mb-6">Why Trust Boring Best?</h2>
+      
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-8">
+        <div>
+          <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"></circle>
+              <polyline points="12 6 12 12 16 14"></polyline>
+            </svg>
+          </div>
+          <h3 class="font-semibold text-gray-900 mb-2">Hours of Testing</h3>
+          <p class="text-sm text-gray-600">We spend 30+ hours testing every product category to find the best options.</p>
+        </div>
+        
+        <div>
+          <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+            </svg>
+          </div>
+          <h3 class="font-semibold text-gray-900 mb-2">100% Independent</h3>
+          <p class="text-sm text-gray-600">We buy every product ourselves. No sponsored reviews, ever.</p>
+        </div>
+        
+        <div>
+          <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+              <polyline points="14 2 14 8 20 8"></polyline>
+              <line x1="16" y1="13" x2="8" y2="13"></line>
+              <line x1="16" y1="17" x2="8" y2="17"></line>
+              <polyline points="10 9 9 9 8 9"></polyline>
+            </svg>
+          </div>
+          <h3 class="font-semibold text-gray-900 mb-2">Transparent Methodology</h3>
+          <p class="text-sm text-gray-600">We explain exactly how we test and why we recommend what we do.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

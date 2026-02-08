@@ -1,0 +1,71 @@
+---
+---
+
+<footer class="bg-gray-900 text-white mt-auto">
+  <div class="container py-12">
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+      <!-- Brand -->
+      <div class="md:col-span-2">
+        <a href="/" class="text-2xl font-bold hover:no-underline">
+          <span class="text-[#3B82F6]">Boring</span>
+          <span>Best</span>
+        </a>
+        <p class="mt-4 text-gray-400" style="max-width: 100%;">
+          Expert reviews of everyday essentials. We test the boring stuff so you don't have to. Honest recommendations for the products you use every day.
+        </p>
+        
+        <!-- Newsletter Mini -->
+        <div class="mt-6">
+          <p class="text-sm font-medium mb-2">Get new reviews weekly</p>
+          <form class="flex gap-2" action="/newsletter/signup" method="POST">
+            <input 
+              type="email" 
+              name="email"
+              placeholder="Enter your email"
+              required
+              class="flex-1 px-3 py-2 bg-gray-800 border border-gray-700 rounded-md text-sm text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-[#3B82F6]"
+            />
+            <button 
+              type="submit"
+              class="px-4 py-2 bg-[#2563EB] hover:bg-[#1D4ED8] text-white text-sm font-medium rounded-md transition-colors"
+            >
+              Subscribe
+            </button>
+          </form>
+        </div>
+      </div>
+      
+      <!-- Links -->
+      <div>
+        <h3 class="font-semibold mb-4">Browse</h3>
+        <ul class="space-y-2 text-sm text-gray-400">
+          <li><a href="/categories/bathroom/" class="hover:text-white transition-colors">Bathroom</a></li>
+          <li><a href="/categories/kitchen/" class="hover:text-white transition-colors">Kitchen</a></li>
+          <li><a href="/categories/home-office/" class="hover:text-white transition-colors">Home Office</a></li>
+          <li><a href="/categories/" class="hover:text-white transition-colors">All Categories</a></li>
+        </ul>
+      </div>
+      
+      <!-- Company -->
+      <div>
+        <h3 class="font-semibold mb-4">Company</h3>
+        <ul class="space-y-2 text-sm text-gray-400">
+          <li><a href="/about/" class="hover:text-white transition-colors">About Us</a></li>
+          <li><a href="/methodology/" class="hover:text-white transition-colors">Methodology</a></li>
+          <li><a href="/newsletter/" class="hover:text-white transition-colors">Newsletter</a></li>
+          <li><a href="/contact/" class="hover:text-white transition-colors">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    
+    <!-- Bottom Bar -->
+    <div class="mt-12 pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-gray-500">
+      <p>&copy; {new Date().getFullYear()} Boring Best. All rights reserved.</p>
+      <p>
+        Boring Best is a participant in the Amazon Services LLC Associates Program, 
+        an affiliate advertising program designed to provide a means for sites to earn 
+        advertising fees by advertising and linking to Amazon.com.
+      </p>
+    </div>
+  </div>
+</footer>

@@ -1,0 +1,87 @@
+---
+interface Props {
+  variant?: 'hero' | 'inline' | 'footer';
+  title?: string;
+  description?: string;
+}
+
+const { 
+  variant = 'inline',
+  title = 'Get the Best Boring Reviews',
+  description = 'Weekly reviews of everyday essentials. No spam, just the products that actually work.'
+} = Astro.props;
+---
+
+{variant === 'hero' && (
+  <div class="bg-gradient-to-br from-blue-600 to-blue-800 rounded-2xl p-6 md:p-10 lg:p-12 text-white">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold mb-4">{title}</h2>
+      <p class="text-blue-100 text-base md:text-lg mb-8 mx-auto" style="max-width: 100%;">{description}</p>
+      
+      <form class="flex flex-col sm:flex-row gap-4 max-w-lg mx-auto" action="/newsletter/signup" method="POST">
+        <input 
+          type="email" 
+          name="email"
+          placeholder="Enter your email"
+          required
+          class="flex-1 px-4 py-3 bg-white/10 border border-white/20 rounded-lg text-white placeholder-blue-200 focus:outline-none focus:ring-2 focus:ring-white/50"
+        />
+        <button 
+          type="submit"
+          class="px-6 py-3 bg-white text-blue-700 font-semibold rounded-lg hover:bg-blue-50 transition-colors whitespace-nowrap"
+        >
+          Subscribe Free
+        </button>
+      </form>
+      
+      <p class="mt-4 text-sm text-blue-200">
+        Join 2,000+ readers. Unsubscribe anytime.
+      </p>
+    </div>
+  </div>
+)}
+
+{variant === 'inline' && (
+  <div class="bg-gray-50 border border-gray-200 rounded-xl p-6">
+    <div class="flex flex-col md:flex-row md:items-center gap-4">
+      <div class="flex-1">
+        <h3 class="text-lg font-bold text-gray-900 mb-1">{title}</h3>
+        <p class="text-sm text-gray-600">{description}</p>
+      </div>
+      
+      <form class="flex gap-2" action="/newsletter/signup" method="POST">
+        <input 
+          type="email" 
+          name="email"
+          placeholder="Your email"
+          required
+          class="px-3 py-2 bg-white border border-gray-300 rounded-md text-sm focus:outline-none focus:ring-2 focus:ring-[#2563EB] focus:border-transparent"
+        />
+        <button 
+          type="submit"
+          class="px-4 py-2 bg-[#2563EB] hover:bg-[#1D4ED8] text-white text-sm font-semibold rounded-md transition-colors"
+        >
+          Subscribe
+        </button>
+      </form>
+    </div>
+  </div>
+)}
+
+{variant === 'footer' && (
+  <form class="flex gap-2" action="/newsletter/signup" method="POST">
+    <input 
+      type="email" 
+      name="email"
+      placeholder="Enter your email"
+      required
+      class="flex-1 px-3 py-2 bg-gray-800 border border-gray-700 rounded-md text-sm text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-[#3B82F6]"
+    />
+    <button 
+      type="submit"
+      class="px-4 py-2 bg-[#2563EB] hover:bg-[#1D4ED8] text-white text-sm font-semibold rounded-md transition-colors"
+    >
+      Subscribe
+    </button>
+  </form>
+)}

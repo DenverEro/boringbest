@@ -1,0 +1,112 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const title = 'Search - Find Reviews';
+const description = 'Search for product reviews on Boring Best. Find expert reviews of everyday essentials.';
+---
+
+<BaseLayout 
+  title={title}
+  description={description}
+>
+  <section class="py-12">
+    <h1 class="text-4xl font-bold text-gray-900 mb-4">Search Reviews</h1>
+    <p class="text-xl text-gray-600 mb-8">
+      Find expert reviews of everyday essentials.
+    </p>
+    
+    <!-- Search Interface -->
+    <div class="max-w-2xl mx-auto">
+      <div class="relative">
+        <input 
+          type="search" 
+          id="search-input"
+          placeholder="Search for products (e.g., toilet plunger, extension cord)..."
+          class="w-full px-4 py-4 pl-12 text-lg border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#2563EB] focus:border-transparent"
+        />
+        <svg class="absolute left-4 top-1/2 -translate-y-1/2 text-gray-400" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="11" cy="11" r="8"></circle>
+          <path d="m21 21-4.3-4.3"></path>
+        </svg>
+      </div>
+      
+      <div id="search-results" class="mt-8 space-y-4">
+        <!-- Results will be populated here -->
+      </div>
+      
+      <div id="search-hint" class="mt-8 text-center text-gray-500">
+        <p>Start typing to search our reviews</p>
+        <p class="text-sm mt-2">Try: "plunger", "shower", "extension cord", "kitchen"</p>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Popular Searches -->
+  <section class="py-8 border-t border-gray-200">
+    <h2 class="text-xl font-bold text-gray-900 mb-4">Popular Reviews</h2>
+    <div class="flex flex-wrap gap-3">
+      <a href="/reviews/best-toilet-plungers/" class="px-4 py-2 bg-gray-100 hover:bg-blue-50 text-gray-700 hover:text-[#2563EB] rounded-full transition-colors">
+        Toilet Plungers
+      </a>
+      <a href="/reviews/best-shower-curtain-liners/" class="px-4 py-2 bg-gray-100 hover:bg-blue-50 text-gray-700 hover:text-[#2563EB] rounded-full transition-colors">
+        Shower Curtain Liners
+      </a>
+      <a href="/reviews/best-extension-cords/" class="px-4 py-2 bg-gray-100 hover:bg-blue-50 text-gray-700 hover:text-[#2563EB] rounded-full transition-colors">
+        Extension Cords
+      </a>
+      <a href="/reviews/best-dish-racks/" class="px-4 py-2 bg-gray-100 hover:bg-blue-50 text-gray-700 hover:text-[#2563EB] rounded-full transition-colors">
+        Dish Racks
+      </a>
+      <a href="/reviews/best-kitchen-trash-cans/" class="px-4 py-2 bg-gray-100 hover:bg-blue-50 text-gray-700 hover:text-[#2563EB] rounded-full transition-colors">
+        Kitchen Trash Cans
+      </a>
+      <a href="/reviews/best-power-strips/" class="px-4 py-2 bg-gray-100 hover:bg-blue-50 text-gray-700 hover:text-[#2563EB] rounded-full transition-colors">
+        Power Strips
+      </a>
+    </div>
+  </section>
+</BaseLayout>
+
+<script>
+  // Simple client-side search (placeholder - Pagefind will be added later)
+  const searchInput = document.getElementById('search-input');
+  const searchResults = document.getElementById('search-results');
+  const searchHint = document.getElementById('search-hint');
+  
+  const reviews = [
+    { title: 'Best Toilet Plungers', slug: 'best-toilet-plungers', excerpt: 'After testing 12 plungers over 47 hours, we found the one that actually works every time.' },
+    { title: 'Best Shower Curtain Liners', slug: 'best-shower-curtain-liners', excerpt: 'We tested 15 liners for mold resistance, durability, and eco-friendliness.' },
+    { title: 'Best Extension Cords', slug: 'best-extension-cords', excerpt: 'Safety-tested 20 extension cords for home and outdoor use.' },
+    { title: 'Best Dish Racks', slug: 'best-dish-racks', excerpt: 'Rusted 8 dish racks to find the one that drains best and lasts longest.' },
+    { title: 'Best Kitchen Trash Cans', slug: 'best-kitchen-trash-cans', excerpt: 'Tested 10 trash cans for odor control, foot pedal durability, and bag compatibility.' },
+    { title: 'Best Power Strips', slug: 'best-power-strips', excerpt: 'Surge protection tested 18 power strips with USB charging.' }
+  ];
+  
+  searchInput?.addEventListener('input', (e) => {
+    const query = (e.target as HTMLInputElement).value.toLowerCase();
+    
+    if (query.length < 2) {
+      searchResults.innerHTML = '';
+      searchHint.style.display = 'block';
+      return;
+    }
+    
+    const results = reviews.filter(review => 
+      review.title.toLowerCase().includes(query) || 
+      review.excerpt.toLowerCase().includes(query)
+    );
+    
+    searchHint.style.display = 'none';
+    
+    if (results.length === 0) {
+      searchResults.innerHTML = '<p class="text-gray-500 text-center">No results found. Try a different search term.</p>';
+    } else {
+      searchResults.innerHTML = results.map(review => `
+        <a href="/reviews/${review.slug}/" class="block p-4 bg-gray-50 hover:bg-blue-50 rounded-lg transition-colors group">
+          <h3 class="font-bold text-gray-900 group-hover:text-[#2563EB] transition-colors mb-1">${review.title}</h3>
+          <p class="text-gray-600 text-sm">${review.excerpt}</p>
+        </a>
+      `).join('');
+    }
+  });
+</script>
