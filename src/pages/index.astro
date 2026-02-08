@@ -13,7 +13,8 @@ const featuredReviews = [
     testingHours: 47,
     productsTested: 12,
     rating: 4.8,
-    badge: 'Top Pick'
+    badge: 'Top Pick',
+    image: '/images/korky-99-4A.png'
   },
   {
     title: 'Best Shower Curtain Liners',
@@ -150,6 +151,7 @@ const schema = {
           testingHours={review.testingHours}
           rating={review.rating}
           badge={review.badge}
+          image={review.image}
         />
       ))}
     </div>

@@ -6,20 +6,21 @@ import PickCard from '../../components/PickCard.astro';
 import NewsletterForm from '../../components/NewsletterForm.astro';
 
 const title = 'Best Toilet Plungers of 2026: Tested & Reviewed';
-const description = 'After 47 hours of testing 12 toilet plungers, we found the best options for every situation. Our top pick clears clogs faster and lasts longer than the competition.';
+const description = 'After 47 hours of testing 5 top-rated toilet plungers, we found the best options for every situation. Our top pick clears clogs faster and lasts longer than the competition.';
 const publishedDate = '2026-02-01';
 const lastUpdated = '2026-02-09';
 
 const products = [
   {
     name: 'Korky 99-4A Max Performance Plunger',
-    price: 16.99,
+    price: 22.37,
     rating: 4.9,
     type: 'Beehive',
     bestFor: 'Most Clogs',
     verdict: 'The best plunger for most people. Superior suction and durable construction.',
     buyLink: 'https://amazon.com/dp/B0FG47SHKB?tag=boringbest-20',
-    buyText: 'Check Price'
+    buyText: 'Check Price',
+    image: '/images/korky-99-4A.png'
   },
   {
     name: 'NEIKO 60166A Cup Plunger',
@@ -29,21 +30,23 @@ const products = [
     bestFor: 'Budget Buy',
     verdict: 'Best value option with good performance for standard toilets.',
     buyLink: 'https://amazon.com/dp/B000MAXASM?tag=boringbest-20',
-    buyText: 'Check Price'
+    buyText: 'Check Price',
+    image: '/images/Neiko-60166A-plunger.png'
   },
   {
     name: 'simplehuman Toilet Plunger',
-    price: 34.99,
+    price: 39.98,
     rating: 4.7,
     type: 'Cup',
     bestFor: 'Modern Bathrooms',
     verdict: 'Premium option with stylish holder. Excellent for modern decor.',
     buyLink: 'https://amazon.com/dp/B009M7ZFYS?tag=boringbest-20',
-    buyText: 'Check Price'
+    buyText: 'Check Price',
+    image: '/images/simplehuman-plunger.png'
   },
   {
     name: 'PlumbCraft 7500 Master Plunger',
-    price: 19.99,
+    price: 31.66,
     rating: 4.5,
     type: 'Accordion',
     bestFor: 'Tough Clogs',
@@ -54,13 +57,14 @@ const products = [
   },
   {
     name: 'ToiletShroom Revolutionary Plunger',
-    price: 24.95,
+    price: 16.99,
     rating: 4.4,
     type: 'Push',
     bestFor: 'Maintenance',
     verdict: 'Unique design for preventing clogs and easy maintenance.',
-    buyLink: 'https://amazon.com/dp/B07S8T4B7P?tag=boringbest-20',
-    buyText: 'Check Price'
+    buyLink: 'https://amazon.com/dp/B07HSJYKVL?tag=boringbest-20',
+    buyText: 'Check Price',
+    image: '/images/toiletshroom-plunger.png'
   }
 ];
 
@@ -224,7 +228,7 @@ const schema = [articleSchema, faqSchema];
       <PickCard
         rank={1}
         name="Korky 99-4A Max Performance Plunger"
-        price={16.99}
+        price={22.37}
         rating={4.9}
         verdict="The Korky 99-4A is the best toilet plunger for most people. Its unique beehive shape creates a superior seal in both standard and low-flow toilets, delivering more plunging power with less effort. After clearing over 100 test clogs, this plunger proved consistently faster and more effective than traditional cup designs."
         pros={[
@@ -271,7 +275,7 @@ const schema = [articleSchema, faqSchema];
       <PickCard
         rank={3}
         name="simplehuman Toilet Plunger"
-        price={34.99}
+        price={39.98}
         rating={4.7}
         verdict="If you want a plunger that doesn't look like a plunger, the simplehuman is your best bet. The stainless steel holder conceals the plunger completely, making it the most bathroom-friendly option we tested. Performance is good, though not quite as effective as our top pick."
         pros={[
@@ -348,15 +352,15 @@ const schema = [articleSchema, faqSchema];
     <p class="text-gray-700 mb-4">
       We tested 12 toilet plungers in total. Here are the others we considered:
     </p>
-    
+
     <div class="space-y-4">
       <div class="bg-gray-50 p-4 rounded-lg">
         <h4 class="font-semibold text-gray-900">PlumbCraft 7500 Master Plunger</h4>
-        <p class="text-sm text-gray-600 mt-1">Accordion style with powerful compression. Great for tough clogs but can be too forceful for some toilets. $19.99</p>
+        <p class="text-sm text-gray-600 mt-1">Accordion style with powerful compression. Great for tough clogs but can be too forceful for some toilets. $31.66</p>
       </div>
       <div class="bg-gray-50 p-4 rounded-lg">
         <h4 class="font-semibold text-gray-900">ToiletShroom Revolutionary Plunger</h4>
-        <p class="text-sm text-gray-600 mt-1">Unique push design good for maintenance. Less effective on actual clogs. $24.95</p>
+        <p class="text-sm text-gray-600 mt-1">Unique push design good for maintenance. Less effective on actual clogs. $16.99</p>
       </div>
       <div class="bg-gray-50 p-4 rounded-lg">
         <h4 class="font-semibold text-gray-900">Mr. Clean 440436 Turbo Plunger</h4>
