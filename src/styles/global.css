@@ -219,16 +219,26 @@ button {
   color: #ffffff !important;
 }
 
-/* Phase 1: Newsletter & Category Buttons Visible */
-.newsletter button,
-.newsletter .subscribe-btn,
-.subscribe-btn,
+/* Phase 1.1: Targeted Newsletter Hero Fix (white bg blue text) */
+.newsletter button[type="submit"][class*="bg-white"],
+.hero button[type="submit"] {
+  color: #1D4ED8 !important;
+  font-weight: 600 !important;
+}
+
+/* Category View All & Amazon/Primary Buttons (blue bg white text) */
 .category a[href*="view-all"],
-.btn-subscribe,
-.btn-view-all,
-a[href*="subscribe"] {
+.btn-primary,
+button.bg-primary,
+a[href*="amazon"],
+.btn-subscribe:not([class*="bg-white"]) {
   color: #ffffff !important;
   font-weight: 600 !important;
-  text-shadow: 0 0 2px rgba(0,0,0,0.5) !important;
+  text-shadow: 0 0 1px rgba(0,0,0,0.3) !important;
+}
+
+/* General button safety */
+button span {
+  color: inherit !important;
 }
 
