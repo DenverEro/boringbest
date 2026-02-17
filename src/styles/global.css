@@ -218,3 +218,17 @@ button {
 [id^="pick-"] a span {
   color: #ffffff !important;
 }
+
+/* Phase 1: Newsletter & Category Buttons Visible */
+.newsletter button,
+.newsletter .subscribe-btn,
+.subscribe-btn,
+.category a[href*="view-all"],
+.btn-subscribe,
+.btn-view-all,
+a[href*="subscribe"] {
+  color: #ffffff !important;
+  font-weight: 600 !important;
+  text-shadow: 0 0 2px rgba(0,0,0,0.5) !important;
+}
+
