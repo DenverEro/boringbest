@@ -49,44 +49,6 @@ npm run build && npx pagefind --site dist
 └── ...
 ```
 
-## 5-Pillar Visibility Framework
-
-This site is optimized for all 5 pillars of modern visibility:
-
-### 1. SEO (Search Engine Optimization)
-- Semantic HTML5 structure
-- Schema.org structured data (Organization, Article, Review, FAQ, BreadcrumbList)
-- Meta tags (Open Graph, Twitter Cards)
-- Canonical URLs
-- Sitemap generation
-- Robots.txt
-- Fast loading (Astro static generation)
-
-### 2. SEvO (Search Everywhere Optimization)
-- Reddit-ready content (shareable stats, original research)
-- Social sharing optimized (OG images, Twitter Cards)
-- Quote cards and shareable content blocks
-
-### 3. GEO (Generative Engine Optimization)
-- Original statistics with sources ("47 hours of testing", "12 products tested")
-- Expert quotes and methodology transparency
-- FAQ sections with direct answers
-- "Last updated" timestamps on every page
-- Comparison tables (AI-friendly format)
-- Pros/cons lists (easy to parse)
-
-### 4. AGO (Agentic Optimization)
-- Structured data (Schema.org)
-- Clear CTAs with semantic markup
-- Machine-readable comparison tables
-- Sortable data tables
-
-### 5. LLMO (LLM Optimization)
-- Semantic content structure (H2/H3 hierarchy)
-- Self-contained sections (can stand alone)
-- Chunk-friendly formatting
-- Clear headings and bullet points
-
 ## Design System
 
 ### Colors
