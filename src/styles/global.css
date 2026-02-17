@@ -219,6 +219,24 @@ button {
   color: #ffffff !important;
 }
 
+/* Phase 1.4: Newsletter Hero Button - Blue Text on White BG (Tailwind Override) */
+.bg-gradient-to-br button[type="submit"],
+div[class*="from-blue"] button[type="submit"],
+button[class*="bg-white"][class*="text-blue"],
+button.px-6.py-3.bg-white.text-blue-700 {
+  color: #1D4ED8 !important;
+  background-color: #ffffff !important;
+  font-weight: 700 !important;
+  text-shadow: none !important;
+}
+
+ /* Hero form specific */
+div[class*="bg-gradient-to-br"] button,
+.hero button[type="submit"] {
+  color: #1D4ED8 !important;
+}
+
+
 /* Phase 1.1: Targeted Newsletter Hero Fix (white bg blue text) */
 .newsletter button[type="submit"][class*="bg-white"],
 .hero button[type="submit"] {
