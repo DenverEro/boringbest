@@ -1,0 +1,110 @@
+{
+  "slug": "best-extension-cords",
+  "status": "live",
+  "title": "Best Extension Cords of 2026: Ranked by Real Reviews",
+  "description": "The best-rated extension cords and surge protectors on Amazon, ranked by safety records and real customer feedback. Find the right gauge and length for home, office, or outdoor use.",
+  "category": "home-office",
+  "categoryLabel": "Home Office",
+  "publishedDate": "2026-01-18",
+  "lastUpdated": "2026-02-08",
+  "quickAnswer": "The <strong>Amazon Basics 6-Outlet Surge Protector</strong> is the highest-rated pick for most home and office use, holding a 4.8 star Amazon rating. Buyers value its 6 grounded outlets, 790-joule surge protection, and 6-foot cord at an unbeatable $12.99. For outdoor work, reviewers consistently favor the Iron Forge 100-foot heavy-duty cord.",
+  "howWeChose": {
+    "heading": "How We Chose These Cords",
+    "intro": "We rank products the honest way: <strong>by digging through real Amazon customer reviews, safety records, and buyer complaints</strong>. Here is our process:",
+    "steps": [
+      "<strong>Star-rating analysis:</strong> We surface the top-rated cords and surge protectors and note their real Amazon ratings.",
+      "<strong>Safety verification:</strong> We confirm each pick carries a legitimate UL or ETL certification — drawn from the product listing, not assumed.",
+      "<strong>Review reading:</strong> We read verified buyer reviews to surface consistent complaints (overheating, stiff cold-weather cords, flimsy plugs) and consistent praise.",
+      "<strong>Use-case matching:</strong> We rank the best pick for home office, yard work, style, medium duty, and high capacity."
+    ],
+    "closing": "Each product's rating below is its <strong>real Amazon rating</strong> — a reflection of what real buyers reported, not our own hands-on testing."
+  },
+  "whoThisIsFor": [
+    "This guide is for anyone who needs safe, reliable extension cords for home, office, or outdoor use. Whether you are powering a computer setup, yard tools, or holiday lights, we have ranked options for every situation and safety requirement.",
+    "We focused on UL-listed cords that meet strict safety standards. All our picks are suitable for continuous use at their rated capacity."
+  ],
+  "comparison": {
+    "heading": "Compare the Best Extension Cords",
+    "intro": "Click column headers to sort by price, rating, or type. Prices current as of February 2026. Ratings are real Amazon customer ratings."
+  },
+  "products": [
+    { "name": "Amazon Basics 6-Outlet Surge Protector", "price": 12.99, "rating": 4.8, "type": "Indoor", "bestFor": "Home Office", "verdict": "Best overall with surge protection, 6 outlets, and 6-foot cord at an unbeatable price.", "buyLink": "https://amazon.com/dp/B00TP1C51M?tag=boringbest-20", "buyText": "Check Price" },
+    { "name": "Iron Forge Cable 100-Foot Outdoor Cord", "price": 39.99, "rating": 4.7, "type": "Outdoor", "bestFor": "Yard Work", "verdict": "Heavy-duty 12/3 cord that handles power tools and outdoor equipment safely.", "buyLink": "https://amazon.com/dp/B01N3RPUVT?tag=boringbest-20", "buyText": "Check Price" },
+    { "name": "Cordinate Designer 3-Outlet Extension Cord", "price": 9.99, "rating": 4.5, "type": "Indoor", "bestFor": "Style & Function", "verdict": "Stylish woven fabric cord with 3 outlets and 8-foot reach. Great for visible areas.", "buyLink": "https://amazon.com/dp/B01MTQ7KY7?tag=boringbest-20", "buyText": "Check Price" },
+    { "name": "US Wire & Cable 50-Foot Heavy Duty", "price": 34.99, "rating": 4.6, "type": "Outdoor", "bestFor": "Medium Duty", "verdict": "Flexible cold-weather cord that stays pliable in freezing temperatures.", "buyLink": "https://amazon.com/dp/B000FPAN3A?tag=boringbest-20", "buyText": "Check Price" },
+    { "name": "Belkin 12-Outlet Power Strip", "price": 24.99, "rating": 4.7, "type": "Indoor", "bestFor": "High Capacity", "verdict": "Maximum outlets with 3940-joule surge protection and coaxial protection.", "buyLink": "https://amazon.com/dp/B000J2EN4S?tag=boringbest-20", "buyText": "Check Price" }
+  ],
+  "picks": [
+    {
+      "rank": 1, "name": "Amazon Basics 6-Outlet Surge Protector", "price": 12.99, "rating": 4.8,
+      "verdict": "The Amazon Basics surge protector is the most-loved pick for most people, holding a 4.8 star Amazon rating. It provides 6 grounded outlets, 790-joule surge protection, and a 6-foot cord at an unbeatable price. Buyers praise its stable, dependable performance and reset button, and the compact design fits easily behind furniture.",
+      "pros": ["6 outlets with surge protection", "790-joule surge rating", "6-foot cord length", "UL listed for safety", "Circuit breaker reset button", "Excellent value at $12.99"],
+      "cons": ["Not for outdoor use", "Cord is not braided/fabric", "Outlets are close together", "No USB ports"],
+      "buyLink": "https://amazon.com/dp/B00TP1C51M?tag=boringbest-20", "buyText": "Check Price on Amazon", "badge": "Best Overall"
+    },
+    {
+      "rank": 2, "name": "Iron Forge Cable 100-Foot Outdoor Cord", "price": 39.99, "rating": 4.7,
+      "verdict": "The best-rated outdoor extension cord for yard work and heavy-duty applications. The 12/3 gauge wire safely handles 15 amps, and buyers consistently praise the heavy-duty vinyl jacket for resisting abrasion and weather. The bright yellow color makes it easy to spot in grass, and reviewers report it stays reliable after seasons of outdoor use.",
+      "pros": ["Heavy-duty 12/3 gauge wire", "100-foot reach", "Rated for -40F to 140F", "Water-resistant vinyl jacket", "Reinforced strain relief", "Lighted end shows power status"],
+      "cons": ["Heavy to carry (8.5 lbs)", "Stiff when cold (softens with use)", "Premium price", "Not for permanent installation"],
+      "buyLink": "https://amazon.com/dp/B01N3RPUVT?tag=boringbest-20", "buyText": "Check Price on Amazon", "badge": "Best Outdoor"
+    },
+    {
+      "rank": 3, "name": "Belkin 12-Outlet Power Strip", "price": 24.99, "rating": 4.7,
+      "verdict": "If you need maximum outlets for a home office or entertainment center, the Belkin is the most-recommended high-capacity option. With 12 outlets and 3940-joule surge protection, it can handle an entire desk setup. Buyers particularly value the widely spaced outlets that accommodate large power bricks, and the 8-foot cord for placement flexibility.",
+      "pros": ["12 outlets (8 spaced for large plugs)", "3940-joule surge protection", "8-foot cord", "Coaxial and telephone protection", "Sliding safety covers", "$40,000 connected equipment warranty"],
+      "cons": ["Large footprint (12.5 inches)", "No USB charging ports", "Higher price point", "Not for outdoor use"],
+      "buyLink": "https://amazon.com/dp/B000J2EN4S?tag=boringbest-20", "buyText": "Check Price on Amazon", "badge": "Best Capacity"
+    }
+  ],
+  "guide": {
+    "heading": "Extension Cord Buying Guide",
+    "blocks": [
+      { "type": "h3", "text": "Understanding Wire Gauges" },
+      { "type": "p", "text": "Wire gauge determines how much power a cord can safely carry. Lower numbers mean thicker wire:" },
+      { "type": "table", "rows": [
+        { "cols": ["Gauge", "Max Amps", "Best For"] },
+        { "cols": ["16", "13 amps", "Lamps, chargers, small electronics"] },
+        { "cols": ["14", "15 amps", "Power tools, appliances, medium loads"] },
+        { "cols": ["12", "15-20 amps", "Heavy power tools, heaters, outdoor use"] },
+        { "cols": ["10", "20+ amps", "High-power equipment, industrial use"] }
+      ] },
+      { "type": "h3", "text": "Key Safety Features" },
+      { "type": "list", "items": [
+        "<strong>UL or ETL listing:</strong> Ensures the cord meets safety standards. Never buy unlisted cords.",
+        "<strong>Grounded (3-prong):</strong> Essential for safety with power tools and electronics.",
+        "<strong>Proper gauge:</strong> Match the wire gauge to your device's amp draw.",
+        "<strong>Strain relief:</strong> Prevents wire damage at the plug connections.",
+        "<strong>Weather rating:</strong> Outdoor cords should be marked with \"W\" for water resistance."
+      ] },
+      { "type": "h3", "text": "What to Avoid" },
+      { "type": "list", "items": [
+        "<strong>Damaged cords:</strong> Frayed insulation or exposed wires are fire hazards. Replace immediately.",
+        "<strong>Overloading:</strong> Never exceed the cord's amp rating. Calculate total device draw before plugging in.",
+        "<strong>Indoor cords outdoors:</strong> Indoor cords lack weather protection and can shock or short in moisture.",
+        "<strong>Running under rugs:</strong> Heat buildup under rugs can cause fires. Use cord covers instead.",
+        "<strong>Daisy-chaining:</strong> Never plug extension cords into each other. Use one properly sized cord."
+      ] }
+    ]
+  },
+  "care": {
+    "heading": "Care & Maintenance",
+    "intro": "Extend the life of your extension cords and stay safe with these tips:",
+    "items": [
+      "<strong>Inspect regularly:</strong> Check for cuts, fraying, or exposed wires before each use.",
+      "<strong>Coil properly:</strong> Use the over-under technique to prevent kinks and wire damage.",
+      "<strong>Store indoors:</strong> Keep cords dry and away from direct sunlight when not in use.",
+      "<strong>Clean contacts:</strong> Wipe plugs with a dry cloth to ensure good connections.",
+      "<strong>Replace old cords:</strong> Replace cords every 3-5 years or sooner if damaged.",
+      "<strong>Unroll fully:</strong> For high-power use, unroll the entire cord to prevent heat buildup."
+    ]
+  },
+  "faqs": [
+    { "q": "What gauge extension cord do I need?", "a": "For most household use (lamps, chargers, small appliances), 16-gauge is sufficient. For power tools, heaters, or outdoor use, use 14-gauge or 12-gauge. The lower the gauge number, the thicker the wire and the more power it can safely handle. Always check the amp rating of your device and match it to the cord capacity." },
+    { "q": "Can you plug an extension cord into another extension cord?", "a": "No, this is called \"daisy-chaining\" and is a fire hazard. It can overload the circuit and cause overheating. If you need more reach, use one longer cord rated for your power needs instead of connecting multiple shorter cords." },
+    { "q": "Are outdoor extension cords safe in rain?", "a": "Outdoor-rated cords (marked with \"W\" for water-resistant) are designed for outdoor use but should still be protected from standing water. Look for cords with grounded (3-prong) plugs, heavy-duty jackets, and keep connections elevated off the ground. Never use indoor cords outdoors." },
+    { "q": "How long can an extension cord be?", "a": "Extension cords come in lengths from 1 foot to 100+ feet. However, longer cords have more resistance and voltage drop. For high-power devices, keep cords under 50 feet when possible. If you must use a longer cord, use a heavier gauge (12 or 10) to compensate for the distance." },
+    { "q": "Do extension cords wear out?", "a": "Yes, extension cords degrade over time. Inspect cords regularly for damage: frayed insulation, exposed wires, cracked plugs, or loose connections. Replace cords every 3-5 years with regular use, or immediately if damaged. Store cords loosely coiled in a dry place to extend their life." }
+  ],
+  "newsletter": { "title": "Want More Safety-Focused Guides?", "description": "Get weekly best-rated buying guides for everyday essentials delivered to your inbox." }
+}

@@ -1,0 +1,259 @@
+---
+// Generic review guide template.
+// Renders every guide from src/data/reviews/*.json
+// Supports status: 'live' (full guide) or 'coming-soon' (notify page).
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import TrustBar from '../../components/TrustBar.astro';
+import SortableTable from '../../components/SortableTable.astro';
+import PickCard from '../../components/PickCard.astro';
+import NewsletterForm from '../../components/NewsletterForm.astro';
+
+interface GuideJSON {
+  slug: string; title: string; description: string;
+  category: string; categoryLabel: string;
+  status?: 'live' | 'coming-soon';
+  publishedDate?: string; lastUpdated?: string;
+  quickAnswer?: string;
+  howWeChose?: { heading: string; intro: string; steps: string[]; closing?: string };
+  whoThisIsFor?: string[];
+  comparison?: { heading?: string; intro?: string };
+  products?: any[];
+  picks?: any[];
+  guide?: { heading: string; blocks: any[] };
+  competition?: { heading: string; intro: string; items: { name: string; description: string }[] };
+  care?: { heading: string; intro: string; items: string[] };
+  faqs?: { q: string; a: string }[];
+  newsletter?: { title: string; description: string };
+  comingSoonMessage?: string;
+}
+
+export function getStaticPaths() {
+  const guideModules = import.meta.glob('../../data/reviews/*.json', { eager: true });
+  const guides: GuideJSON[] = Object.values(guideModules).map((m: any) => (m as any).default as GuideJSON);
+  return guides.map((g) => ({ params: { slug: g.slug }, props: { guide: g } }));
+}
+
+const { guide } = Astro.props;
+
+const breadcrumbs = [
+  { label: 'Reviews', href: '/categories/' },
+  { label: guide.categoryLabel || 'Reviews' },
+];
+
+const faqs = guide.faqs || [];
+
+// Schema: honest Article + FAQPage (never Review/reviewCount)
+const articleSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: guide.title,
+  description: guide.description,
+  url: `https://boringbest.com/reviews/${guide.slug}/`,
+  datePublished: guide.publishedDate,
+  dateModified: guide.lastUpdated,
+  author: { '@type': 'Organization', name: 'Boring Best' },
+  publisher: { '@type': 'Organization', name: 'Boring Best' },
+  mainEntityOfPage: { '@type': 'WebPage', '@id': `https://boringbest.com/reviews/${guide.slug}/` }
+};
+const faqSchema = faqs.length ? {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: faqs.map((f) => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } }))
+} : null;
+const schema = faqSchema ? { '@graph': [articleSchema, faqSchema] } : { '@graph': [articleSchema] };
+---
+
+<BaseLayout
+  title={guide.title}
+  description={guide.description}
+  type="article"
+  publishedDate={guide.publishedDate}
+  modifiedDate={guide.lastUpdated}
+  schema={schema}
+  breadcrumbs={breadcrumbs}
+>
+  {guide.status === 'coming-soon' ? (
+    <section class="py-12 text-center">
+      <h1 class="text-4xl font-bold text-gray-900 mb-4">{guide.title}</h1>
+      <p class="text-xl text-gray-600 max-w-3xl mx-auto">{guide.description}</p>
+      <div class="py-12">
+        <div class="bg-blue-50 border border-blue-200 rounded-xl p-8 text-center max-w-2xl mx-auto">
+          <h2 class="text-2xl font-bold text-gray-900 mb-4">This Guide Is Being Written</h2>
+          <p class="text-gray-700 mb-6">
+            {guide.comingSoonMessage || 'We are digging through real Amazon reviews to rank the best-rated products in this category. Join the list and we will notify you the moment it publishes.'}
+          </p>
+          <NewsletterForm
+            variant="inline"
+            title="Get Notified When This Guide Publishes"
+            description="Be first to read our best-rated picks, ranked from real customer reviews."
+          />
+        </div>
+      </div>
+      <div class="bg-gray-100 rounded-lg p-4 mt-8 text-sm text-gray-600 max-w-2xl mx-auto">
+        <strong>Affiliate Disclosure:</strong> Boring Best is a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for sites to earn advertising fees by advertising and linking to Amazon.com.
+      </div>
+    </section>
+  ) : (
+    <>
+      <!-- Quick Answer -->
+      <section class="py-8">
+        <div class="bg-blue-50 border-l-4 border-[#2563EB] p-6 rounded-r-lg">
+          <h2 class="text-lg font-bold text-gray-900 mb-2">Quick Answer</h2>
+          <p class="text-gray-700" set:html={guide.quickAnswer} />
+        </div>
+      </section>
+
+      <!-- Trust Bar -->
+      <TrustBar
+        lastUpdated={guide.lastUpdated || ''}
+      />
+
+      {guide.howWeChose && (
+        <section class="py-8 border-b border-gray-200">
+          <h2 class="text-2xl font-bold text-gray-900 mb-4">{guide.howWeChose.heading}</h2>
+          <div class="prose max-w-none text-gray-700">
+            <p class="mb-4" set:html={guide.howWeChose.intro} />
+            <ul class="list-disc pl-6 mb-4 space-y-2">
+              {guide.howWeChose.steps.map((s) => (<li set:html={s} />))}
+            </ul>
+            {guide.howWeChose.closing && (<p set:html={guide.howWeChose.closing} />)}
+          </div>
+        </section>
+      )}
+
+      {guide.whoThisIsFor && (
+        <section class="py-8 border-b border-gray-200">
+          <h2 class="text-2xl font-bold text-gray-900 mb-4">Who This Is For</h2>
+          {guide.whoThisIsFor.map((p) => (<p class="text-gray-700 mb-4">{p}</p>))}
+        </section>
+      )}
+
+      {guide.products && guide.products.length > 0 && (
+        <section class="py-8">
+          <h2 class="text-2xl font-bold text-gray-900 mb-4">
+            {guide.comparison?.heading || 'Compare the Best Options'}
+          </h2>
+          <p class="text-gray-600 mb-6">
+            {guide.comparison?.intro || 'Click column headers to sort by price, rating, or type. Ratings are real Amazon customer ratings.'}
+          </p>
+          <SortableTable products={guide.products} />
+        </section>
+      )}
+
+      {guide.picks && guide.picks.length > 0 && (
+        <section class="py-8">
+          <h2 class="text-2xl font-bold text-gray-900 mb-6">Our Top Picks</h2>
+          <div class="space-y-8">
+            {guide.picks.map((pick) => (
+              <PickCard
+                rank={pick.rank}
+                name={pick.name}
+                price={pick.price}
+                rating={pick.rating}
+                verdict={pick.verdict}
+                pros={pick.pros}
+                cons={pick.cons}
+                buyLink={pick.buyLink}
+                buyText={pick.buyText}
+                badge={pick.badge}
+                image={pick.image}
+              />
+            ))}
+          </div>
+        </section>
+      )}
+
+      {guide.guide && (
+        <section class="py-8 border-t border-gray-200">
+          <h2 class="text-2xl font-bold text-gray-900 mb-4">{guide.guide.heading}</h2>
+          <div class="prose max-w-none text-gray-700">
+            {guide.guide.blocks.map((block) => {
+              if (block.type === 'h2') return <h2 class="text-xl font-bold text-gray-900 mt-6 mb-3" set:html={block.text} />;
+              if (block.type === 'h3') return <h3 class="text-xl font-semibold text-gray-900 mt-6 mb-3" set:html={block.text} />;
+              if (block.type === 'p') return <p class="mb-4" set:html={block.text} />;
+              if (block.type === 'list') return <ul class="list-disc pl-6 mb-4 space-y-2">{block.items.map((i) => <li set:html={i} />)}</ul>;
+              if (block.type === 'grid' && block.grid) return (
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
+                  {block.grid.map((g) => (
+                    <div class="bg-gray-50 p-4 rounded-lg">
+                      <h4 class="font-semibold text-gray-900 mb-2">{g.h4}</h4>
+                      <p class="text-sm text-gray-600">{g.p}</p>
+                    </div>
+                  ))}
+                </div>
+              );
+              if (block.type === 'table' && block.rows) return (
+                <div class="bg-gray-50 p-4 rounded-lg my-4">
+                  <table class="w-full text-sm">
+                    <thead><tr class="border-b border-gray-300">{block.rows[0].cols.map((c) => <th class="text-left py-2">{c}</th>)}</tr></thead>
+                    <tbody>
+                      {block.rows.slice(1).map((r) => (
+                        <tr class="border-b border-gray-200">{r.cols.map((c) => <td class="py-2">{c}</td>)}</tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
+              );
+              return null;
+            })}
+          </div>
+        </section>
+      )}
+
+      {guide.competition && (
+        <section class="py-8 border-t border-gray-200">
+          <h2 class="text-2xl font-bold text-gray-900 mb-4">{guide.competition.heading}</h2>
+          <p class="text-gray-700 mb-4">{guide.competition.intro}</p>
+          <div class="space-y-4">
+            {guide.competition.items.map((it) => (
+              <div class="bg-gray-50 p-4 rounded-lg">
+                <h4 class="font-semibold text-gray-900">{it.name}</h4>
+                <p class="text-sm text-gray-600 mt-1">{it.description}</p>
+              </div>
+            ))}
+          </div>
+        </section>
+      )}
+
+      {guide.care && (
+        <section class="py-8 border-t border-gray-200">
+          <h2 class="text-2xl font-bold text-gray-900 mb-4">{guide.care.heading}</h2>
+          <div class="prose max-w-none text-gray-700">
+            <p class="mb-4">{guide.care.intro}</p>
+            <ul class="list-disc pl-6 mb-4 space-y-2">
+              {guide.care.items.map((i) => (<li set:html={i} />))}
+            </ul>
+          </div>
+        </section>
+      )}
+
+      {faqs.length > 0 && (
+        <section class="py-8 border-t border-gray-200">
+          <h2 class="text-2xl font-bold text-gray-900 mb-6">Frequently Asked Questions</h2>
+          <div class="space-y-4">
+            {faqs.map((faq) => (
+              <div class="border border-gray-200 rounded-lg overflow-hidden" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                <h3 class="text-lg font-semibold text-gray-900 p-4 bg-gray-50" itemprop="name">{faq.q}</h3>
+                <div class="p-4 text-gray-700" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                  <div itemprop="text">{faq.a}</div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </section>
+      )}
+
+      <section class="py-8 border-t border-gray-200">
+        <NewsletterForm
+          variant="inline"
+          title={guide.newsletter?.title || 'Want More Guides Like This?'}
+          description={guide.newsletter?.description || 'Get weekly best-rated buying guides for everyday essentials delivered to your inbox.'}
+        />
+      </section>
+
+      <div class="bg-gray-100 rounded-lg p-4 mt-8 text-sm text-gray-600">
+        <strong>Affiliate Disclosure:</strong> Boring Best is a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for sites to earn advertising fees by advertising and linking to Amazon.com. We may earn a commission when you purchase products through our links. Recommendations are based on real Amazon customer ratings and reviews, not on any manufacturer or affiliate relationship.
+      </div>
+    </>
+  )}
+</BaseLayout>

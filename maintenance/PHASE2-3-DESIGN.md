@@ -1,11 +1,15 @@
 # Boring Best — Phase 2 & 3 Design
 
-**Status:** Design (not built). Phase 1 (honesty fix) is DONE, committed & pushed.
+**Status:** Phase 2 DONE (data-driven template live). Phase 3 (Rainforest) pending API key.
 **Reader:** you (non-programmer) — this is the map, not the code.
 
 ---
 
-## Where we are after Phase 1 (done)
+## Where we are
+
+- **Phase 1 (honesty fix):** DONE, deployed, live.
+- **Phase 2 (data-driven template):** DONE, deployed, live. This doc reflects the built state.
+- **Phase 3 (Rainforest sourcing):** designed, not built — needs your API key.
 
 - Every fake "we tested it / X hrs / X products" claim is gone across all 22 files.
 - Fabricated `@type: Review` + `reviewCount` structured data replaced with honest `Article` + `FAQPage` schema.
@@ -62,8 +66,7 @@ src/
       "asin": "B0FG47SHKB",
       "price": 22.37,
       "rating": 4.9,
-      "badge": "Best Overall",
-      "image": "/images/korky-99-4A.png",
+      "image": "/images/korky-99-4A.png",  <- Rainforest returns main_image; store/use real Amazon photo
       "pros": ["...", "..."],
       "cons": ["...", "..."],
       "verdict": "..."      <- the human-written 1-2 sentence rationale
@@ -107,7 +110,9 @@ GET https://api.rainforestapi.com/request
 ```
 
 The response's `products[]` gives you, for each item:
-`asin`, `title`, `link`, `price`, `rating`, `ratings_total`, `image`.
+`asin`, `title`, `link`, `price`, `rating`, `ratings_total`, `image`, `main_image` (high-res), and `images[]`.
+
+**Image note:** Rainforest returns the real Amazon product image(s) for every item — so your guides can use actual product photos (via `main_image`) instead of the current placeholder/local shots.
 
 ### The pipeline (with your human checkpoint)
 
