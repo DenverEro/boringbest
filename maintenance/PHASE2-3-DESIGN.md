@@ -1,6 +1,6 @@
 # Boring Best — Phase 2 & 3 Design
 
-**Status:** Phase 2 DONE (data-driven template live). Phase 3 (Rainforest) pending API key.
+**Status:** Phase 2 DONE (data-driven template live). Phase 3 sourcing script BUILT but BLOCKED: Amazon Creators API returns 403 `AssociateNotEligible` (needs 10 qualifying sales in 30 days; currently under). Credentials in `.env` authenticate fine — it's an account-state gate, not a bug. Rainforest out of budget for now. Re-test free API once ~10 sales/30d, or fund Rainforest later; meanwhile hand-build JSON guides.
 **Reader:** you (non-programmer) — this is the map, not the code.
 
 ---
