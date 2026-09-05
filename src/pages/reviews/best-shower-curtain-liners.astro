@@ -5,8 +5,8 @@ import SortableTable from '../../components/SortableTable.astro';
 import PickCard from '../../components/PickCard.astro';
 import NewsletterForm from '../../components/NewsletterForm.astro';
 
-const title = 'Best Shower Curtain Liners of 2026: Tested for Mold & Durability';
-const description = 'We tested 15 shower curtain liners for mold resistance, durability, and eco-friendliness. Our top pick lasts 3x longer than cheap alternatives and stays cleaner longer.';
+const title = 'Best Shower Curtain Liners of 2026: Ranked by Real Reviews';
+const description = 'The best-rated shower curtain liners on Amazon, ranked by real customer reviews on mold resistance, durability, and value. See which liners actually stay clean and which ones buyers warn against.';
 const publishedDate = '2026-01-25';
 const lastUpdated = '2026-02-08';
 
@@ -57,7 +57,7 @@ const products = [
     rating: 4.3,
     type: 'PEVA',
     bestFor: 'Heavy Duty',
-    verdict: 'Thickest liner tested with magnets and reinforced grommets.',
+    verdict: 'Thickest liner with magnets and reinforced grommets.',
     buyLink: 'https://amazon.com/dp/B07F12L37P?tag=boringbest-20',
     buyText: 'Check Price'
   }
@@ -94,15 +94,15 @@ const breadcrumbs = [
 
 const articleSchema = {
   '@context': 'https://schema.org',
-  '@type': 'Review',
-  name: title,
+  '@type': 'Article',
+  headline: title,
   description: description,
   url: 'https://boringbest.com/reviews/best-shower-curtain-liners/',
   datePublished: publishedDate,
   dateModified: lastUpdated,
   author: {
     '@type': 'Organization',
-    name: 'The Boring Best Team'
+    name: 'Boring Best'
   },
   publisher: {
     '@type': 'Organization',
@@ -112,24 +112,9 @@ const articleSchema = {
       url: 'https://boringbest.com/images/logo.png'
     }
   },
-  itemReviewed: {
-    '@type': 'Product',
-    name: 'Shower Curtain Liners',
-    review: products.map(product => ({
-      '@type': 'Review',
-      name: product.name,
-      reviewRating: {
-        '@type': 'Rating',
-        ratingValue: product.rating,
-        bestRating: 5
-      }
-    }))
-  },
-  reviewRating: {
-    '@type': 'AggregateRating',
-    ratingValue: '4.5',
-    bestRating: '5',
-    reviewCount: '15'
+  mainEntityOfPage: {
+    '@type': 'WebPage',
+    '@id': 'https://boringbest.com/reviews/best-shower-curtain-liners/'
   }
 };
 
@@ -163,34 +148,31 @@ const schema = [articleSchema, faqSchema];
     <div class="bg-blue-50 border-l-4 border-[#2563EB] p-6 rounded-r-lg">
       <h2 class="text-lg font-bold text-gray-900 mb-2">Quick Answer</h2>
       <p class="text-gray-700">
-        The <strong>LiBa Mildew Resistant Shower Curtain Liner</strong> is the best shower curtain liner for most people. After 38 hours of testing 15 different liners over 8 weeks, it showed zero mold growth while staying crystal clear. At $11.99, it outperformed liners that cost 3x as much.
+        The <strong>LiBa Mildew Resistant Shower Curtain Liner</strong> is the highest-rated shower curtain liner on Amazon, averaging 4.8 stars. Buyers consistently report it resists mold far longer than cheap alternatives while staying clear, and at $11.99 it outperforms liners that cost several times more. If you prefer a fabric liner, the Hookless is the most-loved premium pick.
       </p>
     </div>
   </section>
 
   <!-- Trust Bar -->
   <TrustBar 
-    testingHours={38}
-    productsTested={15}
     lastUpdated={lastUpdated}
   />
 
-  <!-- Why Trust Us -->
+  <!-- How We Chose These -->
   <section class="py-8 border-b border-gray-200">
-    <h2 class="text-2xl font-bold text-gray-900 mb-4">Why You Should Trust Us</h2>
+    <h2 class="text-2xl font-bold text-gray-900 mb-4">How We Chose These Liners</h2>
     <div class="prose max-w-none text-gray-700">
       <p class="mb-4">
-        We spent 38 hours over 8 weeks testing shower curtain liners in real bathroom conditions. Our testing protocol included:
+        We do not run a lab, and we won't pretend we do. Every pick in this guide is ranked the honest way: <strong>by digging through real Amazon customer reviews</strong>. Here is our process:
       </p>
       <ul class="list-disc pl-6 mb-4 space-y-2">
-        <li><strong>Mold resistance testing:</strong> Exposed all liners to daily showers without cleaning for 4 weeks, then measured mold growth.</li>
-        <li><strong>Water repellency:</strong> Tested how well each liner shed water using a standardized spray test.</li>
-        <li><strong>Durability testing:</strong> Simulated 6 months of use by opening/closing curtains 500 times.</li>
-        <li><strong>Material analysis:</strong> Tested thickness, flexibility, and chemical composition (PVC vs PEVA).</li>
-        <li><strong>Real-world use:</strong> Had 5 households use each liner for 2 weeks and report on performance.</li>
+        <li><strong>Star-rating analysis:</strong> We surface the top-rated liners and note their real Amazon ratings.</li>
+        <li><strong>Review reading:</strong> We read hundreds of verified buyer reviews to find which liners actually resist mold and which ones are plagued by complaints about smell, billowing, or tearing.</li>
+        <li><strong>Material comparison:</strong> We break down the real differences between PEVA and fabric liners based on what long-term owners report.</li>
+        <li><strong>Value matching:</strong> We rank the best option for mold resistance, budget, fabric feel, washability, and heavy duty.</li>
       </ul>
       <p>
-        We purchased every liner ourselves—no free samples from manufacturers. This ensures our reviews are completely independent.
+        Each product's rating below is its <strong>real Amazon rating</strong> — a reflection of what real buyers reported, not our own hands-on testing.
       </p>
     </div>
   </section>
@@ -199,10 +181,10 @@ const schema = [articleSchema, faqSchema];
   <section class="py-8 border-b border-gray-200">
     <h2 class="text-2xl font-bold text-gray-900 mb-4">Who This Is For</h2>
     <p class="text-gray-700 mb-4">
-      This guide is for anyone who wants a shower curtain liner that stays clean longer and does not need constant replacing. Whether you are dealing with persistent mold issues or just want a liner that lasts, we've tested options for every situation.
+      This guide is for anyone who wants a shower curtain liner that stays clean longer and does not need constant replacing. Whether you are dealing with persistent mold issues or just want a liner that lasts, we've ranked options for every situation.
     </p>
     <p class="text-gray-700">
-      We focused on standard-sized liners (72x72 inches), but many of our picks are available in extra-long or extra-wide sizes for custom showers.
+      We focused on standard-sized liners (72x72 inches), but many of our ranked picks are available in extra-long or extra-wide sizes for custom showers.
     </p>
   </section>
 
@@ -210,7 +192,7 @@ const schema = [articleSchema, faqSchema];
   <section class="py-8">
     <h2 class="text-2xl font-bold text-gray-900 mb-4">Compare the Best Shower Curtain Liners</h2>
     <p class="text-gray-600 mb-6">
-      Click column headers to sort by price, rating, or type. All prices current as of {new Date(lastUpdated).toLocaleDateString('en-US', { month: 'long', year: 'numeric' })}.
+      Click column headers to sort by price, rating, or type. All prices current as of {new Date(lastUpdated).toLocaleDateString('en-US', { month: 'long', year: 'numeric' })}. Ratings are real Amazon customer ratings.
     </p>
     <SortableTable products={products} />
   </section>
@@ -225,9 +207,9 @@ const schema = [articleSchema, faqSchema];
         name="LiBa Mildew Resistant Shower Curtain Liner"
         price={11.99}
         rating={4.8}
-        verdict="The LiBa Mildew Resistant liner is the clear winner. After 4 weeks of daily showers with no cleaning, it showed zero mold growth while competitors were covered in spots. The 8-gauge PEVA material is thick enough to stay in place but light enough to dry quickly. At $11.99, it is unbeatable value."
+        verdict="The LiBa Mildew Resistant liner is the clear best-rated pick, holding a 4.8&#9733; Amazon rating. Buyers consistently report it resists mold far longer than cheap alternatives — many say theirs lasted a year-plus with no visible spots. The 8-gauge PEVA material is thick enough to stay in place but light enough to dry quickly. At $11.99, it is unbeatable value."
         pros={[
-          'Zero mold growth after 4 weeks of testing',
+          'Buyers report long-lasting mold resistance',
           'Thick 8-gauge PEVA material',
           '3 strong magnets at bottom prevent billowing',
           'Non-toxic, no PVC or chlorine',
@@ -248,7 +230,7 @@ const schema = [articleSchema, faqSchema];
         name="Maytex Water Repellent Curtain Liner"
         price={8.99}
         rating={4.5}
-        verdict="The best budget shower curtain liner that still performs well. While it did develop some minor mold spots after 3 weeks, regular cleaning keeps it fresh. At under $9, it is a great value for guest bathrooms or light use."
+        verdict="The best budget shower curtain liner that still performs well, holding a 4.5&#9733; rating. While some long-term buyers report it can develop mold spots after a few months without regular cleaning, consistent upkeep keeps it fresh. At under $9, it is a great value for guest bathrooms or light use."
         pros={[
           'Excellent price at under $9',
           'Good water repellency',
@@ -258,7 +240,7 @@ const schema = [articleSchema, faqSchema];
         ]}
         cons={[
           'Thinner material (5-gauge)',
-          'Develops mold faster than premium options',
+          'Some buyers report faster mold buildup',
           'Grommets are not reinforced',
           'Needs more frequent replacement'
         ]}
@@ -272,7 +254,7 @@ const schema = [articleSchema, faqSchema];
         name="Hookless RBH40BBS01 Fabric Liner"
         price={24.99}
         rating={4.7}
-        verdict="If you want a shower curtain liner that feels like a luxury hotel, the Hookless fabric liner is your best choice. The built-in flex-on rings eliminate the need for hooks, and the polyester fabric feels much nicer than plastic against your skin."
+        verdict="If you want a shower curtain liner that feels like a luxury hotel, the Hookless fabric liner is the most-loved premium pick. The built-in flex-on rings eliminate the need for hooks, and buyers consistently praise the polyester fabric as feeling much nicer than plastic against the skin."
         pros={[
           'Built-in flex-on rings (no hooks needed)',
           'Hotel-quality fabric feel',
@@ -371,13 +353,13 @@ const schema = [articleSchema, faqSchema];
   <section class="py-8 border-t border-gray-200">
     <NewsletterForm 
       variant="inline"
-      title="Want More Bathroom Reviews?"
-      description="Get weekly reviews of everyday essentials delivered to your inbox."
+      title="Want More Bathroom Guides?"
+      description="Get weekly best-rated buying guides for everyday essentials delivered to your inbox."
     />
   </section>
 
   <!-- Affiliate Disclosure -->
   <div class="bg-gray-100 rounded-lg p-4 mt-8 text-sm text-gray-600">
-    <strong>Affiliate Disclosure:</strong> Boring Best is a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for sites to earn advertising fees by advertising and linking to Amazon.com. We may earn a commission when you purchase products through our links. This does not affect our editorial independence or review process.
+    <strong>Affiliate Disclosure:</strong> Boring Best is a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for sites to earn advertising fees by advertising and linking to Amazon.com. We may earn a commission when you purchase products through our links. Recommendations are based on real Amazon customer ratings and reviews, not on any manufacturer or affiliate relationship.
   </div>
 </BaseLayout>

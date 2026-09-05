@@ -5,8 +5,8 @@ import SortableTable from '../../components/SortableTable.astro';
 import PickCard from '../../components/PickCard.astro';
 import NewsletterForm from '../../components/NewsletterForm.astro';
 
-const title = 'Best Extension Cords of 2026: Safety Tested & Reviewed';
-const description = 'We safety-tested 20 extension cords for home and outdoor use. Our top pick delivers reliable power with built-in surge protection and meets all safety standards.';
+const title = 'Best Extension Cords of 2026: Ranked by Real Reviews';
+const description = 'The best-rated extension cords and surge protectors on Amazon, ranked by safety records and real customer feedback. Find the right gauge and length for home, office, or outdoor use.';
 const publishedDate = '2026-01-18';
 const lastUpdated = '2026-02-08';
 
@@ -94,15 +94,15 @@ const breadcrumbs = [
 
 const articleSchema = {
   '@context': 'https://schema.org',
-  '@type': 'Review',
-  name: title,
+  '@type': 'Article',
+  headline: title,
   description: description,
   url: 'https://boringbest.com/reviews/best-extension-cords/',
   datePublished: publishedDate,
   dateModified: lastUpdated,
   author: {
     '@type': 'Organization',
-    name: 'The Boring Best Team'
+    name: 'Boring Best'
   },
   publisher: {
     '@type': 'Organization',
@@ -112,24 +112,9 @@ const articleSchema = {
       url: 'https://boringbest.com/images/logo.png'
     }
   },
-  itemReviewed: {
-    '@type': 'Product',
-    name: 'Extension Cords',
-    review: products.map(product => ({
-      '@type': 'Review',
-      name: product.name,
-      reviewRating: {
-        '@type': 'Rating',
-        ratingValue: product.rating,
-        bestRating: 5
-      }
-    }))
-  },
-  reviewRating: {
-    '@type': 'AggregateRating',
-    ratingValue: '4.7',
-    bestRating: '5',
-    reviewCount: '20'
+  mainEntityOfPage: {
+    '@type': 'WebPage',
+    '@id': 'https://boringbest.com/reviews/best-extension-cords/'
   }
 };
 
@@ -163,15 +148,13 @@ const schema = [articleSchema, faqSchema];
     <div class="bg-blue-50 border-l-4 border-[#2563EB] p-6 rounded-r-lg">
       <h2 class="text-lg font-bold text-gray-900 mb-2">Quick Answer</h2>
       <p class="text-gray-700">
-        The <strong>Amazon Basics 6-Outlet Surge Protector</strong> is the best extension cord for most home and office use. After 52 hours of electrical testing, it delivered stable power with 790-joule surge protection. At $12.99 for 6 outlets and a 6-foot cord, it is unbeatable value. For outdoor use, we recommend the Iron Forge 100-foot heavy-duty cord.
+        The <strong>Amazon Basics 6-Outlet Surge Protector</strong> is the highest-rated pick for most home and office use, holding a 4.8&#9733; Amazon rating. Buyers value its 6 grounded outlets, 790-joule surge protection, and 6-foot cord at an unbeatable $12.99. For outdoor work, reviewers consistently favor the Iron Forge 100-foot heavy-duty cord.
       </p>
     </div>
   </section>
 
   <!-- Trust Bar -->
   <TrustBar 
-    testingHours={52}
-    productsTested={20}
     lastUpdated={lastUpdated}
   />
 
@@ -187,28 +170,26 @@ const schema = [articleSchema, faqSchema];
         Important Safety Information
       </h3>
       <p class="text-yellow-800 text-sm">
-        Extension cords can overheat and cause fires if misused. Never exceed the amp rating, never use damaged cords, and never run cords under rugs or through walls. Our top picks meet or exceed UL safety standards.
+        Extension cords can overheat and cause fires if misused. Never exceed the amp rating, never use damaged cords, and never run cords under rugs or through walls. Our top picks all meet or exceed UL safety standards. We rank them by real buyer feedback on safety and reliability, not by our own lab tests.
       </p>
     </div>
   </section>
 
-  <!-- Why Trust Us -->
+  <!-- How We Chose These -->
   <section class="py-8 border-b border-gray-200">
-    <h2 class="text-2xl font-bold text-gray-900 mb-4">Why You Should Trust Us</h2>
+    <h2 class="text-2xl font-bold text-gray-900 mb-4">How We Chose These Cords</h2>
     <div class="prose max-w-none text-gray-700">
       <p class="mb-4">
-        We spent 52 hours testing 20 extension cords using professional electrical testing equipment. Our safety-focused testing included:
+        We do not run a lab, and we won't pretend we do. Every pick in this guide is ranked the honest way: <strong>by digging through real Amazon customer reviews, safety records, and buyer complaints</strong>. Here is our process:
       </p>
       <ul class="list-disc pl-6 mb-4 space-y-2">
-        <li><strong>Voltage drop testing:</strong> Measured voltage at cord ends under full load to identify poor conductors.</li>
-        <li><strong>Heat generation:</strong> Monitored cord temperature during 4-hour continuous use at rated capacity.</li>
-        <li><strong>Surge protection:</strong> Tested surge protectors with 1,000V surges to verify clamping performance.</li>
-        <li><strong>Durability testing:</strong> Flexed cords 10,000 times to simulate years of coiling and uncoiling.</li>
-        <li><strong>Weather resistance:</strong> Exposed outdoor cords to rain, UV light, and temperature extremes.</li>
-        <li><strong>Safety verification:</strong> Confirmed all cords carry proper UL or ETL safety certifications.</li>
+        <li><strong>Star-rating analysis:</strong> We surface the top-rated cords and surge protectors and note their real Amazon ratings.</li>
+        <li><strong>Safety verification:</strong> We confirm each pick carries a legitimate UL or ETL certification — drawn from the product listing, not assumed.</li>
+        <li><strong>Review reading:</strong> We read verified buyer reviews to surface consistent complaints (overheating, stiff cold-weather cords, flimsy plugs) and consistent praise.</li>
+        <li><strong>Use-case matching:</strong> We rank the best pick for home office, yard work, style, medium duty, and high capacity.</li>
       </ul>
       <p>
-        We purchased every cord ourselves—no free products from manufacturers. Safety is our top priority.
+        Each product's rating below is its <strong>real Amazon rating</strong> — a reflection of what real buyers reported, not our own hands-on testing.
       </p>
     </div>
   </section>
@@ -217,7 +198,7 @@ const schema = [articleSchema, faqSchema];
   <section class="py-8 border-b border-gray-200">
     <h2 class="text-2xl font-bold text-gray-900 mb-4">Who This Is For</h2>
     <p class="text-gray-700 mb-4">
-      This guide is for anyone who needs safe, reliable extension cords for home, office, or outdoor use. Whether you are powering a computer setup, yard tools, or holiday lights, we have tested options for every situation and safety requirement.
+      This guide is for anyone who needs safe, reliable extension cords for home, office, or outdoor use. Whether you are powering a computer setup, yard tools, or holiday lights, we have ranked options for every situation and safety requirement.
     </p>
     <p class="text-gray-700">
       We focused on UL-listed cords that meet strict safety standards. All our picks are suitable for continuous use at their rated capacity.
@@ -228,7 +209,7 @@ const schema = [articleSchema, faqSchema];
   <section class="py-8">
     <h2 class="text-2xl font-bold text-gray-900 mb-4">Compare the Best Extension Cords</h2>
     <p class="text-gray-600 mb-6">
-      Click column headers to sort by price, rating, or type. All prices current as of {new Date(lastUpdated).toLocaleDateString('en-US', { month: 'long', year: 'numeric' })}.
+      Click column headers to sort by price, rating, or type. All prices current as of {new Date(lastUpdated).toLocaleDateString('en-US', { month: 'long', year: 'numeric' })}. Ratings are real Amazon customer ratings.
     </p>
     <SortableTable products={products} />
   </section>
@@ -243,7 +224,7 @@ const schema = [articleSchema, faqSchema];
         name="Amazon Basics 6-Outlet Surge Protector"
         price={12.99}
         rating={4.8}
-        verdict="The Amazon Basics surge protector is the best extension cord for most people. It provides 6 grounded outlets, 790-joule surge protection, and a 6-foot cord at an unbeatable price. During testing, it maintained stable voltage under full load and the surge protection responded instantly to our test surges. The compact design fits easily behind furniture."
+        verdict="The Amazon Basics surge protector is the most-loved pick for most people, holding a 4.8&#9733; Amazon rating. It provides 6 grounded outlets, 790-joule surge protection, and a 6-foot cord at an unbeatable price. Buyers praise its stable, dependable performance and reset button, and the compact design fits easily behind furniture."
         pros={[
           '6 outlets with surge protection',
           '790-joule surge rating',
@@ -268,7 +249,7 @@ const schema = [articleSchema, faqSchema];
         name="Iron Forge Cable 100-Foot Outdoor Cord"
         price={39.99}
         rating={4.7}
-        verdict="The best outdoor extension cord for yard work and heavy-duty applications. The 12/3 gauge wire safely handles 15 amps, and the heavy-duty vinyl jacket resists abrasion, chemicals, and weather. The bright yellow color makes it easy to see in grass. After 4 weeks of outdoor exposure, it showed no degradation."
+        verdict="The best-rated outdoor extension cord for yard work and heavy-duty applications. The 12/3 gauge wire safely handles 15 amps, and buyers consistently praise the heavy-duty vinyl jacket for resisting abrasion and weather. The bright yellow color makes it easy to spot in grass, and reviewers report it stays reliable after seasons of outdoor use."
         pros={[
           'Heavy-duty 12/3 gauge wire',
           '100-foot reach',
@@ -293,7 +274,7 @@ const schema = [articleSchema, faqSchema];
         name="Belkin 12-Outlet Power Strip"
         price={24.99}
         rating={4.7}
-        verdict="If you need maximum outlets for a home office or entertainment center, the Belkin is your best choice. With 12 outlets and 3940-joule surge protection, it can handle an entire desk setup. The spaced outlets accommodate large power bricks, and the 8-foot cord provides flexibility in placement."
+        verdict="If you need maximum outlets for a home office or entertainment center, the Belkin is the most-recommended high-capacity option. With 12 outlets and 3940-joule surge protection, it can handle an entire desk setup. Buyers particularly value the widely spaced outlets that accommodate large power bricks, and the 8-foot cord for placement flexibility."
         pros={[
           '12 outlets (8 spaced for large plugs)',
           '3940-joule surge protection',
@@ -421,13 +402,13 @@ const schema = [articleSchema, faqSchema];
   <section class="py-8 border-t border-gray-200">
     <NewsletterForm 
       variant="inline"
-      title="Want More Home Safety Reviews?"
-      description="Get weekly reviews of everyday essentials delivered to your inbox."
+      title="Want More Home Safety Guides?"
+      description="Get weekly best-rated buying guides for everyday essentials delivered to your inbox."
     />
   </section>
 
   <!-- Affiliate Disclosure -->
   <div class="bg-gray-100 rounded-lg p-4 mt-8 text-sm text-gray-600">
-    <strong>Affiliate Disclosure:</strong> Boring Best is a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for sites to earn advertising fees by advertising and linking to Amazon.com. We may earn a commission when you purchase products through our links. This does not affect our editorial independence or review process.
+    <strong>Affiliate Disclosure:</strong> Boring Best is a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for sites to earn advertising fees by advertising and linking to Amazon.com. We may earn a commission when you purchase products through our links. Recommendations are based on real Amazon customer ratings and reviews, not on any manufacturer or affiliate relationship.
   </div>
 </BaseLayout>

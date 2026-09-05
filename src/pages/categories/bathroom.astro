@@ -4,25 +4,21 @@ import TrustBar from '../../components/TrustBar.astro';
 import NewsletterForm from '../../components/NewsletterForm.astro';
 
 const title = 'Best Bathroom Products 2026 - Reviews & Buying Guides';
-const description = 'Expert reviews of bathroom essentials including toilet plungers, shower curtain liners, and more. Tested for durability and performance.';
+const description = 'Best-rated bathroom essentials including toilet plungers and shower curtain liners, ranked by real Amazon customer reviews.';
 
 const reviews = [
   {
     title: 'Best Toilet Plungers',
     slug: 'best-toilet-plungers',
-    description: 'After testing 12 plungers over 47 hours, we found the one that actually works every time.',
-    testingHours: 47,
-    productsTested: 12,
-    rating: 4.8,
+    description: 'The top-rated toilet plungers, ranked by real Amazon customer reviews.',
+    rating: 4.4,
     image: '/images/plunger.jpg'
   },
   {
     title: 'Best Shower Curtain Liners',
     slug: 'best-shower-curtain-liners',
-    description: 'We tested 15 liners for mold resistance, durability, and eco-friendliness.',
-    testingHours: 38,
-    productsTested: 15,
-    rating: 4.6,
+    description: 'The highest-rated shower curtain liners, ranked by real customer feedback.',
+    rating: 4.3,
     image: '/images/shower-liner.jpg'
   }
 ];
@@ -49,12 +45,10 @@ const breadcrumbs = [
   <section class="py-12">
     <h1 class="text-4xl font-bold text-gray-900 mb-4">Bathroom Reviews</h1>
     <p class="text-xl text-gray-600 mb-8 max-w-3xl">
-      Expert reviews of bathroom essentials. We test for durability, performance, and value so you can buy with confidence.
+      Best-rated bathroom essentials. We rank products by digging through real Amazon customer reviews, so you can buy with confidence.
     </p>
     
     <TrustBar 
-      testingHours={85}
-      productsTested={27}
       lastUpdated="2026-02-08"
     />
   </section>
@@ -88,12 +82,11 @@ const breadcrumbs = [
               <div class="flex items-center gap-4 text-sm text-gray-500">
                 <span class="flex items-center gap-1">
                   <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <circle cx="12" cy="12" r="10"></circle>
-                    <polyline points="12 6 12 12 16 14"></polyline>
+                    <path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"></path>
+                    <circle cx="12" cy="12" r="3"></circle>
                   </svg>
-                  {review.testingHours} hrs
+                  Real Amazon reviews
                 </span>
-                <span>{review.productsTested} products</span>
               </div>
               <div class="flex items-center gap-1">
                 <span class="font-bold text-gray-900">{review.rating}</span>

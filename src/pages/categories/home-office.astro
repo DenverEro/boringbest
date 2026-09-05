@@ -4,30 +4,19 @@ import TrustBar from '../../components/TrustBar.astro';
 import NewsletterForm from '../../components/NewsletterForm.astro';
 
 const title = 'Best Home Office Products 2026 - Reviews & Buying Guides';
-const description = 'Expert reviews of home office essentials including extension cords, power strips, and more. Tested for safety and performance.';
+const description = 'Best-rated home office essentials including extension cords and power strips, ranked by real Amazon customer reviews.';
 
-const reviews = [
+const publishedReviews = [
   {
     title: 'Best Extension Cords',
     slug: 'best-extension-cords',
-    description: 'Safety-tested 20 extension cords for home and outdoor use.',
-    testingHours: 52,
-    productsTested: 20,
-    rating: 4.9,
-    image: '/images/extension-cord.jpg'
-  },
-  {
-    title: 'Best Power Strips',
-    slug: 'best-power-strips',
-    description: 'Surge protection tested 18 power strips with USB charging.',
-    testingHours: 35,
-    productsTested: 18,
-    rating: 4.8,
-    image: '/images/power-strip.jpg'
+    description: 'The best-rated extension cords and surge protectors, ranked by real customer feedback on safety and reliability.',
+    rating: 4.5
   }
 ];
 
 const comingSoon = [
+  'Power Strips',
   'Cable Organizers',
   'Desk Lamps',
   'Monitor Stands',
@@ -49,22 +38,20 @@ const breadcrumbs = [
   <section class="py-12">
     <h1 class="text-4xl font-bold text-gray-900 mb-4">Home Office Reviews</h1>
     <p class="text-xl text-gray-600 mb-8 max-w-3xl">
-      Expert reviews of home office essentials. We test for safety, reliability, and productivity so you can work with confidence.
+      Best-rated home office essentials. We rank products by digging through real Amazon customer reviews, so you can work with confidence.
     </p>
     
     <TrustBar 
-      testingHours={87}
-      productsTested={38}
       lastUpdated="2026-02-08"
     />
   </section>
   
-  <!-- Published Reviews -->
+  <!-- Published Guides -->
   <section class="py-8">
-    <h2 class="text-2xl font-bold text-gray-900 mb-6">Published Reviews</h2>
+    <h2 class="text-2xl font-bold text-gray-900 mb-6">{publishedReviews.length} Guide Available</h2>
     
     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-      {reviews.map((review) => (
+      {publishedReviews.map((review) => (
         <a 
           href={`/reviews/${review.slug}/`}
           class="group bg-white border border-gray-200 rounded-xl overflow-hidden hover:shadow-lg hover:border-[#2563EB] transition-all"
@@ -88,12 +75,11 @@ const breadcrumbs = [
               <div class="flex items-center gap-4 text-sm text-gray-500">
                 <span class="flex items-center gap-1">
                   <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <circle cx="12" cy="12" r="10"></circle>
-                    <polyline points="12 6 12 12 16 14"></polyline>
+                    <path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"></path>
+                    <circle cx="12" cy="12" r="3"></circle>
                   </svg>
-                  {review.testingHours} hrs
+                  Real Amazon reviews
                 </span>
-                <span>{review.productsTested} products</span>
               </div>
               <div class="flex items-center gap-1">
                 <span class="font-bold text-gray-900">{review.rating}</span>
@@ -114,7 +100,7 @@ const breadcrumbs = [
   
   <!-- Coming Soon -->
   <section class="py-8 border-t border-gray-200">
-    <h2 class="text-2xl font-bold text-gray-900 mb-6">Reviews Coming Soon</h2>
+    <h2 class="text-2xl font-bold text-gray-900 mb-6">Guides Coming Soon</h2>
     <div class="flex flex-wrap gap-3">
       {comingSoon.map((item) => (
         <span class="inline-flex items-center px-4 py-2 bg-gray-100 text-gray-700 font-medium rounded-full">
@@ -123,7 +109,7 @@ const breadcrumbs = [
       ))}
     </div>
     <p class="text-gray-600 mt-4">
-      Want to know when we publish these reviews? <a href="/newsletter/" class="text-[#2563EB] hover:underline">Subscribe to our newsletter</a>.
+      Want to know when we publish these guides? <a href="/newsletter/" class="text-[#2563EB] hover:underline">Subscribe to our newsletter</a>.
     </p>
   </section>
   
@@ -131,8 +117,8 @@ const breadcrumbs = [
   <section class="py-12 border-t border-gray-200">
     <NewsletterForm 
       variant="inline"
-      title="Get Home Office Reviews First"
-      description="Be the first to know when we publish new home office product reviews."
+      title="Get Home Office Guides First"
+      description="Be the first to know when we publish new best-rated home office guides."
     />
   </section>
 </BaseLayout>

@@ -4,7 +4,6 @@ interface Props {
   description: string;
   category: string;
   slug: string;
-  testingHours: number;
   rating: number;
   badge?: string;
   image?: string;
@@ -15,7 +14,6 @@ const {
   description, 
   category, 
   slug, 
-  testingHours, 
   rating,
   badge,
   image
@@ -65,7 +63,7 @@ const {
         {category}
       </span>
       <span class="text-gray-300">•</span>
-      <span class="text-xs text-gray-500">{testingHours} hrs testing</span>
+      <span class="text-xs text-gray-500">Amazon top-rated</span>
     </div>
     
     <!-- Title -->
