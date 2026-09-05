@@ -29,13 +29,16 @@ jobs:
         run: npm run build
 
       - name: Add deploy key
+        shell: bash
         run: |
+          set -e
           mkdir -p ~/.ssh
-          # The private key is stored as a GitHub secret
-          echo "${{ secrets.HOSTINGER_SSH_KEY }}" > ~/.ssh/deploy_key
+          chmod 700 ~/.ssh
+          # The private key is stored as a GitHub secret (must end in newline)
+          printf '%s\n' "${{ secrets.HOSTINGER_SSH_KEY }}" > ~/.ssh/deploy_key
           chmod 600 ~/.ssh/deploy_key
-          # Trust the host without interactive prompt
-          ssh-keyscan -p ${{ secrets.HOSTINGER_SSH_PORT }} ${{ secrets.HOSTINGER_SSH_HOST }} >> ~/.ssh/known_hosts 2>/dev/null
+          # Trust the host without interactive prompt; ignore ssh-keyscan exit code
+          ssh-keyscan -p ${{ secrets.HOSTINGER_SSH_PORT }} ${{ secrets.HOSTINGER_SSH_HOST }} >> ~/.ssh/known_hosts 2>/dev/null || true
 
       - name: Deploy dist/ via rsync
         run: |
