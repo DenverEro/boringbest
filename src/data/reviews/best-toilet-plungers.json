@@ -28,53 +28,174 @@
     "intro": "Click column headers to sort by price, rating, or type. Prices current as of September 2026. Ratings are real Amazon customer ratings."
   },
   "products": [
-    { "name": "OXO Good Grips Toilet Plunger with Drip Tray", "price": 29.99, "rating": 4.6, "type": "Cup + Flange", "bestFor": "Best Overall", "verdict": "Highest-rated plunger here (4.6★); comfortable grip with a drip-tray holder that keeps the floor clean.", "buyLink": "https://amazon.com/dp/B07GTHXKF3?tag=boringbest-20", "buyText": "Check Price" },
-    { "name": "Clorox Toilet Plunger with Hideaway Holder", "price": 13.99, "rating": 4.5, "type": "Cup + Flange", "bestFor": "Budget Buy", "verdict": "Heavy-duty build with a compact hideaway caddy; 18,000+ reviews at about $13.", "buyLink": "https://amazon.com/dp/B00P7VW2H6?tag=boringbest-20", "buyText": "Check Price" },
-    { "name": "Korky BeehiveMAX Telescoping Plunger", "price": 15.99, "rating": 4.5, "type": "Beehive", "bestFor": "Strong Seal", "verdict": "Beehive shape seals all bowl shapes; telescoping handle folds away for storage.", "buyLink": "https://amazon.com/dp/B0851T29PF?tag=boringbest-20", "buyText": "Check Price" },
-    { "name": "MR. SIGA Toilet Plunger with Holder", "price": 27.99, "rating": 4.4, "type": "Cup + Flange", "bestFor": "Sleek Holder", "verdict": "Stylish holder set with heavy-duty plunger; modern look for a neat bathroom.", "buyLink": "https://amazon.com/dp/B07XGKZ2RC?tag=boringbest-20", "buyText": "Check Price" },
-    { "name": "FORASTO Toilet Plunger with Holder", "price": 8.99, "rating": 4.2, "type": "Cup", "bestFor": "Basic Value", "verdict": "Simple, low-priced plunger with holder; a fine light-use backup.", "buyLink": "https://amazon.com/dp/B0DPQLZPBQ?tag=boringbest-20", "buyText": "Check Price" }
+    {
+      "name": "OXO Good Grips Toilet Plunger with Drip Tray",
+      "price": 29.99,
+      "rating": 4.6,
+      "type": "Cup + Flange",
+      "bestFor": "Best Overall",
+      "verdict": "Highest-rated plunger here (4.6★); comfortable grip with a drip-tray holder that keeps the floor clean.",
+      "buyLink": "https://amazon.com/dp/B07GTHXKF3?tag=boringbest-20",
+      "buyText": "Check Price",
+      "image": "/images/best-toilet-plungers-B07GTHXKF3.jpg"
+    },
+    {
+      "name": "Clorox Toilet Plunger with Hideaway Holder",
+      "price": 13.99,
+      "rating": 4.5,
+      "type": "Cup + Flange",
+      "bestFor": "Budget Buy",
+      "verdict": "Heavy-duty build with a compact hideaway caddy; 18,000+ reviews at about $13.",
+      "buyLink": "https://amazon.com/dp/B00P7VW2H6?tag=boringbest-20",
+      "buyText": "Check Price",
+      "image": "/images/best-toilet-plungers-B00P7VW2H6.jpg"
+    },
+    {
+      "name": "Korky BeehiveMAX Telescoping Plunger",
+      "price": 15.99,
+      "rating": 4.5,
+      "type": "Beehive",
+      "bestFor": "Strong Seal",
+      "verdict": "Beehive shape seals all bowl shapes; telescoping handle folds away for storage.",
+      "buyLink": "https://amazon.com/dp/B0851T29PF?tag=boringbest-20",
+      "buyText": "Check Price",
+      "image": "/images/best-toilet-plungers-B0851T29PF.jpg"
+    },
+    {
+      "name": "MR. SIGA Toilet Plunger with Holder",
+      "price": 27.99,
+      "rating": 4.4,
+      "type": "Cup + Flange",
+      "bestFor": "Sleek Holder",
+      "verdict": "Stylish holder set with heavy-duty plunger; modern look for a neat bathroom.",
+      "buyLink": "https://amazon.com/dp/B07XGKZ2RC?tag=boringbest-20",
+      "buyText": "Check Price",
+      "image": "/images/best-toilet-plungers-B07XGKZ2RC.jpg"
+    },
+    {
+      "name": "FORASTO Toilet Plunger with Holder",
+      "price": 8.99,
+      "rating": 4.2,
+      "type": "Cup",
+      "bestFor": "Basic Value",
+      "verdict": "Simple, low-priced plunger with holder; a fine light-use backup.",
+      "buyLink": "https://amazon.com/dp/B0DPQLZPBQ?tag=boringbest-20",
+      "buyText": "Check Price",
+      "image": "/images/best-toilet-plungers-B0DPQLZPBQ.jpg"
+    }
   ],
   "picks": [
     {
-      "rank": 1, "name": "OXO Good Grips Toilet Plunger with Drip Tray", "price": 29.99, "rating": 4.6,
+      "rank": 1,
+      "name": "OXO Good Grips Toilet Plunger with Drip Tray",
+      "price": 29.99,
+      "rating": 4.6,
       "verdict": "The highest-rated plunger in this roundup, the OXO Good Grips holds a 4.6-star rating across nearly 5,000 reviews. Reviewers consistently praise its comfortable non-slip grip, effective cup-and-flange shape that seals all bowl types, and the sturdy holder plus drip tray that keeps the floor spotless. It is the premium pick, but the strong rating and practical design make it the best choice for most bathrooms.",
-      "pros": ["Highest rating here (4.6★)", "Comfortable non-slip grip", "Cup-and-flange seals all bowl types", "Holder with drip tray keeps floor clean", "Solid, durable build"],
-      "cons": ["Premium price near $30", "Larger footprint than bare plungers", "White finish shows grime"],
-      "buyLink": "https://amazon.com/dp/B07GTHXKF3?tag=boringbest-20", "buyText": "Check Price on Amazon", "badge": "Best Overall"
+      "pros": [
+        "Highest rating here (4.6★)",
+        "Comfortable non-slip grip",
+        "Cup-and-flange seals all bowl types",
+        "Holder with drip tray keeps floor clean",
+        "Solid, durable build"
+      ],
+      "cons": [
+        "Premium price near $30",
+        "Larger footprint than bare plungers",
+        "White finish shows grime"
+      ],
+      "buyLink": "https://amazon.com/dp/B07GTHXKF3?tag=boringbest-20",
+      "buyText": "Check Price on Amazon",
+      "badge": "Best Overall",
+      "image": "/images/best-toilet-plungers-B07GTHXKF3.jpg"
     },
     {
-      "rank": 2, "name": "Clorox Toilet Plunger with Hideaway Holder", "price": 13.99, "rating": 4.5,
+      "rank": 2,
+      "name": "Clorox Toilet Plunger with Hideaway Holder",
+      "price": 13.99,
+      "rating": 4.5,
       "verdict": "The best budget plunger that still handles real clogs, the Clorox Hideaway holds a 4.5-star rating across more than 18,000 reviews — the largest reviewer base in this list. The heavy-duty rubber cup delivers strong suction, and the compact hideaway caddy keeps it tucked out of sight near the toilet. At about $13 it is the value pick most households should consider first.",
-      "pros": ["Very strong 4.5★ across 18k+ reviews", "Heavy-duty rubber for real suction", "Compact hideaway caddy", "Low price under $14", "Fits tight bathroom corners"],
-      "cons": ["Caddy less decorative than premium holders", "Cup design (not beehive) slightly less powerful", "Handle not telescoping"],
-      "buyLink": "https://amazon.com/dp/B00P7VW2H6?tag=boringbest-20", "buyText": "Check Price on Amazon", "badge": "Best Budget"
+      "pros": [
+        "Very strong 4.5★ across 18k+ reviews",
+        "Heavy-duty rubber for real suction",
+        "Compact hideaway caddy",
+        "Low price under $14",
+        "Fits tight bathroom corners"
+      ],
+      "cons": [
+        "Caddy less decorative than premium holders",
+        "Cup design (not beehive) slightly less powerful",
+        "Handle not telescoping"
+      ],
+      "buyLink": "https://amazon.com/dp/B00P7VW2H6?tag=boringbest-20",
+      "buyText": "Check Price on Amazon",
+      "badge": "Best Budget",
+      "image": "/images/best-toilet-plungers-B00P7VW2H6.jpg"
     },
     {
-      "rank": 3, "name": "Korky BeehiveMAX Telescoping Plunger", "price": 15.99, "rating": 4.5,
+      "rank": 3,
+      "name": "Korky BeehiveMAX Telescoping Plunger",
+      "price": 15.99,
+      "rating": 4.5,
       "verdict": "If you deal with frequent clogs or have a modern low-flow toilet, the Korky BeehiveMAX is the top-rated beehive option at 4.5 stars. Its tapered beehive shape seals better than a flat cup in most bowl shapes, and the telescoping handle collapses so it stores compactly when not in use. At around $16 it is a strong, seal-focused pick over a basic cup plunger.",
-      "pros": ["Beehive shape seals all bowl types", "Telescoping handle for compact storage", "Strong 4.5-star rating across 6k reviews", "Made in USA"],
-      "cons": ["Beehive shape takes getting used to", "No holder/caddy included", "Handle slightly shorter when collapsed"],
-      "buyLink": "https://amazon.com/dp/B0851T29PF?tag=boringbest-20", "buyText": "Check Price on Amazon", "badge": "Best Seal"
+      "pros": [
+        "Beehive shape seals all bowl types",
+        "Telescoping handle for compact storage",
+        "Strong 4.5-star rating across 6k reviews",
+        "Made in USA"
+      ],
+      "cons": [
+        "Beehive shape takes getting used to",
+        "No holder/caddy included",
+        "Handle slightly shorter when collapsed"
+      ],
+      "buyLink": "https://amazon.com/dp/B0851T29PF?tag=boringbest-20",
+      "buyText": "Check Price on Amazon",
+      "badge": "Best Seal",
+      "image": "/images/best-toilet-plungers-B0851T29PF.jpg"
     }
   ],
   "guide": {
     "heading": "Toilet Plunger Buying Guide",
     "blocks": [
-      { "type": "h3", "text": "Types of Toilet Plungers" },
-      { "type": "grid", "grid": [
-        { "h4": "Beehive Plungers", "p": "Best for most situations. The tapered shape creates a seal in any toilet type and delivers maximum suction power. Consistently the highest-rated type." },
-        { "h4": "Cup Plungers", "p": "The classic design. Works well in standard toilets but may struggle with low-flow models." },
-        { "h4": "Accordion Plungers", "p": "Maximum force for tough clogs. Can damage older toilets if used too aggressively." },
-        { "h4": "Push Plungers", "p": "Modern designs for maintenance and prevention. Less effective on existing clogs." }
-      ] },
-      { "type": "h3", "text": "What to Look For" },
-      { "type": "list", "items": [
-        "<strong>Rubber quality:</strong> Look for thick, flexible rubber that won't crack or lose shape.",
-        "<strong>Handle length:</strong> 15-20 inches is ideal for most people. Too short strains your back; too long reduces control.",
-        "<strong>Seal quality:</strong> The plunger should create suction with minimal effort.",
-        "<strong>Ease of cleaning:</strong> Smooth surfaces clean easier than textured ones.",
-        "<strong>Storage:</strong> Consider where you'll store it—some come with holders or caddies."
-      ] }
+      {
+        "type": "h3",
+        "text": "Types of Toilet Plungers"
+      },
+      {
+        "type": "grid",
+        "grid": [
+          {
+            "h4": "Beehive Plungers",
+            "p": "Best for most situations. The tapered shape creates a seal in any toilet type and delivers maximum suction power. Consistently the highest-rated type."
+          },
+          {
+            "h4": "Cup Plungers",
+            "p": "The classic design. Works well in standard toilets but may struggle with low-flow models."
+          },
+          {
+            "h4": "Accordion Plungers",
+            "p": "Maximum force for tough clogs. Can damage older toilets if used too aggressively."
+          },
+          {
+            "h4": "Push Plungers",
+            "p": "Modern designs for maintenance and prevention. Less effective on existing clogs."
+          }
+        ]
+      },
+      {
+        "type": "h3",
+        "text": "What to Look For"
+      },
+      {
+        "type": "list",
+        "items": [
+          "<strong>Rubber quality:</strong> Look for thick, flexible rubber that won't crack or lose shape.",
+          "<strong>Handle length:</strong> 15-20 inches is ideal for most people. Too short strains your back; too long reduces control.",
+          "<strong>Seal quality:</strong> The plunger should create suction with minimal effort.",
+          "<strong>Ease of cleaning:</strong> Smooth surfaces clean easier than textured ones.",
+          "<strong>Storage:</strong> Consider where you'll store it—some come with holders or caddies."
+        ]
+      }
     ]
   },
   "care": {
@@ -89,11 +210,29 @@
     ]
   },
   "faqs": [
-    { "q": "What type of toilet plunger works best?", "a": "For most clogs, a beehive-style plunger works best because it creates a superior seal in modern toilets. The unique shape fits both old and new toilet designs better than traditional cup plungers. Buyers consistently give higher ratings to beehive designs for this reason." },
-    { "q": "How do I use a toilet plunger correctly?", "a": "First, ensure there is enough water in the bowl to cover the rubber part of the plunger. Place the plunger over the drain opening and push down gently to create a seal. Then pull up sharply without breaking the seal. Repeat 5-10 times, then flush to test." },
-    { "q": "How long should a toilet plunger last?", "a": "A quality toilet plunger should last 5-10 years with proper care. Store it in a dry place, clean it after each use, and replace it if the rubber becomes cracked or loses flexibility." },
-    { "q": "Are expensive toilet plungers worth it?", "a": "Across thousands of buyer reviews, mid-range plungers ($15-25) are consistently rated as good as — or better than — premium models. The key factors buyers highlight are rubber quality and plunger design, not price. High-end picks like the OXO earn their cost with a better holder and drip tray, not necessarily more suction." },
-    { "q": "What is the difference between a toilet plunger and a sink plunger?", "a": "Toilet plungers have a flange (extra rubber piece) that extends into the toilet drain for a better seal. Sink plungers are flat cup-style without a flange. Never use a toilet plunger in a sink or vice versa for hygiene reasons." }
+    {
+      "q": "What type of toilet plunger works best?",
+      "a": "For most clogs, a beehive-style plunger works best because it creates a superior seal in modern toilets. The unique shape fits both old and new toilet designs better than traditional cup plungers. Buyers consistently give higher ratings to beehive designs for this reason."
+    },
+    {
+      "q": "How do I use a toilet plunger correctly?",
+      "a": "First, ensure there is enough water in the bowl to cover the rubber part of the plunger. Place the plunger over the drain opening and push down gently to create a seal. Then pull up sharply without breaking the seal. Repeat 5-10 times, then flush to test."
+    },
+    {
+      "q": "How long should a toilet plunger last?",
+      "a": "A quality toilet plunger should last 5-10 years with proper care. Store it in a dry place, clean it after each use, and replace it if the rubber becomes cracked or loses flexibility."
+    },
+    {
+      "q": "Are expensive toilet plungers worth it?",
+      "a": "Across thousands of buyer reviews, mid-range plungers ($15-25) are consistently rated as good as — or better than — premium models. The key factors buyers highlight are rubber quality and plunger design, not price. High-end picks like the OXO earn their cost with a better holder and drip tray, not necessarily more suction."
+    },
+    {
+      "q": "What is the difference between a toilet plunger and a sink plunger?",
+      "a": "Toilet plungers have a flange (extra rubber piece) that extends into the toilet drain for a better seal. Sink plungers are flat cup-style without a flange. Never use a toilet plunger in a sink or vice versa for hygiene reasons."
+    }
   ],
-  "newsletter": { "title": "Want More Guides Like This?", "description": "Get weekly best-rated buying guides for everyday essentials delivered to your inbox." }
+  "newsletter": {
+    "title": "Want More Guides Like This?",
+    "description": "Get weekly best-rated buying guides for everyday essentials delivered to your inbox."
+  }
 }

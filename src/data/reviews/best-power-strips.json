@@ -28,61 +28,242 @@
     "intro": "Click column headers to sort by price, rating, or type. Prices current as of September 2026. Ratings are real Amazon customer ratings."
   },
   "products": [
-    { "name": "SUPERDANNY Power Strip, 22 AC Outlets + 6 USB, 2100J", "price": 21.99, "rating": 4.8, "type": "High-Capacity", "bestFor": "Maximum Outlets", "verdict": "22 grounded outlets plus 6 USB ports at 4.8 stars — the most capacity for the money.", "buyLink": "https://amazon.com/dp/B08Z2ZKVXX?tag=boringbest-20", "buyText": "Check Price" },
-    { "name": "Anker Power Strip, 12 AC + 20W USB-C, 2100J", "price": 28.99, "rating": 4.8, "type": "Surge + USB-C", "bestFor": "Premium Home Office", "verdict": "Reliable Anker build with 2100J protection, 12 outlets, and fast USB-C charging.", "buyLink": "https://amazon.com/dp/B09SG2Q23M?tag=boringbest-20", "buyText": "Check Price" },
-    { "name": "Anker Power Strip, 8 AC + 20W USB-C, 2000J", "price": 27.99, "rating": 4.8, "type": "Surge + USB-C", "bestFor": "Compact Premium", "verdict": "Compact Anker with 8 outlets, 2000J surge protection, and USB-C at a fair price.", "buyLink": "https://amazon.com/dp/B0DXPRK65X?tag=boringbest-20", "buyText": "Check Price" },
-    { "name": "HANYCONY Surge Protector, 1080J, Braided 5ft", "price": 11.99, "rating": 4.8, "type": "Budget + Braided", "bestFor": "Budget Surge", "verdict": "Top-rated budget strip with braided cord, surge protection, and a low price.", "buyLink": "https://amazon.com/dp/B092J8LPWR?tag=boringbest-20", "buyText": "Check Price" },
-    { "name": "TESSAN Surge Protector, 900J, 10ft", "price": 25.99, "rating": 4.8, "type": "Long Cord", "bestFor": "Reach + Surge", "verdict": "10-foot cord with surge protection and a flat plug for tight spaces.", "buyLink": "https://amazon.com/dp/B0BYD63H34?tag=boringbest-20", "buyText": "Check Price" },
-    { "name": "Nuetsa Flat Plug Power Strip, 8 Outlets", "price": 13.99, "rating": 4.7, "type": "Flat Plug", "bestFor": "Space Saving", "verdict": "Flat plug plus 8 outlets and a long cord at a low price — great for cramped setups.", "buyLink": "https://amazon.com/dp/B09F2XPJ47?tag=boringbest-20", "buyText": "Check Price" },
-    { "name": "Yintar 6ft Power Strip, 6 Outlets + 3 USB", "price": 12.99, "rating": 4.7, "type": "Desktop", "bestFor": "Desk Setup", "verdict": "6 outlets and 3 USB ports with a 6-foot cord — a solid every-day desk strip.", "buyLink": "https://amazon.com/dp/B08MTBCXWX?tag=boringbest-20", "buyText": "Check Price" },
-    { "name": "LeZone Surge Protector, 4800J, 10ft", "price": 18.99, "rating": 4.7, "type": "High-Joule", "bestFor": "Whole-Room Surge", "verdict": "4800J surge protection and a 10-foot flat-plug cord for whole-room coverage.", "buyLink": "https://amazon.com/dp/B0CN6V6M5F?tag=boringbest-20", "buyText": "Check Price" },
-    { "name": "Olcorife Flat Plug Power Strip, 6 Outlets + 3 USB", "price": 9.99, "rating": 4.7, "type": "Flat Plug", "bestFor": "Budget Value", "verdict": "Flat plug, 6 outlets, 3 USB ports, and a 5-foot cord at a bargain price.", "buyLink": "https://amazon.com/dp/B0BJ1SWDNB?tag=boringbest-20", "buyText": "Check Price" },
-    { "name": "YISHU Surge Protector, 8 Outlets + 4 USB", "price": 9.99, "rating": 4.6, "type": "Budget + USB", "bestFor": "Lots of Ports Cheap", "verdict": "8 outlets plus 4 USB ports at a rock-bottom price; 6-foot cord.", "buyLink": "https://amazon.com/dp/B09PDLBFKY?tag=boringbest-20", "buyText": "Check Price" },
-    { "name": "CHCORE Surge Protector, Braided 5ft, 8 Outlets", "price": 9.99, "rating": 4.6, "type": "Budget + Braided", "bestFor": "Braided Budget", "verdict": "Braided extension cord with 8 outlets and surge protection at a great price.", "buyLink": "https://amazon.com/dp/B0DC6GXZSV?tag=boringbest-20", "buyText": "Check Price" }
+    {
+      "name": "SUPERDANNY Power Strip, 22 AC Outlets + 6 USB, 2100J",
+      "price": 21.99,
+      "rating": 4.8,
+      "type": "High-Capacity",
+      "bestFor": "Maximum Outlets",
+      "verdict": "22 grounded outlets plus 6 USB ports at 4.8 stars — the most capacity for the money.",
+      "buyLink": "https://amazon.com/dp/B08Z2ZKVXX?tag=boringbest-20",
+      "buyText": "Check Price",
+      "image": "/images/best-power-strips-B08Z2ZKVXX.jpg"
+    },
+    {
+      "name": "Anker Power Strip, 12 AC + 20W USB-C, 2100J",
+      "price": 28.99,
+      "rating": 4.8,
+      "type": "Surge + USB-C",
+      "bestFor": "Premium Home Office",
+      "verdict": "Reliable Anker build with 2100J protection, 12 outlets, and fast USB-C charging.",
+      "buyLink": "https://amazon.com/dp/B09SG2Q23M?tag=boringbest-20",
+      "buyText": "Check Price",
+      "image": "/images/best-power-strips-B09SG2Q23M.jpg"
+    },
+    {
+      "name": "Anker Power Strip, 8 AC + 20W USB-C, 2000J",
+      "price": 27.99,
+      "rating": 4.8,
+      "type": "Surge + USB-C",
+      "bestFor": "Compact Premium",
+      "verdict": "Compact Anker with 8 outlets, 2000J surge protection, and USB-C at a fair price.",
+      "buyLink": "https://amazon.com/dp/B0DXPRK65X?tag=boringbest-20",
+      "buyText": "Check Price",
+      "image": "/images/best-power-strips-B0DXPRK65X.jpg"
+    },
+    {
+      "name": "HANYCONY Surge Protector, 1080J, Braided 5ft",
+      "price": 11.99,
+      "rating": 4.8,
+      "type": "Budget + Braided",
+      "bestFor": "Budget Surge",
+      "verdict": "Top-rated budget strip with braided cord, surge protection, and a low price.",
+      "buyLink": "https://amazon.com/dp/B092J8LPWR?tag=boringbest-20",
+      "buyText": "Check Price",
+      "image": "/images/best-power-strips-B092J8LPWR.jpg"
+    },
+    {
+      "name": "TESSAN Surge Protector, 900J, 10ft",
+      "price": 25.99,
+      "rating": 4.8,
+      "type": "Long Cord",
+      "bestFor": "Reach + Surge",
+      "verdict": "10-foot cord with surge protection and a flat plug for tight spaces.",
+      "buyLink": "https://amazon.com/dp/B0BYD63H34?tag=boringbest-20",
+      "buyText": "Check Price",
+      "image": "/images/best-power-strips-B0BYD63H34.jpg"
+    },
+    {
+      "name": "Nuetsa Flat Plug Power Strip, 8 Outlets",
+      "price": 13.99,
+      "rating": 4.7,
+      "type": "Flat Plug",
+      "bestFor": "Space Saving",
+      "verdict": "Flat plug plus 8 outlets and a long cord at a low price — great for cramped setups.",
+      "buyLink": "https://amazon.com/dp/B09F2XPJ47?tag=boringbest-20",
+      "buyText": "Check Price",
+      "image": "/images/best-power-strips-B09F2XPJ47.jpg"
+    },
+    {
+      "name": "Yintar 6ft Power Strip, 6 Outlets + 3 USB",
+      "price": 12.99,
+      "rating": 4.7,
+      "type": "Desktop",
+      "bestFor": "Desk Setup",
+      "verdict": "6 outlets and 3 USB ports with a 6-foot cord — a solid every-day desk strip.",
+      "buyLink": "https://amazon.com/dp/B08MTBCXWX?tag=boringbest-20",
+      "buyText": "Check Price",
+      "image": "/images/best-power-strips-B08MTBCXWX.jpg"
+    },
+    {
+      "name": "LeZone Surge Protector, 4800J, 10ft",
+      "price": 18.99,
+      "rating": 4.7,
+      "type": "High-Joule",
+      "bestFor": "Whole-Room Surge",
+      "verdict": "4800J surge protection and a 10-foot flat-plug cord for whole-room coverage.",
+      "buyLink": "https://amazon.com/dp/B0CN6V6M5F?tag=boringbest-20",
+      "buyText": "Check Price",
+      "image": "/images/best-power-strips-B0CN6V6M5F.jpg"
+    },
+    {
+      "name": "Olcorife Flat Plug Power Strip, 6 Outlets + 3 USB",
+      "price": 9.99,
+      "rating": 4.7,
+      "type": "Flat Plug",
+      "bestFor": "Budget Value",
+      "verdict": "Flat plug, 6 outlets, 3 USB ports, and a 5-foot cord at a bargain price.",
+      "buyLink": "https://amazon.com/dp/B0BJ1SWDNB?tag=boringbest-20",
+      "buyText": "Check Price",
+      "image": "/images/best-power-strips-B0BJ1SWDNB.jpg"
+    },
+    {
+      "name": "YISHU Surge Protector, 8 Outlets + 4 USB",
+      "price": 9.99,
+      "rating": 4.6,
+      "type": "Budget + USB",
+      "bestFor": "Lots of Ports Cheap",
+      "verdict": "8 outlets plus 4 USB ports at a rock-bottom price; 6-foot cord.",
+      "buyLink": "https://amazon.com/dp/B09PDLBFKY?tag=boringbest-20",
+      "buyText": "Check Price",
+      "image": "/images/best-power-strips-B09PDLBFKY.jpg"
+    },
+    {
+      "name": "CHCORE Surge Protector, Braided 5ft, 8 Outlets",
+      "price": 9.99,
+      "rating": 4.6,
+      "type": "Budget + Braided",
+      "bestFor": "Braided Budget",
+      "verdict": "Braided extension cord with 8 outlets and surge protection at a great price.",
+      "buyLink": "https://amazon.com/dp/B0DC6GXZSV?tag=boringbest-20",
+      "buyText": "Check Price",
+      "image": "/images/best-power-strips-B0DC6GXZSV.jpg"
+    }
   ],
   "picks": [
     {
-      "rank": 1, "name": "SUPERDANNY Power Strip, 22 AC Outlets + 6 USB", "price": 21.99, "rating": 4.8,
-      "verdict": "The most capacity per dollar in this roundup, the SUPERDANNY strip offers 22 grounded AC outlets plus 6 USB ports (4 USB-A, 2 USB-C) and 2100J surge protection, all at a 4.8-star rating and about $21. Reviewers consistently praise how many devices it handles from one wall outlet — ideal for a media center or workbench. The tradeoff is a higher footprint and fewer premium features than the Anker."
-      ,
-      "pros": ["22 AC outlets — massive capacity", "6 USB ports (2x USB-C)", "2100J surge protection", "High 4.8-star rating", "Low price for the capacity"],
-      "cons": ["Large footprint takes desk/floor space", "Not a premium-brand build", "Bigger with 6.5-ft cord"],
-      "buyLink": "https://amazon.com/dp/B08Z2ZKVXX?tag=boringbest-20", "buyText": "Check Price on Amazon", "badge": "Best Overall"
+      "rank": 1,
+      "name": "SUPERDANNY Power Strip, 22 AC Outlets + 6 USB",
+      "price": 21.99,
+      "rating": 4.8,
+      "verdict": "The most capacity per dollar in this roundup, the SUPERDANNY strip offers 22 grounded AC outlets plus 6 USB ports (4 USB-A, 2 USB-C) and 2100J surge protection, all at a 4.8-star rating and about $21. Reviewers consistently praise how many devices it handles from one wall outlet — ideal for a media center or workbench. The tradeoff is a higher footprint and fewer premium features than the Anker.",
+      "pros": [
+        "22 AC outlets — massive capacity",
+        "6 USB ports (2x USB-C)",
+        "2100J surge protection",
+        "High 4.8-star rating",
+        "Low price for the capacity"
+      ],
+      "cons": [
+        "Large footprint takes desk/floor space",
+        "Not a premium-brand build",
+        "Bigger with 6.5-ft cord"
+      ],
+      "buyLink": "https://amazon.com/dp/B08Z2ZKVXX?tag=boringbest-20",
+      "buyText": "Check Price on Amazon",
+      "badge": "Best Overall",
+      "image": "/images/best-power-strips-B08Z2ZKVXX.jpg"
     },
     {
-      "rank": 2, "name": "Anker Power Strip, 12 AC + 20W USB-C, 2100J", "price": 28.99, "rating": 4.8,
+      "rank": 2,
+      "name": "Anker Power Strip, 12 AC + 20W USB-C, 2100J",
+      "price": 28.99,
+      "rating": 4.8,
       "verdict": "If you want a premium, reliable strip for a home office, the Anker 12-outlet model is the most-loved higher-end pick at a 4.8-star rating. It delivers 2100J surge protection, 12 outlets, and a 20W USB-C port that actually fast-charges — Anker is a brand reviewers consistently trust for build quality. At about $29 it costs more than budget strips, but it is a buy-once, long-lived option.",
-      "pros": ["Trusted Anker build quality", "2100J surge protection", "12 AC outlets", "20W USB-C fast charging", "4.8-star rating"],
-      "cons": ["Higher price than budget strips", "12 outlets is less than the 22-outlet pick", "No braided cord"],
-      "buyLink": "https://amazon.com/dp/B09SG2Q23M?tag=boringbest-20", "buyText": "Check Price on Amazon", "badge": "Best Premium"
+      "pros": [
+        "Trusted Anker build quality",
+        "2100J surge protection",
+        "12 AC outlets",
+        "20W USB-C fast charging",
+        "4.8-star rating"
+      ],
+      "cons": [
+        "Higher price than budget strips",
+        "12 outlets is less than the 22-outlet pick",
+        "No braided cord"
+      ],
+      "buyLink": "https://amazon.com/dp/B09SG2Q23M?tag=boringbest-20",
+      "buyText": "Check Price on Amazon",
+      "badge": "Best Premium",
+      "image": "/images/best-power-strips-B09SG2Q23M.jpg"
     },
     {
-      "rank": 3, "name": "HANYCONY Surge Protector, 1080J Braided", "price": 11.99, "rating": 4.8,
+      "rank": 3,
+      "name": "HANYCONY Surge Protector, 1080J Braided",
+      "price": 11.99,
+      "rating": 4.8,
       "verdict": "For a compact, reliable surge protector on a budget, the HANYCONY is a top-rated bargain at a 4.8-star rating and about $12. The braided 5-foot cord is flexible and durable, and it carries 1080J surge protection with multiple outlets and USB ports. Reviewers like it for desks and bedside setups where you want protection without spending much. It has fewer outlets than the big-capacity picks, so it suits lighter use.",
-      "pros": ["Low price under $12", "High 4.8-star rating", "Braided, durable cord", "Surge protection + USB ports", "Compact for desks and nightstands"],
-      "cons": ["Fewer outlets than high-capacity strips", "Lower 1080J surge rating", "No USB-C port"],
-      "buyLink": "https://amazon.com/dp/B092J8LPWR?tag=boringbest-20", "buyText": "Check Price on Amazon", "badge": "Best Budget"
+      "pros": [
+        "Low price under $12",
+        "High 4.8-star rating",
+        "Braided, durable cord",
+        "Surge protection + USB ports",
+        "Compact for desks and nightstands"
+      ],
+      "cons": [
+        "Fewer outlets than high-capacity strips",
+        "Lower 1080J surge rating",
+        "No USB-C port"
+      ],
+      "buyLink": "https://amazon.com/dp/B092J8LPWR?tag=boringbest-20",
+      "buyText": "Check Price on Amazon",
+      "badge": "Best Budget",
+      "image": "/images/best-power-strips-B092J8LPWR.jpg"
     }
   ],
   "guide": {
     "heading": "Power Strip Buying Guide",
     "blocks": [
-      { "type": "h3", "text": "Types of Power Strips" },
-      { "type": "grid", "grid": [
-        { "h4": "Basic Power Strips", "p": "Just extra outlets, sometimes with a switch. Cheapest, but they offer no surge protection. Fine for low-value devices, but avoid for expensive electronics." },
-        { "h4": "Surge Protector Strips", "p": "Add surge protection that absorbs voltage spikes from the wall. Essential for protecting TVs, computers, and other expensive electronics. Look for a joule rating (higher = better)." },
-        { "h4": "Strips with USB Ports", "p": "Include USB-A and/or USB-C charging ports so you can charge phones and tablets without a wall adapter. Convenient for desks and nightstands." },
-        { "h4": "Flat-Plug / Right-Angle Strips", "p": "The plug lays flat or turns sideways so it doesn't block the other outlet or stick out from the wall. Great for tight spaces behind furniture." }
-      ] },
-      { "type": "h3", "text": "What to Look For" },
-      { "type": "list", "items": [
-        "<strong>Surge protection:</strong> Look for a joule rating — 1000J is decent, 2000J+ is good for expensive electronics. Without surge protection, a strip is just extra outlets.",
-        "<strong>Outlet count:</strong> Count what you actually plug in. A desk might need just 6 outlets; a media center or workbench might want 12-22.",
-        "<strong>USB ports:</strong> USB-C is faster for modern phones and laptops. If you need USB at all, prefer a model with at least one USB-C port.",
-        "<strong>Flat plug vs straight plug:</strong> If the strip goes behind furniture, a flat plug stops it from crowding the wall outlet.",
-        "<strong>Cord length and type:</strong> Braided cords resist wear and are more flexible. Longer cords reach farther but remember: don't chain strips together.",
-        "<strong>Rating density:</strong> A high star rating across many thousands of reviews is a stronger signal than a high rating on a handful."
-      ] }
+      {
+        "type": "h3",
+        "text": "Types of Power Strips"
+      },
+      {
+        "type": "grid",
+        "grid": [
+          {
+            "h4": "Basic Power Strips",
+            "p": "Just extra outlets, sometimes with a switch. Cheapest, but they offer no surge protection. Fine for low-value devices, but avoid for expensive electronics."
+          },
+          {
+            "h4": "Surge Protector Strips",
+            "p": "Add surge protection that absorbs voltage spikes from the wall. Essential for protecting TVs, computers, and other expensive electronics. Look for a joule rating (higher = better)."
+          },
+          {
+            "h4": "Strips with USB Ports",
+            "p": "Include USB-A and/or USB-C charging ports so you can charge phones and tablets without a wall adapter. Convenient for desks and nightstands."
+          },
+          {
+            "h4": "Flat-Plug / Right-Angle Strips",
+            "p": "The plug lays flat or turns sideways so it doesn't block the other outlet or stick out from the wall. Great for tight spaces behind furniture."
+          }
+        ]
+      },
+      {
+        "type": "h3",
+        "text": "What to Look For"
+      },
+      {
+        "type": "list",
+        "items": [
+          "<strong>Surge protection:</strong> Look for a joule rating — 1000J is decent, 2000J+ is good for expensive electronics. Without surge protection, a strip is just extra outlets.",
+          "<strong>Outlet count:</strong> Count what you actually plug in. A desk might need just 6 outlets; a media center or workbench might want 12-22.",
+          "<strong>USB ports:</strong> USB-C is faster for modern phones and laptops. If you need USB at all, prefer a model with at least one USB-C port.",
+          "<strong>Flat plug vs straight plug:</strong> If the strip goes behind furniture, a flat plug stops it from crowding the wall outlet.",
+          "<strong>Cord length and type:</strong> Braided cords resist wear and are more flexible. Longer cords reach farther but remember: don't chain strips together.",
+          "<strong>Rating density:</strong> A high star rating across many thousands of reviews is a stronger signal than a high rating on a handful."
+        ]
+      }
     ]
   },
   "care": {
@@ -98,11 +279,29 @@
     ]
   },
   "faqs": [
-    { "q": "What is the difference between a power strip and a surge protector?", "a": "A basic power strip just adds outlets — it has no surge protection. A surge protector absorbs voltage spikes from the wall to protect attached electronics. If you're plugging in anything expensive (TV, computer), use a surge protector. The protection level is measured in joules; higher is better." },
-    { "q": "How many outlets do I need on a power strip?", "a": "Count what you actually plug in and add a little headroom. A desk typically needs 6-8 outlets; a TV stand or media center often wants 10-20. High-capacity strips like the SUPERDANNY (22 outlets) are for when you're consolidating a lot of devices around one spot." },
-    { "q": "What does a surge protector's joule rating mean?", "a": "Joules measure how much energy a surge protector can absorb before it fails. A 1000J rating protects against small everyday surges; 2000J+ offers better protection for expensive electronics. After a large surge the protector can be spent, often signaled by a status light going off." },
-    { "q": "Is it safe to plug a power strip into another power strip?", "a": "No. Connecting strips together (daisy-chaining) can overload the circuit and cause overheating or fire. If you need more reach, use one longer, properly rated cord. If you need more outlets, use one higher-capacity strip." },
-    { "q": "Should I get a power strip with USB ports?", "a": "USB ports are convenient for a desk or nightstand because they charge phones, tablets, and earbuds without a separate wall adapter. Prefer a model with USB-C for faster charging of modern devices. Just note USB ports don't add surge protection on strip models without a separate rating." }
+    {
+      "q": "What is the difference between a power strip and a surge protector?",
+      "a": "A basic power strip just adds outlets — it has no surge protection. A surge protector absorbs voltage spikes from the wall to protect attached electronics. If you're plugging in anything expensive (TV, computer), use a surge protector. The protection level is measured in joules; higher is better."
+    },
+    {
+      "q": "How many outlets do I need on a power strip?",
+      "a": "Count what you actually plug in and add a little headroom. A desk typically needs 6-8 outlets; a TV stand or media center often wants 10-20. High-capacity strips like the SUPERDANNY (22 outlets) are for when you're consolidating a lot of devices around one spot."
+    },
+    {
+      "q": "What does a surge protector's joule rating mean?",
+      "a": "Joules measure how much energy a surge protector can absorb before it fails. A 1000J rating protects against small everyday surges; 2000J+ offers better protection for expensive electronics. After a large surge the protector can be spent, often signaled by a status light going off."
+    },
+    {
+      "q": "Is it safe to plug a power strip into another power strip?",
+      "a": "No. Connecting strips together (daisy-chaining) can overload the circuit and cause overheating or fire. If you need more reach, use one longer, properly rated cord. If you need more outlets, use one higher-capacity strip."
+    },
+    {
+      "q": "Should I get a power strip with USB ports?",
+      "a": "USB ports are convenient for a desk or nightstand because they charge phones, tablets, and earbuds without a separate wall adapter. Prefer a model with USB-C for faster charging of modern devices. Just note USB ports don't add surge protection on strip models without a separate rating."
+    }
   ],
-  "newsletter": { "title": "Want More Home Office Guides?", "description": "Get weekly best-rated buying guides for everyday essentials delivered to your inbox." }
+  "newsletter": {
+    "title": "Want More Home Office Guides?",
+    "description": "Get weekly best-rated buying guides for everyday essentials delivered to your inbox."
+  }
 }

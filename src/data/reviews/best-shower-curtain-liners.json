@@ -28,53 +28,173 @@
     "intro": "Click column headers to sort by price, rating, or type. Prices current as of September 2026. Ratings are real Amazon customer ratings."
   },
   "products": [
-    { "name": "LiBa 8G PEVA Waterproof Shower Curtain Liner (72x72)", "price": 9.0, "rating": 4.6, "type": "PEVA", "bestFor": "Most Popular", "verdict": "Thick 8-gauge PEVA liner holding a 4.6 rating across 147k+ reviews; top choice for most households.", "buyLink": "https://amazon.com/dp/B00LS9UD2M?tag=boringbest-20", "buyText": "Check Price" },
-    { "name": "Barossa Design Heavy Duty Liner with 6 Magnets", "price": 9.0, "rating": 4.5, "type": "PEVA", "bestFor": "Heavy Duty", "verdict": "Heavy-duty clear liner with 6 strong magnets to hold it tight; high review count.", "buyLink": "https://amazon.com/dp/B082YLQ8RN?tag=boringbest-20", "buyText": "Check Price" },
-    { "name": "Barossa Design White Shower Curtain Liner, Standard", "price": 8.0, "rating": 4.5, "type": "PEVA", "bestFor": "Clean White Look", "verdict": "Classic white liner with a soft finish; standard size fits most tubs.", "buyLink": "https://amazon.com/dp/B0B7MHFBFK?tag=boringbest-20", "buyText": "Check Price" },
-    { "name": "ALYVIA SPRING Waterproof Fabric Shower Liner (White, 72x72)", "price": 9.0, "rating": 4.5, "type": "Fabric", "bestFor": "Fabric Feel", "verdict": "Waterproof fabric liner that feels nicer than plastic; the top premium-feel option.", "buyLink": "https://amazon.com/dp/B08BZFRQLS?tag=boringbest-20", "buyText": "Check Price" },
-    { "name": "AmazerBath Lightweight Plastic Liner (72x72)", "price": 7.0, "rating": 4.4, "type": "PEVA", "bestFor": "Budget", "verdict": "Lightweight, low-priced plastic liner; a solid budget pick for guest baths.", "buyLink": "https://amazon.com/dp/B0BY8X9KF4?tag=boringbest-20", "buyText": "Check Price" }
+    {
+      "name": "LiBa 8G PEVA Waterproof Shower Curtain Liner (72x72)",
+      "price": 9.0,
+      "rating": 4.6,
+      "type": "PEVA",
+      "bestFor": "Most Popular",
+      "verdict": "Thick 8-gauge PEVA liner holding a 4.6 rating across 147k+ reviews; top choice for most households.",
+      "buyLink": "https://amazon.com/dp/B00LS9UD2M?tag=boringbest-20",
+      "buyText": "Check Price",
+      "image": "/images/best-shower-curtain-liners-B00LS9UD2M.jpg"
+    },
+    {
+      "name": "Barossa Design Heavy Duty Liner with 6 Magnets",
+      "price": 9.0,
+      "rating": 4.5,
+      "type": "PEVA",
+      "bestFor": "Heavy Duty",
+      "verdict": "Heavy-duty clear liner with 6 strong magnets to hold it tight; high review count.",
+      "buyLink": "https://amazon.com/dp/B082YLQ8RN?tag=boringbest-20",
+      "buyText": "Check Price",
+      "image": "/images/best-shower-curtain-liners-B082YLQ8RN.jpg"
+    },
+    {
+      "name": "Barossa Design White Shower Curtain Liner, Standard",
+      "price": 8.0,
+      "rating": 4.5,
+      "type": "PEVA",
+      "bestFor": "Clean White Look",
+      "verdict": "Classic white liner with a soft finish; standard size fits most tubs.",
+      "buyLink": "https://amazon.com/dp/B0B7MHFBFK?tag=boringbest-20",
+      "buyText": "Check Price",
+      "image": "/images/best-shower-curtain-liners-B0B7MHFBFK.jpg"
+    },
+    {
+      "name": "ALYVIA SPRING Waterproof Fabric Shower Liner (White, 72x72)",
+      "price": 9.0,
+      "rating": 4.5,
+      "type": "Fabric",
+      "bestFor": "Fabric Feel",
+      "verdict": "Waterproof fabric liner that feels nicer than plastic; the top premium-feel option.",
+      "buyLink": "https://amazon.com/dp/B08BZFRQLS?tag=boringbest-20",
+      "buyText": "Check Price",
+      "image": "/images/best-shower-curtain-liners-B08BZFRQLS.jpg"
+    },
+    {
+      "name": "AmazerBath Lightweight Plastic Liner (72x72)",
+      "price": 7.0,
+      "rating": 4.4,
+      "type": "PEVA",
+      "bestFor": "Budget",
+      "verdict": "Lightweight, low-priced plastic liner; a solid budget pick for guest baths.",
+      "buyLink": "https://amazon.com/dp/B0BY8X9KF4?tag=boringbest-20",
+      "buyText": "Check Price",
+      "image": "/images/best-shower-curtain-liners-B0BY8X9KF4.jpg"
+    }
   ],
   "picks": [
     {
-      "rank": 1, "name": "LiBa 8G PEVA Waterproof Shower Curtain Liner", "price": 9.0, "rating": 4.6,
+      "rank": 1,
+      "name": "LiBa 8G PEVA Waterproof Shower Curtain Liner",
+      "price": 9.0,
+      "rating": 4.6,
       "verdict": "The LiBa 8G PEVA liner is the clear best-rated pick here, holding a 4.6-star Amazon rating across more than 147,000 reviews. Buyers consistently report its thick 8-gauge PEVA material resists mold and tearing far longer than thin 3-5 gauge liners, and the clear finish stays water-tight. Nearly 148k reviews makes it the most-buyer-verified option in this list — a strong signal of real-world durability. At around $9, it is excellent value.",
-      "pros": ["Highest rating (4.6★) across 147k+ reviews", "Thick 8-gauge PEVA resists mold and tears", "Clear, waterproof finish", "Non-toxic, PVC-free material", "Proven by a huge reviewer base"],
-      "cons": ["Not machine washable (wipe-clean PEVA)", "Clear finish can show soap scum", "Standard 72x72 only"],
-      "buyLink": "https://amazon.com/dp/B00LS9UD2M?tag=boringbest-20", "buyText": "Check Price on Amazon", "badge": "Best Overall"
+      "pros": [
+        "Highest rating (4.6★) across 147k+ reviews",
+        "Thick 8-gauge PEVA resists mold and tears",
+        "Clear, waterproof finish",
+        "Non-toxic, PVC-free material",
+        "Proven by a huge reviewer base"
+      ],
+      "cons": [
+        "Not machine washable (wipe-clean PEVA)",
+        "Clear finish can show soap scum",
+        "Standard 72x72 only"
+      ],
+      "buyLink": "https://amazon.com/dp/B00LS9UD2M?tag=boringbest-20",
+      "buyText": "Check Price on Amazon",
+      "badge": "Best Overall",
+      "image": "/images/best-shower-curtain-liners-B00LS9UD2M.jpg"
     },
     {
-      "rank": 2, "name": "Barossa Design Heavy Duty Liner with 6 Magnets", "price": 9.0, "rating": 4.5,
+      "rank": 2,
+      "name": "Barossa Design Heavy Duty Liner with 6 Magnets",
+      "price": 9.0,
+      "rating": 4.5,
       "verdict": "For a liner that stays put, the Barossa Design heavy-duty clear liner holds a 4.5-star rating across over 100,000 reviews. Its 6 bottom magnets grip the tub firmly so the liner does not billow inward while you shower, and the heavier material resists tearing over time. At around $9 with a huge buyer base, it is the top pick for anyone annoyed by liners blowing around.",
-      "pros": ["6 strong bottom magnets prevent billowing", "Heavy-duty build resists tearing", "4.5★ across 100k+ reviews", "Clear, waterproof, PVC-free"],
-      "cons": ["Not machine washable", "Clear finish shows water spots", "No fabric softness"],
-      "buyLink": "https://amazon.com/dp/B082YLQ8RN?tag=boringbest-20", "buyText": "Check Price on Amazon", "badge": "Best Heavy Duty"
+      "pros": [
+        "6 strong bottom magnets prevent billowing",
+        "Heavy-duty build resists tearing",
+        "4.5★ across 100k+ reviews",
+        "Clear, waterproof, PVC-free"
+      ],
+      "cons": [
+        "Not machine washable",
+        "Clear finish shows water spots",
+        "No fabric softness"
+      ],
+      "buyLink": "https://amazon.com/dp/B082YLQ8RN?tag=boringbest-20",
+      "buyText": "Check Price on Amazon",
+      "badge": "Best Heavy Duty",
+      "image": "/images/best-shower-curtain-liners-B082YLQ8RN.jpg"
     },
     {
-      "rank": 3, "name": "ALYVIA SPRING Waterproof Fabric Shower Liner", "price": 9.0, "rating": 4.5,
+      "rank": 3,
+      "name": "ALYVIA SPRING Waterproof Fabric Shower Liner",
+      "price": 9.0,
+      "rating": 4.5,
       "verdict": "If you want a liner that feels like fabric rather than plastic, the ALYVIA SPRING waterproof fabric liner is the most-loved premium-feel pick, holding a 4.5-star rating across 61,000+ reviews. Buyers praise the soft white polyester that still repsels water, and it is machine washable — a real advantage over PEVA. At around $9 it delivers a nicer feel for about the same price as a clear liner.",
-      "pros": ["Soft fabric feel instead of plastic", "Waterproof and machine washable", "4.5★ across 61k+ reviews", "Low price around $9"],
-      "cons": ["Fabric needs more maintenance than PEVA", "May absorb some water if left bunched", "Standard white only"],
-      "buyLink": "https://amazon.com/dp/B08BZFRQLS?tag=boringbest-20", "buyText": "Check Price on Amazon", "badge": "Best Fabric"
+      "pros": [
+        "Soft fabric feel instead of plastic",
+        "Waterproof and machine washable",
+        "4.5★ across 61k+ reviews",
+        "Low price around $9"
+      ],
+      "cons": [
+        "Fabric needs more maintenance than PEVA",
+        "May absorb some water if left bunched",
+        "Standard white only"
+      ],
+      "buyLink": "https://amazon.com/dp/B08BZFRQLS?tag=boringbest-20",
+      "buyText": "Check Price on Amazon",
+      "badge": "Best Fabric",
+      "image": "/images/best-shower-curtain-liners-B08BZFRQLS.jpg"
     }
   ],
   "guide": {
     "heading": "Shower Curtain Liner Buying Guide",
     "blocks": [
-      { "type": "h3", "text": "Types of Shower Curtain Liners" },
-      { "type": "grid", "grid": [
-        { "h4": "PEVA Liners", "p": "The most popular choice. Waterproof, affordable, and mold-resistant. Free from harmful PVC chemicals. Best for most households." },
-        { "h4": "Vinyl/PVC Liners", "p": "Cheapest option but contains potentially harmful chemicals. We recommend avoiding PVC liners, especially for households with children." },
-        { "h4": "Fabric Liners", "p": "Polyester or nylon liners feel luxurious and are machine washable. Require more maintenance but can last longer with proper care." },
-        { "h4": "Hookless / No-Hook Liners", "p": "Built-in rings or flex-on hooks eliminate the need for separate curtain hooks. Easier to install and remove for cleaning." }
-      ] },
-      { "type": "h3", "text": "Key Features to Look For" },
-      { "type": "list", "items": [
-        "<strong>Thickness (gauge):</strong> Look for 8-gauge or thicker for durability. Thinner liners (3-5 gauge) tear easily and billow.",
-        "<strong>Magnets:</strong> Bottom magnets (3 or more) keep the liner from blowing inward while you shower.",
-        "<strong>Reinforced grommets:</strong> Metal or reinforced plastic grommets prevent tearing at the holes.",
-        "<strong>Mildew resistance:</strong> Look for treated or naturally mold-resistant materials.",
-        "<strong>Non-toxic materials:</strong> Choose PEVA over PVC to avoid harmful chemical off-gassing."
-      ] }
+      {
+        "type": "h3",
+        "text": "Types of Shower Curtain Liners"
+      },
+      {
+        "type": "grid",
+        "grid": [
+          {
+            "h4": "PEVA Liners",
+            "p": "The most popular choice. Waterproof, affordable, and mold-resistant. Free from harmful PVC chemicals. Best for most households."
+          },
+          {
+            "h4": "Vinyl/PVC Liners",
+            "p": "Cheapest option but contains potentially harmful chemicals. We recommend avoiding PVC liners, especially for households with children."
+          },
+          {
+            "h4": "Fabric Liners",
+            "p": "Polyester or nylon liners feel luxurious and are machine washable. Require more maintenance but can last longer with proper care."
+          },
+          {
+            "h4": "Hookless / No-Hook Liners",
+            "p": "Built-in rings or flex-on hooks eliminate the need for separate curtain hooks. Easier to install and remove for cleaning."
+          }
+        ]
+      },
+      {
+        "type": "h3",
+        "text": "Key Features to Look For"
+      },
+      {
+        "type": "list",
+        "items": [
+          "<strong>Thickness (gauge):</strong> Look for 8-gauge or thicker for durability. Thinner liners (3-5 gauge) tear easily and billow.",
+          "<strong>Magnets:</strong> Bottom magnets (3 or more) keep the liner from blowing inward while you shower.",
+          "<strong>Reinforced grommets:</strong> Metal or reinforced plastic grommets prevent tearing at the holes.",
+          "<strong>Mildew resistance:</strong> Look for treated or naturally mold-resistant materials.",
+          "<strong>Non-toxic materials:</strong> Choose PEVA over PVC to avoid harmful chemical off-gassing."
+        ]
+      }
     ]
   },
   "care": {
@@ -89,11 +209,29 @@
     ]
   },
   "faqs": [
-    { "q": "How often should you replace a shower curtain liner?", "a": "Most shower curtain liners should be replaced every 6-12 months. However, high-quality liners like our top pick can last 2-3 years with proper care. Signs it is time to replace include visible mold, tears, or loss of water repellency." },
-    { "q": "What is the best material for shower curtain liners?", "a": "PEVA (polyethylene vinyl acetate) is the best material for most people. It is waterproof, mold-resistant, affordable, and free from harmful PVC chemicals. Fabric liners offer a more luxurious feel and can be machine washed, but require more maintenance." },
-    { "q": "Can you wash a shower curtain liner?", "a": "Most PEVA and vinyl liners can be wiped clean but should not be machine washed. Fabric liners can typically be machine washed on gentle cycle. Always check the manufacturer instructions before washing." },
-    { "q": "How do you prevent mold on shower curtain liners?", "a": "To prevent mold: 1) Spread the curtain fully after each shower to dry, 2) Use the bathroom fan for 30 minutes after showering, 3) Spray with vinegar solution weekly, 4) Choose a mildew-resistant liner like our top pick, 5) Replace every 6-12 months." },
-    { "q": "Are fabric or plastic shower curtain liners better?", "a": "Plastic (PEVA) liners are better for water containment and low maintenance. Fabric liners feel nicer and are washable but may absorb water if not properly treated. For most households, PEVA is the practical choice." }
+    {
+      "q": "How often should you replace a shower curtain liner?",
+      "a": "Most shower curtain liners should be replaced every 6-12 months. However, high-quality liners like our top pick can last 2-3 years with proper care. Signs it is time to replace include visible mold, tears, or loss of water repellency."
+    },
+    {
+      "q": "What is the best material for shower curtain liners?",
+      "a": "PEVA (polyethylene vinyl acetate) is the best material for most people. It is waterproof, mold-resistant, affordable, and free from harmful PVC chemicals. Fabric liners offer a more luxurious feel and can be machine washed, but require more maintenance."
+    },
+    {
+      "q": "Can you wash a shower curtain liner?",
+      "a": "Most PEVA and vinyl liners can be wiped clean but should not be machine washed. Fabric liners can typically be machine washed on gentle cycle. Always check the manufacturer instructions before washing."
+    },
+    {
+      "q": "How do you prevent mold on shower curtain liners?",
+      "a": "To prevent mold: 1) Spread the curtain fully after each shower to dry, 2) Use the bathroom fan for 30 minutes after showering, 3) Spray with vinegar solution weekly, 4) Choose a mildew-resistant liner like our top pick, 5) Replace every 6-12 months."
+    },
+    {
+      "q": "Are fabric or plastic shower curtain liners better?",
+      "a": "Plastic (PEVA) liners are better for water containment and low maintenance. Fabric liners feel nicer and are washable but may absorb water if not properly treated. For most households, PEVA is the practical choice."
+    }
   ],
-  "newsletter": { "title": "Want More Bathroom Guides?", "description": "Get weekly best-rated buying guides for everyday essentials delivered to your inbox." }
+  "newsletter": {
+    "title": "Want More Bathroom Guides?",
+    "description": "Get weekly best-rated buying guides for everyday essentials delivered to your inbox."
+  }
 }

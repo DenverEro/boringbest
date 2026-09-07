@@ -28,56 +28,205 @@
     "intro": "Click column headers to sort by price, rating, or type. Prices current as of September 2026. Ratings are real Amazon customer ratings."
   },
   "products": [
-    { "name": "SNTD Dish Drying Rack for Small Kitchen Counter (11x15\")", "price": 24.99, "rating": 4.6, "type": "Countertop", "bestFor": "Small Kitchens", "verdict": "Highest-rated rack in this roundup; compact footprint with utensils compartment.", "buyLink": "https://amazon.com/dp/B0FF4KTKZL?tag=boringbest-20", "buyText": "Check Price" },
-    { "name": "JASIWAY Dish Drying Rack in Sink", "price": 26.99, "rating": 4.6, "type": "In-Sink", "bestFor": "No Counter Space", "verdict": "Sits in the sink to free the counter entirely; includes cup and utensil holders.", "buyLink": "https://amazon.com/dp/B0C6D6SH16?tag=boringbest-20", "buyText": "Check Price" },
-    { "name": "SUNLY 2-Tier Extra Large Dish Rack", "price": 59.99, "rating": 4.5, "type": "2-Tier", "bestFor": "Big Loads", "verdict": "Dual tiers hold a full family's dishes; largest capacity here.", "buyLink": "https://amazon.com/dp/B0CZ4HMYZL?tag=boringbest-20", "buyText": "Check Price" },
-    { "name": "Sakugi Over-The-Sink Dish Drying Rack", "price": 19.99, "rating": 4.5, "type": "Over-Sink", "bestFor": "Budget & Space", "verdict": "Adjustable 2-tier design spans the sink to save counter space at a low price.", "buyLink": "https://amazon.com/dp/B0CMQMPSDK?tag=boringbest-20", "buyText": "Check Price" },
-    { "name": "Kitsure Dish Drying Rack (12x15.5\")", "price": 24.99, "rating": 4.4, "type": "Countertop", "bestFor": "Everyday Use", "verdict": "Dependable black-coated steel rack with utensil and cutlery caddy.", "buyLink": "https://amazon.com/dp/B0B4K1XH8Y?tag=boringbest-20", "buyText": "Check Price" },
-    { "name": "Expandable Dish Drying Rack, Stainless Steel", "price": 33.99, "rating": 4.4, "type": "Countertop", "bestFor": "Adjustable Width", "verdict": "Expands to fit the sink width; stainless steel resists rust.", "buyLink": "https://amazon.com/dp/B0D14FG1PW?tag=boringbest-20", "buyText": "Check Price" },
-    { "name": "MAJALiS Dish Drying Rack with Drainboard", "price": 26.99, "rating": 4.4, "type": "Countertop", "bestFor": "Deeper Drainboard", "verdict": "Built-in drainboard catches water and holds a day's dishes.", "buyLink": "https://amazon.com/dp/B0H4W1H2MN?tag=boringbest-20", "buyText": "Check Price" },
-    { "name": "2-Tier Dish Drying Rack, Space-Saving", "price": 36.99, "rating": 4.4, "type": "2-Tier", "bestFor": "Compact 2-Tier", "verdict": "Vertical two-level design doubles capacity without taking more counter.", "buyLink": "https://amazon.com/dp/B0CHRBC7DQ?tag=boringbest-20", "buyText": "Check Price" }
+    {
+      "name": "SNTD Dish Drying Rack for Small Kitchen Counter (11x15\")",
+      "price": 24.99,
+      "rating": 4.6,
+      "type": "Countertop",
+      "bestFor": "Small Kitchens",
+      "verdict": "Highest-rated rack in this roundup; compact footprint with utensils compartment.",
+      "buyLink": "https://amazon.com/dp/B0FF4KTKZL?tag=boringbest-20",
+      "buyText": "Check Price",
+      "image": "/images/best-dish-racks-B0FF4KTKZL.jpg"
+    },
+    {
+      "name": "JASIWAY Dish Drying Rack in Sink",
+      "price": 26.99,
+      "rating": 4.6,
+      "type": "In-Sink",
+      "bestFor": "No Counter Space",
+      "verdict": "Sits in the sink to free the counter entirely; includes cup and utensil holders.",
+      "buyLink": "https://amazon.com/dp/B0C6D6SH16?tag=boringbest-20",
+      "buyText": "Check Price",
+      "image": "/images/best-dish-racks-B0C6D6SH16.jpg"
+    },
+    {
+      "name": "SUNLY 2-Tier Extra Large Dish Rack",
+      "price": 59.99,
+      "rating": 4.5,
+      "type": "2-Tier",
+      "bestFor": "Big Loads",
+      "verdict": "Dual tiers hold a full family's dishes; largest capacity here.",
+      "buyLink": "https://amazon.com/dp/B0CZ4HMYZL?tag=boringbest-20",
+      "buyText": "Check Price",
+      "image": "/images/best-dish-racks-B0CZ4HMYZL.jpg"
+    },
+    {
+      "name": "Sakugi Over-The-Sink Dish Drying Rack",
+      "price": 19.99,
+      "rating": 4.5,
+      "type": "Over-Sink",
+      "bestFor": "Budget & Space",
+      "verdict": "Adjustable 2-tier design spans the sink to save counter space at a low price.",
+      "buyLink": "https://amazon.com/dp/B0CMQMPSDK?tag=boringbest-20",
+      "buyText": "Check Price",
+      "image": "/images/best-dish-racks-B0CMQMPSDK.jpg"
+    },
+    {
+      "name": "Kitsure Dish Drying Rack (12x15.5\")",
+      "price": 24.99,
+      "rating": 4.4,
+      "type": "Countertop",
+      "bestFor": "Everyday Use",
+      "verdict": "Dependable black-coated steel rack with utensil and cutlery caddy.",
+      "buyLink": "https://amazon.com/dp/B0B4K1XH8Y?tag=boringbest-20",
+      "buyText": "Check Price",
+      "image": "/images/best-dish-racks-B0B4K1XH8Y.jpg"
+    },
+    {
+      "name": "Expandable Dish Drying Rack, Stainless Steel",
+      "price": 33.99,
+      "rating": 4.4,
+      "type": "Countertop",
+      "bestFor": "Adjustable Width",
+      "verdict": "Expands to fit the sink width; stainless steel resists rust.",
+      "buyLink": "https://amazon.com/dp/B0D14FG1PW?tag=boringbest-20",
+      "buyText": "Check Price",
+      "image": "/images/best-dish-racks-B0D14FG1PW.jpg"
+    },
+    {
+      "name": "MAJALiS Dish Drying Rack with Drainboard",
+      "price": 26.99,
+      "rating": 4.4,
+      "type": "Countertop",
+      "bestFor": "Deeper Drainboard",
+      "verdict": "Built-in drainboard catches water and holds a day's dishes.",
+      "buyLink": "https://amazon.com/dp/B0H4W1H2MN?tag=boringbest-20",
+      "buyText": "Check Price",
+      "image": "/images/best-dish-racks-B0H4W1H2MN.jpg"
+    },
+    {
+      "name": "2-Tier Dish Drying Rack, Space-Saving",
+      "price": 36.99,
+      "rating": 4.4,
+      "type": "2-Tier",
+      "bestFor": "Compact 2-Tier",
+      "verdict": "Vertical two-level design doubles capacity without taking more counter.",
+      "buyLink": "https://amazon.com/dp/B0CHRBC7DQ?tag=boringbest-20",
+      "buyText": "Check Price",
+      "image": "/images/best-dish-racks-B0CHRBC7DQ.jpg"
+    }
   ],
   "picks": [
     {
-      "rank": 1, "name": "SNTD Dish Drying Rack for Small Kitchen Counter", "price": 24.99, "rating": 4.6,
+      "rank": 1,
+      "name": "SNTD Dish Drying Rack for Small Kitchen Counter",
+      "price": 24.99,
+      "rating": 4.6,
       "verdict": "The highest-rated dish rack in this roundup at 4.6 stars, the SNTD compact rack fits the 11x15-inch footprint most typical counters have room for. Reviewers consistently give it high marks for fitting small kitchens and apartments without dominating the counter, while the integrated utensil caddy keeps silverware out of the way. At around $25 it is the easy choice for most people replacing a worn-out rack.",
-      "pros": ["Highest rating in this roundup (4.6 stars)", "Compact footprint fits small counters", "Integrated utensil and cutlery caddy", "Affordable price point"],
-      "cons": ["Small capacity — not for big family loads", "Not adjustable to a wider sink", "Dark coating can show water spots"],
-      "buyLink": "https://amazon.com/dp/B0FF4KTKZL?tag=boringbest-20", "buyText": "Check Price on Amazon", "badge": "Best Overall"
+      "pros": [
+        "Highest rating in this roundup (4.6 stars)",
+        "Compact footprint fits small counters",
+        "Integrated utensil and cutlery caddy",
+        "Affordable price point"
+      ],
+      "cons": [
+        "Small capacity — not for big family loads",
+        "Not adjustable to a wider sink",
+        "Dark coating can show water spots"
+      ],
+      "buyLink": "https://amazon.com/dp/B0FF4KTKZL?tag=boringbest-20",
+      "buyText": "Check Price on Amazon",
+      "badge": "Best Overall",
+      "image": "/images/best-dish-racks-B0FF4KTKZL.jpg"
     },
     {
-      "rank": 2, "name": "Sakugi Over-The-Sink Dish Drying Rack", "price": 19.99, "rating": 4.5,
+      "rank": 2,
+      "name": "Sakugi Over-The-Sink Dish Drying Rack",
+      "price": 19.99,
+      "rating": 4.5,
       "verdict": "If counter space is the thing you do not have, the Sakugi over-the-sink rack is the best value fix at under $20. The adjustable 2-tier frame spans the sink, so dishes drain above the basin and the counter stays clear. Reviewers like it for tiny kitchens, RV sinks, and rentals. The tradeoff is a smaller drying area than a full countertop rack.",
-      "pros": ["Frees the counter entirely", "Adjustable to fit different sink widths", "Low price under $20", "2-tier design adds storage"],
-      "cons": ["Smaller overall drying capacity", "Requires a sink it can span", "Not designed to hold very large pots"],
-      "buyLink": "https://amazon.com/dp/B0CMQMPSDK?tag=boringbest-20", "buyText": "Check Price on Amazon", "badge": "Best Value"
+      "pros": [
+        "Frees the counter entirely",
+        "Adjustable to fit different sink widths",
+        "Low price under $20",
+        "2-tier design adds storage"
+      ],
+      "cons": [
+        "Smaller overall drying capacity",
+        "Requires a sink it can span",
+        "Not designed to hold very large pots"
+      ],
+      "buyLink": "https://amazon.com/dp/B0CMQMPSDK?tag=boringbest-20",
+      "buyText": "Check Price on Amazon",
+      "badge": "Best Value",
+      "image": "/images/best-dish-racks-B0CMQMPSDK.jpg"
     },
     {
-      "rank": 3, "name": "SUNLY 2-Tier Extra Large Dish Rack", "price": 59.99, "rating": 4.5,
+      "rank": 3,
+      "name": "SUNLY 2-Tier Extra Large Dish Rack",
+      "price": 59.99,
+      "rating": 4.5,
       "verdict": "For a big household that runs a lot of dishes at once, the SUNLY 2-tier extra-large rack is the most-loved large option, holding a 4.5-star rating. The two levels plus a plate divider let you stack plates, bowls, cups, and utensils in one place instead of spreading across the counter. It is the premium pick in this list, and the price reflects that larger footprint and build.",
-      "pros": ["Large 2-tier capacity for family loads", "Plate and cup dividers organize stacking", "Multifunctional upper tier", "Strong 4.5-star rating"],
-      "cons": ["Premium price near $60", "Large footprint needs counter space", "Heavier to move and clean"],
-      "buyLink": "https://amazon.com/dp/B0CZ4HMYZL?tag=boringbest-20", "buyText": "Check Price on Amazon", "badge": "Best Large Capacity"
+      "pros": [
+        "Large 2-tier capacity for family loads",
+        "Plate and cup dividers organize stacking",
+        "Multifunctional upper tier",
+        "Strong 4.5-star rating"
+      ],
+      "cons": [
+        "Premium price near $60",
+        "Large footprint needs counter space",
+        "Heavier to move and clean"
+      ],
+      "buyLink": "https://amazon.com/dp/B0CZ4HMYZL?tag=boringbest-20",
+      "buyText": "Check Price on Amazon",
+      "badge": "Best Large Capacity",
+      "image": "/images/best-dish-racks-B0CZ4HMYZL.jpg"
     }
   ],
   "guide": {
     "heading": "Dish Drying Rack Buying Guide",
     "blocks": [
-      { "type": "h3", "text": "Types of Dish Racks" },
-      { "type": "grid", "grid": [
-        { "h4": "Countertop Racks", "p": "The standard design that sits beside the sink. Best for most kitchens with a little counter to spare. Look for a drainboard to catch drips." },
-        { "h4": "Over-the-Sink Racks", "p": "Span the sink basin so dishes dry above it and the counter stays clear. Great for tiny kitchens, RVs, and rentals with minimal counter space." },
-        { "h4": "In-Sink Racks", "p": "Sit inside the sink basin itself. Frees the most counter space but reduces sink use while dishes are drying." },
-        { "h4": "2-Tier Racks", "p": "Add a second level above the main area to double capacity for plates and bowls without taking more counter footprint." }
-      ] },
-      { "type": "h3", "text": "What to Look For" },
-      { "type": "list", "items": [
-        "<strong>Material:</strong> Stainless steel resists rust best. Powder-coated black steel is common and affordable but can show wear. Avoid exposed steel that hasn't been coated.",
-        "<strong>Size and footprint:</strong> Measure your counter first. Compact racks are about 11-15 inches wide; 2-tier and extra-large racks take noticeably more room.",
-        "<strong>Drainboard:</strong> A built-in tray or drainboard catches water so it doesn't pool on the counter. Essential if your rack sits away from the sink edge.",
-        "<strong>Upgrades:</strong> Utensil caddies, cup holders, and knife slots add convenience. Adjustable/expandable widths let one rack fit different sinks.",
-        "<strong>Rating density:</strong> A high star rating on thousands of reviews is a stronger signal than a high rating on a handful of reviews."
-      ] }
+      {
+        "type": "h3",
+        "text": "Types of Dish Racks"
+      },
+      {
+        "type": "grid",
+        "grid": [
+          {
+            "h4": "Countertop Racks",
+            "p": "The standard design that sits beside the sink. Best for most kitchens with a little counter to spare. Look for a drainboard to catch drips."
+          },
+          {
+            "h4": "Over-the-Sink Racks",
+            "p": "Span the sink basin so dishes dry above it and the counter stays clear. Great for tiny kitchens, RVs, and rentals with minimal counter space."
+          },
+          {
+            "h4": "In-Sink Racks",
+            "p": "Sit inside the sink basin itself. Frees the most counter space but reduces sink use while dishes are drying."
+          },
+          {
+            "h4": "2-Tier Racks",
+            "p": "Add a second level above the main area to double capacity for plates and bowls without taking more counter footprint."
+          }
+        ]
+      },
+      {
+        "type": "h3",
+        "text": "What to Look For"
+      },
+      {
+        "type": "list",
+        "items": [
+          "<strong>Material:</strong> Stainless steel resists rust best. Powder-coated black steel is common and affordable but can show wear. Avoid exposed steel that hasn't been coated.",
+          "<strong>Size and footprint:</strong> Measure your counter first. Compact racks are about 11-15 inches wide; 2-tier and extra-large racks take noticeably more room.",
+          "<strong>Drainboard:</strong> A built-in tray or drainboard catches water so it doesn't pool on the counter. Essential if your rack sits away from the sink edge.",
+          "<strong>Upgrades:</strong> Utensil caddies, cup holders, and knife slots add convenience. Adjustable/expandable widths let one rack fit different sinks.",
+          "<strong>Rating density:</strong> A high star rating on thousands of reviews is a stronger signal than a high rating on a handful of reviews."
+        ]
+      }
     ]
   },
   "care": {
@@ -92,11 +241,29 @@
     ]
   },
   "faqs": [
-    { "q": "What is the best dish drying rack material?", "a": "For durability, stainless steel is the most rust-resistant choice. Powder-coated black steel is affordable and popular for looks, but the coating can chip over time and expose the metal to rust. Plastic and bamboo racks are lighter but less durable under heavy daily use." },
-    { "q": "How much counter space does a dish rack need?", "a": "Standard countertop dish racks run about 11-15 inches wide by 15-18 inches deep. Compact racks fit tight counters; 2-tier and extra-large racks take noticeably more room. Measure your counter before buying, and consider an over-the-sink or in-sink design if you have almost no counter space." },
-    { "q": "Do dish racks rust?", "a": "Yes, over time — especially low-quality coated racks if the coating is scratched or if water sits on the rack constantly. Stainless steel racks are the most resistant. Wiping the rack dry and addressing any scratches can prolong its life." },
-    { "q": "Is a 2-tier dish rack worth it?", "a": "A 2-tier rack doubles capacity without taking much more counter footprint, so it is worth it for households that run a lot of dishes at once. The tradeoff is a taller profile and typically a higher price. Smaller households with light use usually prefer a single-tier countertop rack." },
-    { "q": "Over-the-sink or countertop dish rack?", "a": "Choose over-the-sink if you have almost no counter space — it spans the sink and leaves the counter clear. Choose a countertop rack if you have room beside the sink and want maximum drying capacity. For most standard kitchens, a countertop rack with a drainboard is the practical default." }
+    {
+      "q": "What is the best dish drying rack material?",
+      "a": "For durability, stainless steel is the most rust-resistant choice. Powder-coated black steel is affordable and popular for looks, but the coating can chip over time and expose the metal to rust. Plastic and bamboo racks are lighter but less durable under heavy daily use."
+    },
+    {
+      "q": "How much counter space does a dish rack need?",
+      "a": "Standard countertop dish racks run about 11-15 inches wide by 15-18 inches deep. Compact racks fit tight counters; 2-tier and extra-large racks take noticeably more room. Measure your counter before buying, and consider an over-the-sink or in-sink design if you have almost no counter space."
+    },
+    {
+      "q": "Do dish racks rust?",
+      "a": "Yes, over time — especially low-quality coated racks if the coating is scratched or if water sits on the rack constantly. Stainless steel racks are the most resistant. Wiping the rack dry and addressing any scratches can prolong its life."
+    },
+    {
+      "q": "Is a 2-tier dish rack worth it?",
+      "a": "A 2-tier rack doubles capacity without taking much more counter footprint, so it is worth it for households that run a lot of dishes at once. The tradeoff is a taller profile and typically a higher price. Smaller households with light use usually prefer a single-tier countertop rack."
+    },
+    {
+      "q": "Over-the-sink or countertop dish rack?",
+      "a": "Choose over-the-sink if you have almost no counter space — it spans the sink and leaves the counter clear. Choose a countertop rack if you have room beside the sink and want maximum drying capacity. For most standard kitchens, a countertop rack with a drainboard is the practical default."
+    }
   ],
-  "newsletter": { "title": "Want More Kitchen Guides?", "description": "Get weekly best-rated buying guides for everyday essentials delivered to your inbox." }
+  "newsletter": {
+    "title": "Want More Kitchen Guides?",
+    "description": "Get weekly best-rated buying guides for everyday essentials delivered to your inbox."
+  }
 }

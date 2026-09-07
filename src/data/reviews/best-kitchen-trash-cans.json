@@ -28,57 +28,217 @@
     "intro": "Click column headers to sort by price, rating, or type. Prices current as of September 2026. Ratings are real Amazon customer ratings."
   },
   "products": [
-    { "name": "SONGMICS 13 Gallon Stainless Steel Step-On Pedal", "price": 66.99, "rating": 4.5, "type": "Step-On", "bestFor": "Everyday Reliability", "verdict": "Sturdy stainless can with quiet-close lid and dependable pedal at a fair price.", "buyLink": "https://amazon.com/dp/B07KPZ1DR3?tag=boringbest-20", "buyText": "Check Price" },
-    { "name": "Ninestars 13 Gallon Automatic Motion Sensor", "price": 45.99, "rating": 4.4, "type": "Automatic", "bestFor": "Touchless Value", "verdict": "Sensor opens hands-free for under $50 — the best-value touchless kitchen can.", "buyLink": "https://amazon.com/dp/B06ZYKBF2Z?tag=boringbest-20", "buyText": "Check Price" },
-    { "name": "SONGMICS Dual-Compartment 13 + 5.3 Gallon", "price": 125.99, "rating": 4.5, "type": "Dual-Compartment", "bestFor": "Trash + Recycling", "verdict": "Two compartments in one footprint, soft-close lid — ideal for trash and recycling side by side.", "buyLink": "https://amazon.com/dp/B0GXZB2XG4?tag=boringbest-20", "buyText": "Check Price" },
-    { "name": "Home Zone Living 12 Gallon Slim Fit", "price": 69.99, "rating": 4.4, "type": "Slim", "bestFor": "Narrow Spaces", "verdict": "Slim design slides into tight gaps between cabinets; holds 12 gallons.", "buyLink": "https://amazon.com/dp/B07Y2D44RP?tag=boringbest-20", "buyText": "Check Price" },
-    { "name": "SIMPLI-MAGIC 13.2 Gallon Soft-Close Smudge-Resistant", "price": 99.99, "rating": 4.4, "type": "Soft-Close", "bestFor": "Looks & Quiet Close", "verdict": "Smudge-resistant finish with soft-close lid; upscale look at mid price.", "buyLink": "https://amazon.com/dp/B0BTMZLMGD?tag=boringbest-20", "buyText": "Check Price" },
-    { "name": "EKO Urban 24 Gallon Round Stainless Tall", "price": 169.99, "rating": 4.6, "type": "Tall/Commercial", "bestFor": "Large Kitchens", "verdict": "Highest-rated can here; 24-gallon tall stainless with foot pedal for heavy use.", "buyLink": "https://amazon.com/dp/B07DV2WZ2P?tag=boringbest-20", "buyText": "Check Price" },
-    { "name": "Glad Trash Can with Clorox Odor Protection", "price": 37.99, "rating": 4.2, "type": "Plastic", "bestFor": "Budget", "verdict": "Affordable plastic bin with odor-neutralizing lid treatment; great for light kitchen use.", "buyLink": "https://amazon.com/dp/B07GYB2C3S?tag=boringbest-20", "buyText": "Check Price" },
-    { "name": "EKO Mirage-T Touchless Motion Sensor", "price": 89.99, "rating": 4.2, "type": "Automatic", "bestFor": "Sleek Touchless", "verdict": "Rectangular touchless bin with brushed finish; stylish Match for modern kitchens.", "buyLink": "https://amazon.com/dp/B07RYBNJG3?tag=boringbest-20", "buyText": "Check Price" },
-    { "name": "Rubbermaid Premier Series III Step-On", "price": 63.99, "rating": 4.0, "type": "Step-On", "bestFor": "Simple Step-On", "verdict": "Classic step-on with deodorizer pack and odor filter; straightforward reliability.", "buyLink": "https://amazon.com/dp/B08LMY5PK9?tag=boringbest-20", "buyText": "Check Price" }
+    {
+      "name": "SONGMICS 13 Gallon Stainless Steel Step-On Pedal",
+      "price": 66.99,
+      "rating": 4.5,
+      "type": "Step-On",
+      "bestFor": "Everyday Reliability",
+      "verdict": "Sturdy stainless can with quiet-close lid and dependable pedal at a fair price.",
+      "buyLink": "https://amazon.com/dp/B07KPZ1DR3?tag=boringbest-20",
+      "buyText": "Check Price",
+      "image": "/images/best-kitchen-trash-cans-B07KPZ1DR3.jpg"
+    },
+    {
+      "name": "Ninestars 13 Gallon Automatic Motion Sensor",
+      "price": 45.99,
+      "rating": 4.4,
+      "type": "Automatic",
+      "bestFor": "Touchless Value",
+      "verdict": "Sensor opens hands-free for under $50 — the best-value touchless kitchen can.",
+      "buyLink": "https://amazon.com/dp/B06ZYKBF2Z?tag=boringbest-20",
+      "buyText": "Check Price",
+      "image": "/images/best-kitchen-trash-cans-B06ZYKBF2Z.jpg"
+    },
+    {
+      "name": "SONGMICS Dual-Compartment 13 + 5.3 Gallon",
+      "price": 125.99,
+      "rating": 4.5,
+      "type": "Dual-Compartment",
+      "bestFor": "Trash + Recycling",
+      "verdict": "Two compartments in one footprint, soft-close lid — ideal for trash and recycling side by side.",
+      "buyLink": "https://amazon.com/dp/B0GXZB2XG4?tag=boringbest-20",
+      "buyText": "Check Price",
+      "image": "/images/best-kitchen-trash-cans-B0GXZB2XG4.jpg"
+    },
+    {
+      "name": "Home Zone Living 12 Gallon Slim Fit",
+      "price": 69.99,
+      "rating": 4.4,
+      "type": "Slim",
+      "bestFor": "Narrow Spaces",
+      "verdict": "Slim design slides into tight gaps between cabinets; holds 12 gallons.",
+      "buyLink": "https://amazon.com/dp/B07Y2D44RP?tag=boringbest-20",
+      "buyText": "Check Price",
+      "image": "/images/best-kitchen-trash-cans-B07Y2D44RP.jpg"
+    },
+    {
+      "name": "SIMPLI-MAGIC 13.2 Gallon Soft-Close Smudge-Resistant",
+      "price": 99.99,
+      "rating": 4.4,
+      "type": "Soft-Close",
+      "bestFor": "Looks & Quiet Close",
+      "verdict": "Smudge-resistant finish with soft-close lid; upscale look at mid price.",
+      "buyLink": "https://amazon.com/dp/B0BTMZLMGD?tag=boringbest-20",
+      "buyText": "Check Price",
+      "image": "/images/best-kitchen-trash-cans-B0BTMZLMGD.jpg"
+    },
+    {
+      "name": "EKO Urban 24 Gallon Round Stainless Tall",
+      "price": 169.99,
+      "rating": 4.6,
+      "type": "Tall/Commercial",
+      "bestFor": "Large Kitchens",
+      "verdict": "Highest-rated can here; 24-gallon tall stainless with foot pedal for heavy use.",
+      "buyLink": "https://amazon.com/dp/B07DV2WZ2P?tag=boringbest-20",
+      "buyText": "Check Price",
+      "image": "/images/best-kitchen-trash-cans-B07DV2WZ2P.jpg"
+    },
+    {
+      "name": "Glad Trash Can with Clorox Odor Protection",
+      "price": 37.99,
+      "rating": 4.2,
+      "type": "Plastic",
+      "bestFor": "Budget",
+      "verdict": "Affordable plastic bin with odor-neutralizing lid treatment; great for light kitchen use.",
+      "buyLink": "https://amazon.com/dp/B07GYB2C3S?tag=boringbest-20",
+      "buyText": "Check Price",
+      "image": "/images/best-kitchen-trash-cans-B07GYB2C3S.jpg"
+    },
+    {
+      "name": "EKO Mirage-T Touchless Motion Sensor",
+      "price": 89.99,
+      "rating": 4.2,
+      "type": "Automatic",
+      "bestFor": "Sleek Touchless",
+      "verdict": "Rectangular touchless bin with brushed finish; stylish Match for modern kitchens.",
+      "buyLink": "https://amazon.com/dp/B07RYBNJG3?tag=boringbest-20",
+      "buyText": "Check Price",
+      "image": "/images/best-kitchen-trash-cans-B07RYBNJG3.jpg"
+    },
+    {
+      "name": "Rubbermaid Premier Series III Step-On",
+      "price": 63.99,
+      "rating": 4.0,
+      "type": "Step-On",
+      "bestFor": "Simple Step-On",
+      "verdict": "Classic step-on with deodorizer pack and odor filter; straightforward reliability.",
+      "buyLink": "https://amazon.com/dp/B08LMY5PK9?tag=boringbest-20",
+      "buyText": "Check Price",
+      "image": "/images/best-kitchen-trash-cans-B08LMY5PK9.jpg"
+    }
   ],
   "picks": [
     {
-      "rank": 1, "name": "SONGMICS 13 Gallon Stainless Steel Step-On Pedal", "price": 66.99, "rating": 4.5,
+      "rank": 1,
+      "name": "SONGMICS 13 Gallon Stainless Steel Step-On Pedal",
+      "price": 66.99,
+      "rating": 4.5,
       "verdict": "The most-loved everyday kitchen can in this roundup, the SONGMICS 13-gallon step-on holds a 4.5-star Amazon rating. Reviewers consistently praise the sturdy stainless build, the pedal that actually holds open, and the quiet-close lid that doesn't slam. At just under $70 it hits the sweet spot between flimsy budget cans and overpriced premium models. It is the easy default for a typical household kitchen.",
-      "pros": ["Strong 4.5-star rating", "Sturdy stainless build", "Reliable step-on pedal", "Quiet-close lid", "Fair price near $67"],
-      "cons": ["No sensor / hands-free option", "Scratches can show on stainless", "Medium 13-gallon capacity"],
-      "buyLink": "https://amazon.com/dp/B07KPZ1DR3?tag=boringbest-20", "buyText": "Check Price on Amazon", "badge": "Best Overall"
+      "pros": [
+        "Strong 4.5-star rating",
+        "Sturdy stainless build",
+        "Reliable step-on pedal",
+        "Quiet-close lid",
+        "Fair price near $67"
+      ],
+      "cons": [
+        "No sensor / hands-free option",
+        "Scratches can show on stainless",
+        "Medium 13-gallon capacity"
+      ],
+      "buyLink": "https://amazon.com/dp/B07KPZ1DR3?tag=boringbest-20",
+      "buyText": "Check Price on Amazon",
+      "badge": "Best Overall",
+      "image": "/images/best-kitchen-trash-cans-B07KPZ1DR3.jpg"
     },
     {
-      "rank": 2, "name": "EKO Urban 24 Gallon Round Stainless Tall", "price": 169.99, "rating": 4.6,
+      "rank": 2,
+      "name": "EKO Urban 24 Gallon Round Stainless Tall",
+      "price": 169.99,
+      "rating": 4.6,
       "verdict": "For a large kitchen, a busy household, or anyone who wants a can you don't empty twice a day, the EKO Urban 24-gallon is the highest-rated can in this roundup at 4.6 stars. The tall round stainless design holds a lot while taking little floor footprint, and it has a foot pedal to open hands-free. It is the premium pick here — the price reflects the big capacity and heavier build.",
-      "pros": ["Highest rating in this roundup (4.6 stars)", "Large 24-gallon capacity", "Space-saving tall footprint", "Foot pedal opens hands-free"],
-      "cons": ["Premium price near $170", "Tall — heavy when full and hard to lift out", "Stainless shows fingerprints"],
-      "buyLink": "https://amazon.com/dp/B07DV2WZ2P?tag=boringbest-20", "buyText": "Check Price on Amazon", "badge": "Best Large Capacity"
+      "pros": [
+        "Highest rating in this roundup (4.6 stars)",
+        "Large 24-gallon capacity",
+        "Space-saving tall footprint",
+        "Foot pedal opens hands-free"
+      ],
+      "cons": [
+        "Premium price near $170",
+        "Tall — heavy when full and hard to lift out",
+        "Stainless shows fingerprints"
+      ],
+      "buyLink": "https://amazon.com/dp/B07DV2WZ2P?tag=boringbest-20",
+      "buyText": "Check Price on Amazon",
+      "badge": "Best Large Capacity",
+      "image": "/images/best-kitchen-trash-cans-B07DV2WZ2P.jpg"
     },
     {
-      "rank": 3, "name": "SONGMICS Dual-Compartment 13 + 5.3 Gallon", "price": 125.99, "rating": 4.5,
+      "rank": 3,
+      "name": "SONGMICS Dual-Compartment 13 + 5.3 Gallon",
+      "price": 125.99,
+      "rating": 4.5,
       "verdict": "If you want trash and recycling in one convenient spot, the SONGMICS dual-compartment can puts a 13-gallon trash side and a 5.3-gallon recycling side in a single footprint, with a soft-close lid and a 4.5-star rating. Reviewers like not having a separate recycling bin taking up space. It costs more than a single can, but it replaces two.",
-      "pros": ["Trash + recycling in one footprint", "Soft-close lid", "Strong 4.5-star rating", "Saves floor space vs two bins"],
-      "cons": ["Higher price near $126", "Recycling compartment is smaller (5.3 gal)", "Heavier to move when full"],
-      "buyLink": "https://amazon.com/dp/B0GXZB2XG4?tag=boringbest-20", "buyText": "Check Price on Amazon", "badge": "Best Trash + Recycling"
+      "pros": [
+        "Trash + recycling in one footprint",
+        "Soft-close lid",
+        "Strong 4.5-star rating",
+        "Saves floor space vs two bins"
+      ],
+      "cons": [
+        "Higher price near $126",
+        "Recycling compartment is smaller (5.3 gal)",
+        "Heavier to move when full"
+      ],
+      "buyLink": "https://amazon.com/dp/B0GXZB2XG4?tag=boringbest-20",
+      "buyText": "Check Price on Amazon",
+      "badge": "Best Trash + Recycling",
+      "image": "/images/best-kitchen-trash-cans-B0GXZB2XG4.jpg"
     }
   ],
   "guide": {
     "heading": "Kitchen Trash Can Buying Guide",
     "blocks": [
-      { "type": "h3", "text": "Types of Kitchen Trash Cans" },
-      { "type": "grid", "grid": [
-        { "h4": "Step-On / Pedal Cans", "p": "Open with a foot pedal so you don't touch the lid. Simple and reliable, and they tend to hold the lid shut well. The classic, no-fail choice for most kitchens." },
-        { "h4": "Automatic / Motion-Sensor Cans", "p": "Open hands-free with a sensor wave. Convenient and hygienic, but they need batteries or power and the sensors are an extra thing that can break over time." },
-        { "h4": "Dual-Compartment Cans", "p": "Split trash and recycling into two bins in one footprint. Great if you don't have room for a separate recycling bin." },
-        { "h4": "Soft-Close / Flip-Top Cans", "p": "Lids that close gently on a slow hinge, or a flip-top opening. Quieter and look nicer, but usually cost more and can allow more odor to escape than a sealed step-on." }
-      ] },
-      { "type": "h3", "text": "What to Look For" },
-      { "type": "list", "items": [
-        "<strong>Capacity:</strong> Most kitchen cans are 12-13 gallons, emptied a couple times a week for a small household. Big families or food-heavy kitchens may want 20-24 gallons. Slim cans trade capacity for a narrower footprint.",
-        "<strong>Lid keeps shut:</strong> A can whose lid stays closed matters for odor and pets. Step-on and sensor cans generally seal best; flip-tops leak more odor.",
-        "<strong>Material:</strong> Stainless steel is durable and looks premium but shows fingerprints and scratches. Plastic is lighter, cheaper, and quieter but can crack and hold odors.",
-        "<strong>Odor control:</strong> Some cans come with odor filters, deodorizer packs, or treated lids. If smells are a concern, look for a model with a sealed lid and an odor-neutralizing feature.",
-        "<strong>Rating density:</strong> A high star rating across thousands of reviews is a stronger signal than a high rating on a handful of reviews."
-      ] }
+      {
+        "type": "h3",
+        "text": "Types of Kitchen Trash Cans"
+      },
+      {
+        "type": "grid",
+        "grid": [
+          {
+            "h4": "Step-On / Pedal Cans",
+            "p": "Open with a foot pedal so you don't touch the lid. Simple and reliable, and they tend to hold the lid shut well. The classic, no-fail choice for most kitchens."
+          },
+          {
+            "h4": "Automatic / Motion-Sensor Cans",
+            "p": "Open hands-free with a sensor wave. Convenient and hygienic, but they need batteries or power and the sensors are an extra thing that can break over time."
+          },
+          {
+            "h4": "Dual-Compartment Cans",
+            "p": "Split trash and recycling into two bins in one footprint. Great if you don't have room for a separate recycling bin."
+          },
+          {
+            "h4": "Soft-Close / Flip-Top Cans",
+            "p": "Lids that close gently on a slow hinge, or a flip-top opening. Quieter and look nicer, but usually cost more and can allow more odor to escape than a sealed step-on."
+          }
+        ]
+      },
+      {
+        "type": "h3",
+        "text": "What to Look For"
+      },
+      {
+        "type": "list",
+        "items": [
+          "<strong>Capacity:</strong> Most kitchen cans are 12-13 gallons, emptied a couple times a week for a small household. Big families or food-heavy kitchens may want 20-24 gallons. Slim cans trade capacity for a narrower footprint.",
+          "<strong>Lid keeps shut:</strong> A can whose lid stays closed matters for odor and pets. Step-on and sensor cans generally seal best; flip-tops leak more odor.",
+          "<strong>Material:</strong> Stainless steel is durable and looks premium but shows fingerprints and scratches. Plastic is lighter, cheaper, and quieter but can crack and hold odors.",
+          "<strong>Odor control:</strong> Some cans come with odor filters, deodorizer packs, or treated lids. If smells are a concern, look for a model with a sealed lid and an odor-neutralizing feature.",
+          "<strong>Rating density:</strong> A high star rating across thousands of reviews is a stronger signal than a high rating on a handful of reviews."
+        ]
+      }
     ]
   },
   "care": {
@@ -93,11 +253,29 @@
     ]
   },
   "faqs": [
-    { "q": "What size kitchen trash can do I need?", "a": "The most common household kitchen can is 12-13 gallons, which most households empty once or twice a week. Bigger households or kitchens that generate lots of food waste often prefer 20-24 gallons to avoid emptying daily. If counter space is tight, a slim 12-gallon can still fits between cabinets." },
-    { "q": "Are motion-sensor trash cans worth it?", "a": "For hands-free convenience they are worth it for many people, especially while cooking with messy hands. The tradeoffs are battery or power needs and an extra sensor mechanism that can fail over time. A quality automatic can with decent reviews (like the Ninestars) is a solid value; very cheap ones tend to have unreliable sensors." },
-    { "q": "How do I keep a trash can from smelling?", "a": "Empty it regularly, wipe the interior when you change the bag, and choose a can with a lid that actually seals shut. Some models have odor filters, deodorizer packs, or treated lids. A sprinkle of baking soda in the bottom of the empty can also absorbs odors between cleanings." },
-    { "q": "Stainless steel or plastic trash can?", "a": "Stainless steel is more durable, holds a premium look, and resists absorbing odors, but it shows fingerprints and scratches and costs more. Plastic is lighter, quieter, and cheaper but can crack and soak up odors over time. For a long-lived kitchen main, stainless is usually worth the extra cost." },
-    { "q": "What is a dual-compartment trash can?", "a": "A dual-compartment can splits its footprint into two bins — typically a larger trash side and a smaller recycling side — so you can sort waste in one place without dedicating floor space to a separate recycling bin. They are ideal for kitchens where a second bin would be cramped." }
+    {
+      "q": "What size kitchen trash can do I need?",
+      "a": "The most common household kitchen can is 12-13 gallons, which most households empty once or twice a week. Bigger households or kitchens that generate lots of food waste often prefer 20-24 gallons to avoid emptying daily. If counter space is tight, a slim 12-gallon can still fits between cabinets."
+    },
+    {
+      "q": "Are motion-sensor trash cans worth it?",
+      "a": "For hands-free convenience they are worth it for many people, especially while cooking with messy hands. The tradeoffs are battery or power needs and an extra sensor mechanism that can fail over time. A quality automatic can with decent reviews (like the Ninestars) is a solid value; very cheap ones tend to have unreliable sensors."
+    },
+    {
+      "q": "How do I keep a trash can from smelling?",
+      "a": "Empty it regularly, wipe the interior when you change the bag, and choose a can with a lid that actually seals shut. Some models have odor filters, deodorizer packs, or treated lids. A sprinkle of baking soda in the bottom of the empty can also absorbs odors between cleanings."
+    },
+    {
+      "q": "Stainless steel or plastic trash can?",
+      "a": "Stainless steel is more durable, holds a premium look, and resists absorbing odors, but it shows fingerprints and scratches and costs more. Plastic is lighter, quieter, and cheaper but can crack and soak up odors over time. For a long-lived kitchen main, stainless is usually worth the extra cost."
+    },
+    {
+      "q": "What is a dual-compartment trash can?",
+      "a": "A dual-compartment can splits its footprint into two bins — typically a larger trash side and a smaller recycling side — so you can sort waste in one place without dedicating floor space to a separate recycling bin. They are ideal for kitchens where a second bin would be cramped."
+    }
   ],
-  "newsletter": { "title": "Want More Kitchen Guides?", "description": "Get weekly best-rated buying guides for everyday essentials delivered to your inbox." }
+  "newsletter": {
+    "title": "Want More Kitchen Guides?",
+    "description": "Get weekly best-rated buying guides for everyday essentials delivered to your inbox."
+  }
 }
