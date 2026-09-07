@@ -1,13 +1,31 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import ReviewCard from '../../components/ReviewCard.astro';
 import NewsletterForm from '../../components/NewsletterForm.astro';
 
 const title = 'Best Kitchen Products 2026 - Reviews & Buying Guides';
-const description = 'Best-rated kitchen essentials including dish racks, trash cans, and more. Ranked by real Amazon customer reviews.';
+const description = 'Best-rated kitchen essentials including dish racks and kitchen trash cans, ranked by real Amazon customer reviews.';
+
+const reviews = [
+  {
+    title: 'Best Dish Drying Racks',
+    slug: 'best-dish-racks',
+    description: 'The best-rated dish drying racks, ranked by real customer ratings on durability, size, and value.',
+    category: 'Kitchen',
+    rating: 4.6,
+    image: '/images/best-dish-racks-B0FF4KTKZL.jpg'
+  },
+  {
+    title: 'Best Kitchen Trash Cans',
+    slug: 'best-kitchen-trash-cans',
+    description: 'The best-rated kitchen trash cans, ranked by real customer reviews on lid design, capacity, and value.',
+    category: 'Kitchen',
+    rating: 4.5,
+    image: '/images/best-kitchen-trash-cans-B07KPZ1DR3.jpg'
+  }
+];
 
 const comingSoon = [
-  'Dish Racks',
-  'Kitchen Trash Cans',
   'Sponge Holders',
   'Sink Strainers',
   'Cabinet Organizers',
@@ -29,11 +47,29 @@ const breadcrumbs = [
   <section class="py-12">
     <h1 class="text-4xl font-bold text-gray-900 mb-4">Kitchen Guides</h1>
     <p class="text-xl text-gray-600 mb-8 max-w-3xl">
-      Best-rated kitchen essentials. We rank products by digging through real Amazon customer reviews, and we are writing new guides now.
+      Best-rated kitchen essentials. We rank products by digging through real Amazon customer reviews, so you can buy with confidence.
     </p>
   </section>
   
-  <!-- Guides Coming Soon -->
+  <!-- Published Guides -->
+  <section class="py-8">
+    <h2 class="text-2xl font-bold text-gray-900 mb-6">Published Reviews</h2>
+    
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      {reviews.map((review) => (
+        <ReviewCard
+          title={review.title}
+          description={review.description}
+          category={review.category}
+          slug={review.slug}
+          rating={review.rating}
+          image={review.image}
+        />
+      ))}
+    </div>
+  </section>
+  
+  <!-- Coming Soon -->
   <section class="py-8 border-t border-gray-200">
     <h2 class="text-2xl font-bold text-gray-900 mb-6">Guides Coming Soon</h2>
     <div class="flex flex-wrap gap-3">
@@ -43,9 +79,6 @@ const breadcrumbs = [
         </span>
       ))}
     </div>
-    <p class="text-gray-600 mt-4">
-      Want to know when we publish these guides? <a href="/newsletter/" class="text-[#2563EB] hover:underline">Subscribe to our newsletter</a>.
-    </p>
   </section>
   
   <!-- Newsletter -->
