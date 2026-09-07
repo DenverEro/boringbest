@@ -1,0 +1,12 @@
+# Scratch scrape/audit outputs — regenerated each refresh cycle, not source.
+# Only the baseline-*.md production ledger is tracked (committed).
+dishrack-scrape.json
+ext-replacements.json
+link-audit-2026-09-06-b.json
+plunger-refresh.json
+powerstrips-browser.json
+powerstrips-extra.json
+shower-refresh.json
+shower-replacements.json
+trashcan-browser.json
+trashcan-retry.json
